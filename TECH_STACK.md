@@ -9,8 +9,8 @@
 | FOG CITY | Rikinshah787/Game-Fable-5.2 | JavaScript | three.js | 无构建 | 多文件 ES module，12 个 src 模块 | 建筑立面 / 广告牌由 Higgsfield 生成，模型与 HDRI 来自 three.js examples 与 Poly Haven | — |
 | Dustfall | webKing021/dustfall | JavaScript | three.js 0.187 + Vite 8 | Vite | 站点 | CC0 素材 | — |
 | Bayhaven | fablestar/bayhaven | JavaScript | three.js | Vite | 模块化站点，模块间有接口契约 | 工作室提供的美术 | 每次会话全自动提交，公开直播 |
-| Aquila | GavinLOrio/Fable-5.2-random-game | HTML | three.js | esbuild | 单文件 `rome/index.html` | 海岸线由 Natural Earth 数据生成 | — |
-| Dawnward | GavinLOrio/Fable-5.2-random-game | HTML | three.js | esbuild | 单文件 `index.html` | 同上 | — |
+| Aquila | GavinLOrio/Fable-5.2-random-game | HTML | three.js | esbuild | 单文件 `rome/index.html`，877 KB | 海岸线由 Natural Earth 数据生成 | — |
+| Dawnward | GavinLOrio/Fable-5.2-random-game | HTML | three.js | esbuild | 单文件 `index.html`，678 KB | 同上 | — |
 | Ironvale | SharpWizard/ironvale | HTML | three.js r128（本地 `lib/` + CDN 兜底） | 手写 HTML | 单个 `ironvale.html` + `models/` + `lib/`，另出 5.8 MB 单文件 exe | 用户提供的免费 CC0 模型站链接 | 21 句请求迭代 |
 | Saltline | realcodebear/saltline-fable-5.2 | HTML | three.js（内联） | 无 | **单文件 1.4 MB** | 全部代码生成 | 1 句提示词，约 8 小时，445M 输入 / 2.7M 输出 token，约 $550 |
 | 盐线行动 Online | wenzhengshi/fable5-2-salt-online | JavaScript | three.js + WebSocket | npm 打包 | Node 服务（Express） | 客户端内置 three.js | — |

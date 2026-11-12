@@ -17,7 +17,7 @@ Fable 5.2 上线三天，GitHub 上已经出现了一批不像「demo」的作�
 
 ## 图例
 
-- 🎮 `[Play Online Live Demo]` —— 托管镜像，点开即玩，无需安装
+- 🎮 `[Play Online Live Demo]` —— 托管镜像，点开即玩，无需安装（[技术栈速查表](#六技术栈速查表)里的「🎮 试玩」同样可直接点）
 - 🖥 作者自建站 / GitHub Pages —— 作者本人托管的版本，通常与源码同步更新
 - ⌨️ 暂无在线版本 —— 仓库里没有部署，需 clone 后本地起静态服务
 - ⭐ —— Star 数（2026-11-12）
@@ -162,28 +162,36 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 
 ## 六、技术栈速查表
 
+表中的 🎮 可以直接点开玩；⌨️ 表示无在线版本，需按上方条目的说明在本地运行。
+
 | 游戏 | 渲染 / 引擎 | 构建方式 | 交付形态 | 在线试玩 |
 | --- | --- | --- | --- | :---: |
 | FOG CITY | three.js | 无构建 | 多文件 ES module | ⌨️ |
-| Dustfall | three.js 0.187 | Vite 8 | 站点 | 🎮 |
-| Bayhaven | three.js | Vite | 模块化站点 | 🎮 |
-| Aquila | three.js | esbuild | 单文件 216 KB 级 | ⌨️ |
-| Dawnward | three.js | esbuild | 单文件 | ⌨️ |
-| Ironvale | three.js r128 | 手写 HTML + 本地 lib | 单 HTML + 模型目录 + exe | 🎮 |
-| Saltline | three.js | 无 | 单文件 1.4 MB | 🎮 |
-| 盐线行动 Online | three.js + WS | npm 打包 | Node 服务 | 🎮 |
-| SUBLEVEL 07 | three.js | 无 | 单文件 131 KB | 🎮 |
-| BLAMELESS | three.js | npm 构建 | 站点 + Python 榜单 | 🎮 |
+| Dustfall | three.js 0.187 | Vite 8 | 站点 | [🎮 试玩](https://fable52.games/play/dustfall) |
+| Bayhaven | three.js | Vite | 模块化站点 | [🎮 试玩](https://fable52.games/play/bayhaven) |
+| Aquila | three.js | esbuild | 单文件 877 KB | ⌨️ |
+| Dawnward | three.js | esbuild | 单文件 678 KB | ⌨️ |
+| Ironvale | three.js r128 | 手写 HTML + 本地 lib | 单 HTML + 模型目录 + exe | [🎮 试玩](https://fable52.games/play/ironvale) |
+| Saltline | three.js | 无 | 单文件 1.4 MB | [🎮 试玩](https://fable52.games/play/saltline-fable-5-2-fps) |
+| 盐线行动 Online | three.js + WS | npm 打包 | Node 服务 | [🎮 试玩](https://fable52.games/play/saltline-online) |
+| SUBLEVEL 07 | three.js | 无 | 单文件 131 KB | [🎮 试玩](https://fable52.games/play/sublevel-07-fps-repro) |
+| BLAMELESS | three.js | npm 构建 | 站点 + Python 榜单 | [🎮 试玩](https://fable52.games/play/blameless) |
 | Dustline Outpost | three.js r128 | 无 | HTML + game.js + assets | ⌨️ |
-| Tidebell / MOTHLIGHT / 青云宗 / MISREMEMBER | three.js r170 | 无 | 各自单文件 | 🎮 |
-| Hanford Reach | three.js | Vite | 站点（Vercel） | 🎮 |
-| Boring Game | three.js | Vite + tsc | TypeScript 站点 | 🎮 |
-| Soccer 3D | 自绘 + three.js | 无 | 单文件 + PWA | 🎮 |
-| TukTuk | three.js | 无 | 单文件 | 🎮 |
-| Emberdeep / Daedalus / Sternenjäger / Becario | 原生 / three.js | 无 | 单文件 | 🎮 |
-| Shuttle Strike | three.js + 手部追踪 | 无 | 单文件 + CDN | 🎮 |
+| Tidebell 潮钟 | three.js r170 | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/tidebell) |
+| MOTHLIGHT | three.js r170 | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/mothlight) |
+| 青云宗 · 御剑采灵 | three.js r170 | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/qingyun-sword-flight) |
+| MISREMEMBER | three.js r170 | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/misremember) |
+| Hanford Reach | three.js | Vite | 站点（Vercel） | [🎮 试玩](https://fable52.games/play/hanford-reach) |
+| Boring Game | three.js | Vite + tsc | TypeScript 站点 | [🎮 试玩](https://fable52.games/play/boring-game-sf-bay-transit) |
+| Soccer 3D | 自绘 + three.js | 无 | 单文件 + PWA | [🎮 试玩](https://fable52.games/play/pocket-soccer-3d) |
+| TukTuk | three.js | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/tuktuk) |
+| Emberdeep | 原生 | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/emberdeep) |
+| Daedalus | 原生 | 无 | 单文件 121 KB | [🎮 试玩](https://fable52.games/play/daedalus) |
+| Sternenjäger | 原生 | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/sternenjaeger) |
+| Shuttle Strike | three.js + 手部追踪 | 无 | 单文件 + CDN | [🎮 试玩](https://fable52.games/play/shuttle-strike) |
 | NEON RUNNER | Canvas 2D | 无 | 单文件 | ⌨️ |
-| Harvest Standoff | three.js | 自写 build.mjs | dist 目录 | 🎮 |
+| Becario del Universo | 原生 | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/becario-del-universo) |
+| Harvest Standoff | three.js | 自写 build.mjs | dist 目录 | [🎮 试玩](https://fable52.games/play/harvest-standoff) |
 
 完整的体积、依赖、素材来源、生成成本对照见 **[TECH_STACK.md](TECH_STACK.md)**。
 

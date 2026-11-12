@@ -32,7 +32,7 @@
 ## 交付形态：单文件是主流，但不是全部
 
 - **一个 HTML 文件搞定（16 款）**：Saltline、SUBLEVEL 07、Tidebell、MOTHLIGHT、青云宗、MISREMEMBER、Aquila、Dawnward、Soccer 3D、TukTuk、Emberdeep、Daedalus、Sternenjäger、Shuttle Strike、NEON RUNNER、Becario。双击就能玩，是这波作品最有传播力的形态。
-- **无构建但多文件（3 款）**：FOG CITY、Dustline Outpost、TukTuk 之外的 Ironvale——源码分层清晰，改起来比单文件舒服，但都需要起静态服务（ES module 与 `fetch` 不走 `file://`）。
+- **无构建但多文件（3 款）**：FOG CITY、Dustline Outpost、Ironvale——源码分层清晰，改起来比单文件舒服，但都需要起静态服务（ES module 与 `fetch` 不走 `file://`）。
 - **正经工程化（7 款）**：Dustfall、Bayhaven、Hanford Reach、Boring Game 用 Vite；盐线行动 Online 前后端同仓；BLAMELESS 带 Python 榜单与 headless 端测；Harvest Standoff 自写 `build.mjs` 与 AI 对战测试。
 - **超出浏览器（1 款）**：Ironvale 另外产出了 5.8 MB 单文件 Windows exe。
 

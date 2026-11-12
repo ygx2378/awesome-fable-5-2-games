@@ -1,0 +1,27 @@
+id,name,repo,play_url,author_demo,render,build,delivery,language,stars,category,snapshot_date
+01,FOG CITY,Rikinshah787/Game-Fable-5.2,,,three.js,无构建,多文件 ES module,JavaScript,0,开放世界,2026-11-12
+02,Dustfall,webKing021/dustfall,https://fable52.games/play/dustfall,https://dustfalls.netlify.app/,three.js 0.187 + Vite 8,Vite,站点,JavaScript,2,开放世界,2026-11-12
+03,Bayhaven,fablestar/bayhaven,https://fable52.games/play/bayhaven,https://fablestar.games/watch.html,three.js,Vite,模块化站点,JavaScript,0,开放世界,2026-11-12
+04,Aquila,GavinLOrio/Fable-5.2-random-game,,,three.js,esbuild,单文件 HTML,HTML,0,开放世界,2026-11-12
+05,Dawnward,GavinLOrio/Fable-5.2-random-game,,,three.js,esbuild,单文件 HTML,HTML,0,开放世界,2026-11-12
+06,Ironvale,SharpWizard/ironvale,https://fable52.games/play/ironvale,https://sharpwizard.github.io/ironvale/,three.js r128,手写 HTML + 本地 lib,单 HTML + 模型目录 + exe,HTML,0,RTS,2026-11-12
+07,Saltline,realcodebear/saltline-fable-5.2,https://fable52.games/play/saltline-fable-5-2-fps,https://realcodebear.github.io/saltline-fable-5.2/,three.js,无构建,单文件 HTML 1.4 MB,HTML,230,FPS,2026-11-12
+08,盐线行动 Online,wenzhengshi/fable5-2-salt-online,https://fable52.games/play/saltline-online,,three.js + WebSocket,npm 打包,Node 服务,JavaScript,16,FPS,2026-11-12
+09,SUBLEVEL 07,wquguru/fable52-fps-repro,https://fable52.games/play/sublevel-07-fps-repro,https://wquguru.github.io/fable52-fps-repro/,three.js,无构建,单文件 HTML 131 KB,HTML,78,FPS,2026-11-12
+10,BLAMELESS,Petyok/blameless,https://fable52.games/play/blameless,https://blameless.petruha.ge/,three.js,npm 构建,dist 站点 + Python 榜单,JavaScript,0,FPS,2026-11-12
+11,Dustline Outpost,systemsluke/fable5.2game,,,three.js r128,无构建,HTML + game.js + assets,JavaScript,1,FPS,2026-11-12
+12,Tidebell 潮钟,hahaliu1029/fable5.2demo,https://fable52.games/play/tidebell,,three.js r170,无构建,单文件 HTML,HTML,0,探索,2026-11-12
+13,MOTHLIGHT // Vesper-9,hahaliu1029/fable5.2demo,https://fable52.games/play/mothlight,,three.js r170,无构建,单文件 HTML,HTML,0,驾驶,2026-11-12
+14,青云宗 · 御剑采灵,hahaliu1029/fable5.2demo,https://fable52.games/play/qingyun-sword-flight,,three.js r170,无构建,单文件 HTML,HTML,0,仙侠,2026-11-12
+15,MISREMEMBER,hahaliu1029/fable5.2demo,https://fable52.games/play/misremember,,three.js,无构建,单文件 HTML,HTML,0,恐怖,2026-11-12
+16,Hanford Reach,chzbloom123/settlement-bluff-fable5.2,https://fable52.games/play/hanford-reach,https://settlement-bluff-fable52.vercel.app/,three.js + Vite,Vite,站点（Vercel）,JavaScript,0,建造,2026-11-12
+17,Boring Game,jakozaur/sf_bay_area_transit_fable_5_2_game,https://fable52.games/play/boring-game-sf-bay-transit,https://jakozaur.github.io/sf_bay_area_transit_fable_5_2_game/,three.js + Vite,Vite + tsc,站点,TypeScript,0,建造,2026-11-12
+18,Soccer 3D,ShaunPrice/soccer-3d,https://fable52.games/play/pocket-soccer-3d,https://shaunprice.github.io/soccer-3d/,自绘 3D,无构建,单文件 + PWA,HTML,0,体育,2026-11-12
+19,TukTuk,basemazab/tuktuk,https://fable52.games/play/tuktuk,https://basemazab.github.io/tuktuk/,three.js,无构建,单文件 HTML,JavaScript,0,驾驶,2026-11-12
+20,Emberdeep,DNDNoob/EmberDeep,https://fable52.games/play/emberdeep,https://dndnoob.github.io/EmberDeep/,原生,无构建,单文件 HTML,HTML,0,冒险,2026-11-12
+21,Daedalus,S77FFY/daedalus,https://fable52.games/play/daedalus,https://s77ffy.github.io/daedalus/,原生,无构建,单文件 HTML 121 KB,HTML,1,解谜,2026-11-12
+22,Sternenjäger,oldzitterhand/sternenjaeger,https://fable52.games/play/sternenjaeger,https://oldzitterhand.github.io/sternenjaeger/,原生,无构建,单文件 HTML,HTML,0,射击,2026-11-12
+23,Shuttle Strike,fedifianto/shuttlestrike,https://fable52.games/play/shuttle-strike,https://fedifianto.github.io/shuttlestrike/,three.js + 手部追踪,无构建,单文件 HTML,HTML,0,体育,2026-11-12
+24,NEON RUNNER,Ilias-AK/NewGameFromFable5.2,,,Canvas 2D,无构建,单文件 HTML,HTML,0,跑酷,2026-11-12
+25,Becario del Universo,masugus/fable5.2-5min-game,https://fable52.games/play/becario-del-universo,https://masugus.github.io/fable5.2-5min-game/,原生,无构建,单文件 HTML,HTML,0,休闲,2026-11-12
+26,Harvest Standoff,andreteow/farm-ca,https://fable52.games/play/harvest-standoff,https://harvest-standoff.vercel.app/,three.js,自写 build.mjs,dist 目录,JavaScript,0,竞技,2026-11-12

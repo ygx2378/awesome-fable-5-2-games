@@ -1,6 +1,6 @@
 # Fable 5.2 游戏技术栈对比
 
-22 个游戏仓库的横向拆解。数据抓取于 **2026-11-12**：语言与 Star 来自 GitHub API，构建方式、体积、素材来源、生成成本来自各仓库 README 原文，未做推测填充，未知项标 `—`。
+23 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》新增于 **2026-11-14**。语言与 Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文，未做推测填充，未知项标 `—`。
 
 ## 一览
 
@@ -20,6 +20,7 @@
 | Tidebell / MOTHLIGHT / 青云宗 / MISREMEMBER | hahaliu1029/fable5.2demo | HTML | three.js r170 | 无 | 各自单文件 `index.html`，离线可玩 | 48 个模型由 Blender Python 脚本生成；MISREMEMBER 贴图用 Codex 生图 | 3 句需求出 3 款游戏，另附 10 秒渲染短片 |
 | Hanford Reach | chzbloom123/settlement-bluff-fable5.2 | JavaScript | three.js + Vite | Vite | Vercel 站点，PR 预览 | — | 按 `BUILDLOG.md` 逐会话推进 |
 | Boring Game | jakozaur/sf_bay_area_transit_fable_5_2_game | TypeScript | three.js + Vite | Vite + tsc + Biome + Vitest | 站点，带基准测试 | 真实地图数据 | 15 条提示词，15 小时，66,000 行，约 $700 |
+| Harvest Standoff | andreteow/farm-ca | JavaScript | three.js | 自写 `build.mjs` | dist 目录 | Blender 脚本生成角色；脚本批量生成语音与配乐 | — |
 | Soccer 3D | ShaunPrice/soccer-3d | HTML | 自绘 3D | 无 | 单文件 + PWA（manifest / service worker） | 音效、解说、封面由 ElevenLabs 生成 | 一次对话写完 |
 | TukTuk | basemazab/tuktuk | JavaScript | three.js | 无 | `game.js` + `index.html` | **零素材**：形状、材质、声音全部代码生成 | — |
 | Emberdeep | DNDNoob/EmberDeep | HTML | — | 无 | 单文件 | — | — |
@@ -28,6 +29,7 @@
 | Shuttle Strike | fedifianto/shuttlestrike | HTML | three.js + 手部追踪（CDN） | 无 | 单文件 | — | — |
 | NEON RUNNER | Ilias-AK/NewGameFromFable5.2 | HTML | Canvas 2D + Web Audio | 无 | 单文件，零外部资源 | 图形、音乐全部代码生成 | — |
 | Becario del Universo | masugus/fable5.2-5min-game | HTML | — | 无 | 单文件 | — | 5 分钟出活 |
+| 潮汐战线（Tidemark） | CocoSgt/dsh-game-tidemark | HTML / JavaScript | HTML Canvas | 无 | 多文件 HTML + JavaScript | 仓库内资源 | — |
 
 ## 交付形态：单文件是主流，但不是全部
 
@@ -38,7 +40,7 @@
 
 ## 素材来源谱系
 
-从「零外部素材」到「大量第三方资产」，这 26 款正好铺成一条光谱：
+从「零外部素材」到「大量第三方资产」，这 27 款正好铺成一条光谱：
 
 1. **纯代码生成** — SUBLEVEL 07（着色器画积水与锈迹、Web Audio 合成 18 个音效）、TukTuk、NEON RUNNER、MOTHLIGHT。体积最小（131 KB ~ 数百 KB），加载最快。
 2. **代码生成 + 脚本建模** — Tidebell 四件套用 Blender Python 脚本生成 48 个模型；Harvest Standoff 用 Blender 脚本雕十名角色。

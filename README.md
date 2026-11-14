@@ -1,6 +1,6 @@
 # Awesome Fable 5.2 Games
 
-**26 款游戏 · 22 个游戏仓库 · 3 份社区合集 · 21 款可直接在浏览器里点开就玩**
+**27 款游戏 · 23 个游戏仓库 · 3 份社区合集 · 22 款可直接在浏览器里点开就玩**
 
 Fable 5.2 上线三天，GitHub 上已经出现了一批不像「demo」的作品：能开车抢车被警察追的开放世界、骑马打猎的西部、能联机的港口 FPS、三国志式的 3D 即时战略、甚至单人用 21 句话写完的《帝国时代》替身。
 
@@ -8,11 +8,11 @@ Fable 5.2 上线三天，GitHub 上已经出现了一批不像「demo」的作�
 
 | 文档 | 内容 |
 | --- | --- |
-| [TECH_STACK.md](TECH_STACK.md) | 22 个仓库的技术栈、构建方式、交付体积、生成成本横向对比 |
+| [TECH_STACK.md](TECH_STACK.md) | 23 个仓库的技术栈、构建方式、交付体积、生成成本横向对比 |
 | [PROMPTS.md](PROMPTS.md) | 可复现的原始提示词：一句话 FPS、21 句 RTS、三句需求做出三个游戏 |
 | [data/games.csv](data/games.csv) | 结构化数据，方便二次加工或做站 |
 
-> **核验说明**：数据抓取于 **2026-11-12**。22 个游戏仓库、3 个合集仓库逐一调用 GitHub API 确认存在；所有在线试玩链接逐一发起请求确认可访问（HTTP 200）。Star 数为抓取当日快照。
+> **核验说明**：原有 26 款数据抓取于 **2026-11-12**；新增《潮汐战线》于 **2026-11-14** 核验。原有游戏仓库、合集仓库和试玩链接均逐一确认可访问；新条目的源码仓库与试玩页也已核验可访问（HTTP 200）。Star 数按各条目的抓取日期记录。
 > 部分作品仍在开发中，完成度差异很大；标注「暂无在线版本」的 5 款需要本地起服务才能玩。
 
 ## 图例
@@ -27,7 +27,7 @@ Fable 5.2 上线三天，GitHub 上已经出现了一批不像「demo」的作�
 - [一、开放世界与 3D 动作（6 款）](#一开放世界与-3d-动作6-款)
 - [二、第一人称射击（5 款）](#二第一人称射击5-款)
 - [三、视觉效果与探索（6 款）](#三视觉效果与探索6-款)
-- [四、体育、竞速与其他（9 款）](#四体育竞速与其他9-款)
+- [四、体育、竞速与其他（10 款）](#四体育竞速与其他10-款)
 - [五、值得收藏的社区合集](#五值得收藏的社区合集)
 - [六、技术栈速查表](#六技术栈速查表)
 - [七、这些游戏是怎么被写出来的](#七这些游戏是怎么被写出来的)
@@ -109,7 +109,7 @@ Fable 5.2 上线三天，GitHub 上已经出现了一批不像「demo」的作�
 用真实地图数据重建旧金山湾区体素地形，规划线路、挖隧道、建车站，把列车开到作者公司楼下。15 条提示词、15 小时、66,000 行、约 $700。
 `TypeScript + Vite` · typecheck + Biome + Vitest + 基准测试 · [Play Online Live Demo](https://fable52.games/play/boring-game-sf-bay-transit) · [作者站](https://jakozaur.github.io/sf_bay_area_transit_fable_5_2_game/)
 
-## 四、体育、竞速与其他（9 款）
+## 四、体育、竞速与其他（10 款）
 
 **18 · Soccer 3D** — 7 人制 3D 足球 · [源码](https://github.com/ShaunPrice/soccer-3d) ⭐ 0
 有裁判、越位、红黄牌、点球与人墙、伤停补时和平局点球大战；阵型/心态/逼抢三档战术，体力、受伤、三个换人名额，进球慢镜回放，八级难度。
@@ -146,6 +146,10 @@ Fable 5.2 上线三天，GitHub 上已经出现了一批不像「demo」的作�
 **26 · Harvest Standoff** — 农场 5v5 团队竞技 · [源码](https://github.com/andreteow/farm-ca) ⭐ 0
 动物对农场工人，回合制 5v5，有商店、金币、中场与「臭南瓜」；十名角色全部由 Blender 脚本雕刻生成，语音与配乐由脚本批量产出。
 `three.js` + 自写 `build.mjs` · 有 AI 自动对战测试与地图公平性统计 · [Play Online Live Demo](https://fable52.games/play/harvest-standoff) · [作者站](https://harvest-standoff.vercel.app)
+
+**27 · 潮汐战线（Tidemark）** — 《高级战争》式回合制战棋 · [源码](https://github.com/CocoSgt/dsh-game-tidemark) ⭐ 12（2026-11-14）
+陆海空 33 个兵种、29 位指挥官和 27 关战役；纯前端、多文件 HTML/JavaScript，无需构建，支持本地打开游玩。
+`HTML Canvas + JavaScript` · [在线试玩](https://dsh-game-store.com/games/tidemark/) · [游戏手册](https://dsh-game-store.com/games/tidemark/manual/)
 
 ---
 
@@ -192,6 +196,7 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 | NEON RUNNER | Canvas 2D | 无 | 单文件 | ⌨️ |
 | Becario del Universo | 原生 | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/becario-del-universo) |
 | Harvest Standoff | three.js | 自写 build.mjs | dist 目录 | [🎮 试玩](https://fable52.games/play/harvest-standoff) |
+| 潮汐战线（Tidemark） | HTML Canvas | 无构建 | 多文件 HTML + JavaScript | [🎮 试玩](https://dsh-game-store.com/games/tidemark/) |
 
 完整的体积、依赖、素材来源、生成成本对照见 **[TECH_STACK.md](TECH_STACK.md)**。
 
@@ -222,7 +227,7 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 - 本仓库只做索引，不托管任何游戏代码，版权归各作者所有，请遵守各仓库的 LICENSE。
 - 不少作品借鉴了 3A 游戏的玩法，但都是原创世界与原创命名，未使用原作素材；引用真实品牌或模型的项目已在各自 README 注明。
 - 部分作品仍在开发中，完成度差异很大；「在线可玩」只代表能打开，不代表完成度。
-- Star 数与可访问性为 2026-11-12 快照，会随时间变化。
+- 原有条目的 Star 数与可访问性记录于 2026-11-12；《潮汐战线》记录于 2026-11-14，会随时间变化。
 
 ## 附录：站上还有这 11 款
 

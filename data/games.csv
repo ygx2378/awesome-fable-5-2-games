@@ -25,3 +25,4 @@ id,name,repo,play_url,author_demo,render,build,delivery,language,stars,category,
 24,NEON RUNNER,Ilias-AK/NewGameFromFable5.2,,,Canvas 2D,无构建,单文件 HTML,HTML,0,跑酷,2026-11-12
 25,Becario del Universo,masugus/fable5.2-5min-game,https://fable52.games/play/becario-del-universo,https://masugus.github.io/fable5.2-5min-game/,原生,无构建,单文件 HTML,HTML,0,休闲,2026-11-12
 26,Harvest Standoff,andreteow/farm-ca,https://fable52.games/play/harvest-standoff,https://harvest-standoff.vercel.app/,three.js,自写 build.mjs,dist 目录,JavaScript,0,竞技,2026-11-12
+27,潮汐战线（Tidemark）,CocoSgt/dsh-game-tidemark,https://dsh-game-store.com/games/tidemark/,,HTML Canvas,无构建,多文件 HTML + JavaScript,HTML,12,战棋,2026-11-14

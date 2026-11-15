@@ -1,6 +1,6 @@
 # Fable 5.2 游戏技术栈对比
 
-22 个游戏仓库的横向拆解。数据抓取于 **2026-11-12**：语言与 Star 来自 GitHub API，构建方式、体积、素材来源、生成成本来自各仓库 README 原文，未做推测填充，未知项标 `—`。
+28 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款新发现游戏于 **2026-11-14** 核验。语言与 Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
 
 ## 一览
 
@@ -17,9 +17,15 @@
 | SUBLEVEL 07 | wquguru/fable52-fps-repro | HTML | three.js（CDN） | 无 | **单文件 131 KB** | 纯代码：Web Audio 合成 18 个音效，着色器画材质 | 1 句提示词，73 轮，41 分钟，$15.96 |
 | BLAMELESS | Petyok/blameless | JavaScript | three.js | npm 构建 | dist 站点 + Python 标准库 + SQLite 榜单 | 场景全程序化，音乐 MiniMax Music 3 本地跑，旁白 Piper | 1 句「surprise me」提示词 + 第 2 条部署指令 |
 | Dustline Outpost | systemsluke/fable5.2game | JavaScript | three.js r128 | 无 | `index.html` + `game.js`（约 640 行）+ assets | Poly Haven CC0 扫描模型与 HDRI | 多轮对话，README 里有压缩成单份的完整 brief |
+| No Return | StefanKnol/game-no-return | HTML | WebGL 2 | 无需构建 | 单文件 `index.html` | — | Claude Fable 5.2 最小提示词测试 |
+| Riftline | wongh26/claude_fps | HTML | three.js r160 + PeerJS | 无构建 | 多文件静态站点 | 角色、模型、音效由代码生成 | README 标注为 Fable 5.2 游戏开发测试 |
 | Tidebell / MOTHLIGHT / 青云宗 / MISREMEMBER | hahaliu1029/fable5.2demo | HTML | three.js r170 | 无 | 各自单文件 `index.html`，离线可玩 | 48 个模型由 Blender Python 脚本生成；MISREMEMBER 贴图用 Codex 生图 | 3 句需求出 3 款游戏，另附 10 秒渲染短片 |
 | Hanford Reach | chzbloom123/settlement-bluff-fable5.2 | JavaScript | three.js + Vite | Vite | Vercel 站点，PR 预览 | — | 按 `BUILDLOG.md` 逐会话推进 |
 | Boring Game | jakozaur/sf_bay_area_transit_fable_5_2_game | TypeScript | three.js + Vite | Vite + tsc + Biome + Vitest | 站点，带基准测试 | 真实地图数据 | 15 条提示词，15 小时，66,000 行，约 $700 |
+| The County | TheMizeGuy/fable-5.2-potatobench | TypeScript | three.js + Vite | Vite + TypeScript | GitHub Pages 站点 | 程序化模拟、Web Audio 合成 | 1 句提示词；作者称游戏由 Fable 5.2 完成 |
+| Harvest Standoff | andreteow/farm-ca | JavaScript | three.js | 自写 `build.mjs` | dist 目录 | Blender 脚本生成角色；脚本批量生成语音与配乐 | — |
+| MAKINAMON · Versión Pulso | gavilanbe/makinamon-pulso | JavaScript | Canvas 2D | 无构建 | 多文件 HTML + JavaScript | 像素素材由工具烘焙；音效与音乐浏览器合成 | README 标注由 Claude Fable 5.2 制作 |
+| SUPERFORGE GT | jreinach-alt/sf-gt | Python / 65C816 ASM | SNES Mode 7 | Make + ca65/ld65 | 4 MB `.sfc` ROM | Blender 制作自有场景素材，代码绘制界面 | SuperForge 工具链 + Claude Fable 5.2 |
 | Soccer 3D | ShaunPrice/soccer-3d | HTML | 自绘 3D | 无 | 单文件 + PWA（manifest / service worker） | 音效、解说、封面由 ElevenLabs 生成 | 一次对话写完 |
 | TukTuk | basemazab/tuktuk | JavaScript | three.js | 无 | `game.js` + `index.html` | **零素材**：形状、材质、声音全部代码生成 | — |
 | Emberdeep | DNDNoob/EmberDeep | HTML | — | 无 | 单文件 | — | — |
@@ -28,17 +34,18 @@
 | Shuttle Strike | fedifianto/shuttlestrike | HTML | three.js + 手部追踪（CDN） | 无 | 单文件 | — | — |
 | NEON RUNNER | Ilias-AK/NewGameFromFable5.2 | HTML | Canvas 2D + Web Audio | 无 | 单文件，零外部资源 | 图形、音乐全部代码生成 | — |
 | Becario del Universo | masugus/fable5.2-5min-game | HTML | — | 无 | 单文件 | — | 5 分钟出活 |
+| 潮汐战线（Tidemark） | CocoSgt/dsh-game-tidemark | HTML / JavaScript | HTML Canvas | 无 | 多文件 HTML + JavaScript | 仓库内资源 | — |
 
 ## 交付形态：单文件是主流，但不是全部
 
-- **一个 HTML 文件搞定（16 款）**：Saltline、SUBLEVEL 07、Tidebell、MOTHLIGHT、青云宗、MISREMEMBER、Aquila、Dawnward、Soccer 3D、TukTuk、Emberdeep、Daedalus、Sternenjäger、Shuttle Strike、NEON RUNNER、Becario。双击就能玩，是这波作品最有传播力的形态。
-- **无构建但多文件（3 款）**：FOG CITY、Dustline Outpost、Ironvale——源码分层清晰，改起来比单文件舒服，但都需要起静态服务（ES module 与 `fetch` 不走 `file://`）。
-- **正经工程化（7 款）**：Dustfall、Bayhaven、Hanford Reach、Boring Game 用 Vite；盐线行动 Online 前后端同仓；BLAMELESS 带 Python 榜单与 headless 端测；Harvest Standoff 自写 `build.mjs` 与 AI 对战测试。
-- **超出浏览器（1 款）**：Ironvale 另外产出了 5.8 MB 单文件 Windows exe。
+- **一个 HTML 文件搞定（17 款）**：Saltline、SUBLEVEL 07、No Return、Tidebell、MOTHLIGHT、青云宗、MISREMEMBER、Aquila、Dawnward、Soccer 3D、TukTuk、Emberdeep、Daedalus、Sternenjäger、Shuttle Strike、NEON RUNNER、Becario。
+- **无构建但多文件（6 款）**：FOG CITY、Dustline Outpost、Ironvale、Riftline、MAKINAMON、Tidemark；ES module 游戏需静态服务，Makinamon 和 Tidemark 的入口按各自 README 运行。
+- **工程化构建（9 款）**：Dustfall、Bayhaven、Hanford Reach、Boring Game、The County 用 Vite；盐线行动 Online 前后端同仓；BLAMELESS 带 Python 榜单与 headless 端测；Harvest Standoff 自写 `build.mjs`；SUPERFORGE GT 用 Make 和 ca65/ld65 构建 ROM。
+- **超出浏览器（2 款）**：Ironvale 另有 Windows exe；SUPERFORGE GT 构建为 SNES ROM，需模拟器运行。
 
 ## 素材来源谱系
 
-从「零外部素材」到「大量第三方资产」，这 26 款正好铺成一条光谱：
+从「零外部素材」到「大量第三方资产」，这 32 款正好铺成一条光谱：
 
 1. **纯代码生成** — SUBLEVEL 07（着色器画积水与锈迹、Web Audio 合成 18 个音效）、TukTuk、NEON RUNNER、MOTHLIGHT。体积最小（131 KB ~ 数百 KB），加载最快。
 2. **代码生成 + 脚本建模** — Tidebell 四件套用 Blender Python 脚本生成 48 个模型；Harvest Standoff 用 Blender 脚本雕十名角色。

@@ -1,33 +1,33 @@
 # Awesome Fable 5.2 Games
 
-**26 款游戏 · 22 个游戏仓库 · 3 份社区合集 · 21 款可直接在浏览器里点开就玩**
+**32 款游戏 · 28 个游戏仓库 · 3 份社区合集 · 24 款可直接在浏览器里点开就玩**
 
-Fable 5.2 上线三天，GitHub 上已经出现了一批不像「demo」的作品：能开车抢车被警察追的开放世界、骑马打猎的西部、能联机的港口 FPS、三国志式的 3D 即时战略、甚至单人用 21 句话写完的《帝国时代》替身。
+Fable 5.2 上线后，GitHub 上已经出现了一批不像「demo」的作品：能开车抢车被警察追的开放世界、骑马打猎的西部、能联机的港口 FPS、三国志式的 3D 即时战略、甚至单人用 21 句话写完的《帝国时代》替身。
 
-这个仓库把它们整理成一份可检索的清单：**每款都有源码地址、一句玩法说明、真实技术栈，以及能直接玩的在线地址**。技术栈对比与 Prompt 原文各自独立成篇，方便你反推「什么样的提示词能做出这种东西」。
+这个仓库把它们整理成一份可检索的清单：**每款都有源码地址、玩法说明和真实技术栈；有在线试玩的附链接，没有试玩页的写清本地运行方式**。技术栈对比与 Prompt 原文各自独立成篇，方便你反推「什么样的提示词能做出这种东西」。
 
 | 文档 | 内容 |
 | --- | --- |
-| [TECH_STACK.md](TECH_STACK.md) | 22 个仓库的技术栈、构建方式、交付体积、生成成本横向对比 |
+| [TECH_STACK.md](TECH_STACK.md) | 28 个仓库的技术栈、构建方式、交付体积、生成成本横向对比 |
 | [PROMPTS.md](PROMPTS.md) | 可复现的原始提示词：一句话 FPS、21 句 RTS、三句需求做出三个游戏 |
 | [data/games.csv](data/games.csv) | 结构化数据，方便二次加工或做站 |
 
-> **核验说明**：数据抓取于 **2026-11-12**。22 个游戏仓库、3 个合集仓库逐一调用 GitHub API 确认存在；所有在线试玩链接逐一发起请求确认可访问（HTTP 200）。Star 数为抓取当日快照。
-> 部分作品仍在开发中，完成度差异很大；标注「暂无在线版本」的 5 款需要本地起服务才能玩。
+> **核验说明**：原有 26 款数据抓取于 **2026-11-12**；《潮汐战线》和 5 款新发现游戏于 **2026-11-14** 核验。新增游戏均有源码仓库及明确运行方式；有试玩链接的页面已核验可访问（HTTP 200）。Star 数按各条目的抓取日期记录。
+> 部分作品仍在开发中，完成度差异很大；标注「暂无在线版本」的 8 款需按条目说明本地运行或构建。
 
 ## 图例
 
 - 🎮 `[Play Online Live Demo]` —— 托管镜像，点开即玩，无需安装（[技术栈速查表](#六技术栈速查表)里的「🎮 试玩」同样可直接点）
 - 🖥 作者自建站 / GitHub Pages —— 作者本人托管的版本，通常与源码同步更新
 - ⌨️ 暂无在线版本 —— 仓库里没有部署，需 clone 后本地起静态服务
-- ⭐ —— Star 数（2026-11-12）
+- ⭐ —— Star 数（日期见条目）
 
 ## 目录
 
 - [一、开放世界与 3D 动作（6 款）](#一开放世界与-3d-动作6-款)
-- [二、第一人称射击（5 款）](#二第一人称射击5-款)
+- [二、第一人称射击（7 款）](#二第一人称射击7-款)
 - [三、视觉效果与探索（6 款）](#三视觉效果与探索6-款)
-- [四、体育、竞速与其他（9 款）](#四体育竞速与其他9-款)
+- [四、体育、竞速与其他（13 款）](#四体育竞速与其他13-款)
 - [五、值得收藏的社区合集](#五值得收藏的社区合集)
 - [六、技术栈速查表](#六技术栈速查表)
 - [七、这些游戏是怎么被写出来的](#七这些游戏是怎么被写出来的)
@@ -61,7 +61,7 @@ Fable 5.2 上线三天，GitHub 上已经出现了一批不像「demo」的作�
 采集、建城、三个时代升级、科技树、编队热键、战争迷雾、AI 对手会投降；五个原创国度各有独特兵种与建筑，还有三部原创战役。
 `three.js r128`（内置 `lib/` 并带 CDN 兜底）· 21 句大白话写成 · 另附 5.8 MB 单文件 `Ironvale.exe` · [Play Online Live Demo](https://fable52.games/play/ironvale) · [作者站](https://sharpwizard.github.io/ironvale/) · [完整提示词](https://github.com/SharpWizard/ironvale/blob/main/PROMPTS.md)
 
-## 二、第一人称射击（5 款）
+## 二、第一人称射击（7 款）
 
 **07 · Saltline** — 3D 港口 FPS · [源码](https://github.com/realcodebear/saltline-fable-5.2) ⭐ 230
 整条链路的起点：Anthropic 的 Felix Rieseberg 一句提示词、无人干预 8 小时跑出来的雨夜集装箱码头，切断三个中继站，躲开机群「Gulls」和机械狗「Hounds」。
@@ -83,69 +83,93 @@ Fable 5.2 上线三天，GitHub 上已经出现了一批不像「demo」的作�
 每道闪电把世界倒回 70 秒，你上一轮的自己被留下成一个半透明「回声」，按原样重放每一枪。三个中继站相距太远，只能靠不同轮次的自己配合占领——一共六次机会。
 `three.js r128` · 无构建 · 回声按 20 Hz 记录并从**当前**世界重发射线 · Poly Haven CC0 扫描素材 · ⌨️ 暂无在线版本，需静态服务且首屏拉 41 MB 资源
 
+**12 · No Return** — LiDAR 点云恐怖游戏 · [源码](https://github.com/StefanKnol/game-no-return) ⭐ 0
+在全黑的地下泵房里寻找三卷测绘资料；手持扫描仪照出的点云会留在原地，停下扫描就看不见周围的东西。
+`WebGL 2 + JavaScript` · 已提交单文件 `index.html`，可直接打开游玩；除网页字体外无需下载资源
+
+**13 · Riftline** — 3D 第一人称英雄射击 · [源码](https://github.com/wongh26/claude_fps) ⭐ 0
+用 Vesper 的双枪、瞬移和回溯技能打机器人或与朋友联机对决；支持 PeerJS 点对点联机。
+`three.js r160 + PeerJS` · 无构建 · ⌨️ 暂无在线版本，运行 `python3 -m http.server 8000` 后打开本地地址
+
 ## 三、视觉效果与探索（6 款）
 
-**12 · Tidebell 潮钟** — 3D 水下探索 · [源码](https://github.com/hahaliu1029/fable5.2demo) ⭐ 0
+**14 · Tidebell 潮钟** — 3D 水下探索 · [源码](https://github.com/hahaliu1029/fable5.2demo) ⭐ 0
 驾驶小潜水器从阳光照透的珊瑚礁一路下潜到深渊，唤醒七口沉睡的潮钟。48 个模型全部由 Blender 里的 Python 脚本生成，手写水下光照：红色最先随深度消失，开灯才把颜色找回来。
 `three.js r170` · 单文件 `index.html` · 18,000 个海底实例，鱼群动画跑在顶点着色器里 · [Play Online Live Demo](https://fable52.games/play/tidebell)
 
-**13 · MOTHLIGHT // Vesper-9** — 赛博朋克城市驾驶 · [源码](https://github.com/hahaliu1029/fable5.2demo) ⭐ 0
+**15 · MOTHLIGHT // Vesper-9** — 赛博朋克城市驾驶 · [源码](https://github.com/hahaliu1029/fable5.2demo) ⭐ 0
 雨夜霓虹城里穿 12 道光门，手刹漂移、加速带、单轨列车与全息飞蛾；9×9 街区 694 栋楼一次实例化绘制，窗户画出带纵深的房间。
 `three.js r170` · 单文件 · 湿街道镜面反射与实时环境贴图 · [Play Online Live Demo](https://fable52.games/play/mothlight)
 
-**14 · 青云宗 · 御剑采灵** — 3D 仙侠 · [源码](https://github.com/hahaliu1029/fable5.2demo) ⭐ 0
+**16 · 青云宗 · 御剑采灵** — 3D 仙侠 · [源码](https://github.com/hahaliu1029/fable5.2demo) ⭐ 0
 第三人称御剑飞行，在体积云海、浮岩和真实反射的湖面之间收集 20 颗灵气，点亮山门牌匾后穿门通关；水墨标题、飞剑光带、解锁金光柱。
 `three.js r170` · 单文件 · 支持触屏；自驾驶脚本可完整通关并录回放 · [Play Online Live Demo](https://fable52.games/play/qingyun-sword-flight)
 
-**15 · MISREMEMBER** — 第一人称心理恐怖 · [源码](https://github.com/hahaliu1029/fable5.2demo) ⭐ 0
+**17 · MISREMEMBER** — 第一人称心理恐怖 · [源码](https://github.com/hahaliu1029/fable5.2demo) ⭐ 0
 有什么东西按你的记忆重建了童年的家，而记忆并不可靠：你盯着的东西永远不变，变化只发生在你身后。房间靠门洞模板遮罩拼接，同一扇门下次打开可能通向别处。
 `three.js` · 单文件 · 变化排队等离开视野才落地；贴图由 Codex 生成（仓库只放 WebP）· [Play Online Live Demo](https://fable52.games/play/misremember)
 
-**16 · Hanford Reach** — 小镇探索与定居点建设 · [源码](https://github.com/chzbloom123/settlement-bluff-fable5.2) ⭐ 0
+**18 · Hanford Reach** — 小镇探索与定居点建设 · [源码](https://github.com/chzbloom123/settlement-bluff-fable5.2) ⭐ 0
 哥伦比亚河畔小镇废墟上的慢节奏建造游戏，第一人称与第三人称随时切换，带质量档位、性能报表和一键渲染 14 个固定机位的对比截图脚本。
 `three.js + Vite` · Vercel 自动部署，每个 PR 有独立预览 · [Play Online Live Demo](https://fable52.games/play/hanford-reach) · [作者站](https://settlement-bluff-fable52.vercel.app)
 
-**17 · Boring Game** — 湾区体素世界 · [源码](https://github.com/jakozaur/sf_bay_area_transit_fable_5_2_game) ⭐ 0
+**19 · Boring Game** — 湾区体素世界 · [源码](https://github.com/jakozaur/sf_bay_area_transit_fable_5_2_game) ⭐ 0
 用真实地图数据重建旧金山湾区体素地形，规划线路、挖隧道、建车站，把列车开到作者公司楼下。15 条提示词、15 小时、66,000 行、约 $700。
 `TypeScript + Vite` · typecheck + Biome + Vitest + 基准测试 · [Play Online Live Demo](https://fable52.games/play/boring-game-sf-bay-transit) · [作者站](https://jakozaur.github.io/sf_bay_area_transit_fable_5_2_game/)
 
-## 四、体育、竞速与其他（9 款）
+## 四、体育、竞速与其他（13 款）
 
-**18 · Soccer 3D** — 7 人制 3D 足球 · [源码](https://github.com/ShaunPrice/soccer-3d) ⭐ 0
+**20 · Soccer 3D** — 7 人制 3D 足球 · [源码](https://github.com/ShaunPrice/soccer-3d) ⭐ 0
 有裁判、越位、红黄牌、点球与人墙、伤停补时和平局点球大战；阵型/心态/逼抢三档战术，体力、受伤、三个换人名额，进球慢镜回放，八级难度。
 `单文件 HTML` · PWA 可装到手机主屏、离线可玩 · 音效与解说由 ElevenLabs 生成 · [Play Online Live Demo](https://fable52.games/play/pocket-soccer-3d) · [作者站](https://shaunprice.github.io/soccer-3d/)
 
-**19 · TukTuk** — 埃及街头驾驶 · [源码](https://github.com/basemazab/tuktuk) ⭐ 0
+**21 · TukTuk** — 埃及街头驾驶 · [源码](https://github.com/basemazab/tuktuk) ⭐ 0
 在挤满小巴、出租和西瓜车的开罗街道里钻缝拉客，收车费、躲路障。所有形状、材质、音效都由代码生成，仓库里没有一张图片、一个音频文件。
 `three.js` · `game.js` + `index.html` 两个文件 · [Play Online Live Demo](https://fable52.games/play/tuktuk) · [作者站](https://basemazab.github.io/tuktuk/)
 
-**20 · Emberdeep** — 浏览器冒险 · [源码](https://github.com/DNDNoob/EmberDeep) ⭐ 0
+**22 · Emberdeep** — 浏览器冒险 · [源码](https://github.com/DNDNoob/EmberDeep) ⭐ 0
 火把在烧，往下走。单文件地牢下潜，约 100 KB。
 `单文件 HTML` · [Play Online Live Demo](https://fable52.games/play/emberdeep) · [作者站](https://dndnoob.github.io/EmberDeep/)
 
-**21 · Daedalus** — 古希腊神话解谜 · [源码](https://github.com/S77FFY/daedalus) ⭐ 1
+**23 · Daedalus** — 古希腊神话解谜 · [源码](https://github.com/S77FFY/daedalus) ⭐ 1
 以代达罗斯迷宫为题的谜题游戏，121 KB 单文件。
 `单文件 HTML` · [Play Online Live Demo](https://fable52.games/play/daedalus) · [作者站](https://s77ffy.github.io/daedalus/)
 
-**22 · Sternenjäger** — 科幻太空射击 · [源码](https://github.com/oldzitterhand/sternenjaeger) ⭐ 0
+**24 · Sternenjäger** — 科幻太空射击 · [源码](https://github.com/oldzitterhand/sternenjaeger) ⭐ 0
 12 个星区、3 场 Boss 战，飞船自动开火，玩家只管飞位与 EMP；手机、键盘、手柄三种操作都支持。
 `单文件 HTML` · 无构建无服务 · [Play Online Live Demo](https://fable52.games/play/sternenjaeger) · [作者站](https://oldzitterhand.github.io/sternenjaeger/)
 
-**23 · Shuttle Strike** — 第一人称羽毛球 · [源码](https://github.com/fedifianto/shuttlestrike) ⭐ 0
+**25 · Shuttle Strike** — 第一人称羽毛球 · [源码](https://github.com/fedifianto/shuttlestrike) ⭐ 0
 用摄像头追踪手部：握拳即握拍，挥快球杀球，拍面高低决定挑高或吊球；张开手掌停住是暂停。没摄像头可切鼠标模式。
 `单文件 HTML` + CDN 手部追踪 · 需 HTTPS 或 localhost 才能开摄像头 · [Play Online Live Demo](https://fable52.games/play/shuttle-strike) · [作者站](https://fedifianto.github.io/shuttlestrike/)
 
-**24 · NEON RUNNER** — 赛博朋克 2D 跑酷 · [源码](https://github.com/Ilias-AK/NewGameFromFable5.2) ⭐ 0
+**26 · NEON RUNNER** — 赛博朋克 2D 跑酷 · [源码](https://github.com/Ilias-AK/NewGameFromFable5.2) ⭐ 0
 霓虹城市无尽跑酷，障碍按「与玩家相遇的时间」生成，因此难度提升不会压缩反应窗口；三档难度、护盾与磁铁道具、每 500 米记速、Top-5 本地存档。
 `单文件 HTML` · Canvas 2D + Web Audio + LocalStorage，零外部资源 · ⌨️ 暂无在线版本，双击 `index.html` 即可
 
-**25 · Becario del Universo** — 宇宙主题小游戏 · [源码](https://github.com/masugus/fable5.2-5min-game) ⭐ 0
+**27 · Becario del Universo** — 宇宙主题小游戏 · [源码](https://github.com/masugus/fable5.2-5min-game) ⭐ 0
 「宇宙最新实习生」的琐碎任务合集，桌面与手机同一份代码，5 分钟能玩完一局，最高分存在浏览器里。
 `单文件 HTML` · [Play Online Live Demo](https://fable52.games/play/becario-del-universo) · [作者站](https://masugus.github.io/fable5.2-5min-game/)
 
-**26 · Harvest Standoff** — 农场 5v5 团队竞技 · [源码](https://github.com/andreteow/farm-ca) ⭐ 0
+**28 · Harvest Standoff** — 农场 5v5 团队竞技 · [源码](https://github.com/andreteow/farm-ca) ⭐ 0
 动物对农场工人，回合制 5v5，有商店、金币、中场与「臭南瓜」；十名角色全部由 Blender 脚本雕刻生成，语音与配乐由脚本批量产出。
 `three.js` + 自写 `build.mjs` · 有 AI 自动对战测试与地图公平性统计 · [Play Online Live Demo](https://fable52.games/play/harvest-standoff) · [作者站](https://harvest-standoff.vercel.app)
+
+**29 · 潮汐战线（Tidemark）** — 《高级战争》式回合制战棋 · [源码](https://github.com/CocoSgt/dsh-game-tidemark) ⭐ 12（2026-11-14）
+陆海空 33 个兵种、29 位指挥官和 27 关战役；纯前端、多文件 HTML/JavaScript，无需构建，支持本地打开游玩。
+`HTML Canvas + JavaScript` · [在线试玩](https://dsh-game-store.com/games/tidemark/) · [游戏手册](https://dsh-game-store.com/games/tidemark/manual/)
+
+**30 · The County** — 土豆农场经营策略 · [源码](https://github.com/TheMizeGuy/fable-5.2-potatobench) ⭐ 1（2026-11-14）
+从六块田和一名农夫起步，安排种植、收获、雇工、扩地和订单；作物长在地下，得等收成时才知道结果。
+`TypeScript + three.js + Vite` · [Play Online Live Demo](https://themizeguy.github.io/fable-5.2-potatobench/)
+
+**31 · MAKINAMON · Versión Pulso** — Game Boy Color 风格像素怪物 RPG · [源码](https://github.com/gavilanbe/makinamon-pulso) ⭐ 0（2026-11-14）
+在 10 个章节里收集并培养 50 种机器生物，挑战 6 名中央设施首领；50 种攻击各有动画与音效。
+`Canvas 2D + JavaScript` · [Play Online Live Demo](https://gavilanbe.github.io/makinamon-pulso/)
+
+**32 · SUPERFORGE GT** — SNES 赛车生涯游戏 · [源码](https://github.com/jreinach-alt/sf-gt) ⭐ 0（2026-11-14）
+买车、跑 12 场赛事、用奖金改装；8 台车、6 条 Mode 7 赛道和 9 名对手，最终构建为 4 MB SNES ROM。
+`65C816 Assembly + Python` · 按 README 在 Linux 上构建，再用 SNES 模拟器运行
 
 ---
 
@@ -177,6 +201,8 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 | SUBLEVEL 07 | three.js | 无 | 单文件 131 KB | [🎮 试玩](https://fable52.games/play/sublevel-07-fps-repro) |
 | BLAMELESS | three.js | npm 构建 | 站点 + Python 榜单 | [🎮 试玩](https://fable52.games/play/blameless) |
 | Dustline Outpost | three.js r128 | 无 | HTML + game.js + assets | ⌨️ |
+| No Return | WebGL 2 | 无需构建 | 单文件 HTML | ⌨️ |
+| Riftline | three.js r160 + PeerJS | 无构建 | 多文件静态站点 | ⌨️ |
 | Tidebell 潮钟 | three.js r170 | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/tidebell) |
 | MOTHLIGHT | three.js r170 | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/mothlight) |
 | 青云宗 · 御剑采灵 | three.js r170 | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/qingyun-sword-flight) |
@@ -192,6 +218,10 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 | NEON RUNNER | Canvas 2D | 无 | 单文件 | ⌨️ |
 | Becario del Universo | 原生 | 无 | 单文件 | [🎮 试玩](https://fable52.games/play/becario-del-universo) |
 | Harvest Standoff | three.js | 自写 build.mjs | dist 目录 | [🎮 试玩](https://fable52.games/play/harvest-standoff) |
+| 潮汐战线（Tidemark） | HTML Canvas | 无构建 | 多文件 HTML + JavaScript | [🎮 试玩](https://dsh-game-store.com/games/tidemark/) |
+| The County | three.js + Vite | Vite + TypeScript | 浏览器站点 | [🎮 试玩](https://themizeguy.github.io/fable-5.2-potatobench/) |
+| MAKINAMON | Canvas 2D | 无构建 | 多文件 HTML + JavaScript | [🎮 试玩](https://gavilanbe.github.io/makinamon-pulso/) |
+| SUPERFORGE GT | SNES Mode 7 | Make + ca65/ld65 | 4 MB `.sfc` ROM | ⌨️ |
 
 完整的体积、依赖、素材来源、生成成本对照见 **[TECH_STACK.md](TECH_STACK.md)**。
 
@@ -222,7 +252,7 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 - 本仓库只做索引，不托管任何游戏代码，版权归各作者所有，请遵守各仓库的 LICENSE。
 - 不少作品借鉴了 3A 游戏的玩法，但都是原创世界与原创命名，未使用原作素材；引用真实品牌或模型的项目已在各自 README 注明。
 - 部分作品仍在开发中，完成度差异很大；「在线可玩」只代表能打开，不代表完成度。
-- Star 数与可访问性为 2026-11-12 快照，会随时间变化。
+- 原有条目的 Star 数与可访问性记录于 2026-11-12；《潮汐战线》及 5 款新条目记录于 2026-11-14，会随时间变化。
 
 ## 附录：站上还有这 11 款
 

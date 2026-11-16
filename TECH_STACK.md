@@ -1,6 +1,6 @@
 # Fable 5.2 游戏技术栈对比
 
-28 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款新发现游戏于 **2026-11-14** 核验。语言与 Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
+51 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
 
 ## 一览
 
@@ -17,7 +17,7 @@
 | SUBLEVEL 07 | wquguru/fable52-fps-repro | HTML | three.js（CDN） | 无 | **单文件 131 KB** | 纯代码：Web Audio 合成 18 个音效，着色器画材质 | 1 句提示词，73 轮，41 分钟，$15.96 |
 | BLAMELESS | Petyok/blameless | JavaScript | three.js | npm 构建 | dist 站点 + Python 标准库 + SQLite 榜单 | 场景全程序化，音乐 MiniMax Music 3 本地跑，旁白 Piper | 1 句「surprise me」提示词 + 第 2 条部署指令 |
 | Dustline Outpost | systemsluke/fable5.2game | JavaScript | three.js r128 | 无 | `index.html` + `game.js`（约 640 行）+ assets | Poly Haven CC0 扫描模型与 HDRI | 多轮对话，README 里有压缩成单份的完整 brief |
-| No Return | StefanKnol/game-no-return | HTML | WebGL 2 | 无需构建 | 单文件 `index.html` | — | Claude Fable 5.2 最小提示词测试 |
+| Last Return（原 No Return） | StefanKnol/Last-Return | JavaScript | WebGL 2 | Node.js 自写构建 | 单文件 `index.html`（构建产物） | — | 同一仓库更名；Fable 5.2 最小提示词测试 |
 | Riftline | wongh26/claude_fps | HTML | three.js r160 + PeerJS | 无构建 | 多文件静态站点 | 角色、模型、音效由代码生成 | README 标注为 Fable 5.2 游戏开发测试 |
 | Tidebell / MOTHLIGHT / 青云宗 / MISREMEMBER | hahaliu1029/fable5.2demo | HTML | three.js r170 | 无 | 各自单文件 `index.html`，离线可玩 | 48 个模型由 Blender Python 脚本生成；MISREMEMBER 贴图用 Codex 生图 | 3 句需求出 3 款游戏，另附 10 秒渲染短片 |
 | Hanford Reach | chzbloom123/settlement-bluff-fable5.2 | JavaScript | three.js + Vite | Vite | Vercel 站点，PR 预览 | — | 按 `BUILDLOG.md` 逐会话推进 |
@@ -35,17 +35,42 @@
 | NEON RUNNER | Ilias-AK/NewGameFromFable5.2 | HTML | Canvas 2D + Web Audio | 无 | 单文件，零外部资源 | 图形、音乐全部代码生成 | — |
 | Becario del Universo | masugus/fable5.2-5min-game | HTML | — | 无 | 单文件 | — | 5 分钟出活 |
 | 潮汐战线（Tidemark） | CocoSgt/dsh-game-tidemark | HTML / JavaScript | HTML Canvas | 无 | 多文件 HTML + JavaScript | 仓库内资源 | — |
+| The Long Climb | HILAYTRIVEDI/thirty-days | JavaScript | three.js | 无构建 | 多文件静态站点 | three.js 来自 CDN；其余见源码 | 作者说明使用 Fable 5.2 |
+| The Boondocks: The Woodcrest Files | Achraf921/boondocks | JavaScript | 原生 JavaScript | 无构建 | 多文件静态站点 | 角色、背景与声音由代码生成；对白用浏览器语音 | 作者说明使用 Fable 5.2 |
+| Duel Knights | bitofastickler/duel-knights | JavaScript | three.js | 无构建 | 多文件静态站点 | 模型、场景与声音由代码生成 | 源自 Fable 5.2 的 Ashen Crown，后续扩展见作者 Origin 说明 |
+| Graveyard Shift | ethanplusai/zombies | JavaScript | three.js / WebGL 2 | esbuild | 单文件 dist/index.html；可选 Worker + D1 | 运行时生成模型、贴图与声音；封面图另附 | 作者说明使用 Fable 5.2 |
+| SHUTTERPINE | DQuanBui/shutterpine | JavaScript | three.js | Vite | 浏览器站点 dist/ | — | 作者说明使用 Fable 5.2 |
+| Power the Spire | cdurgun/claude-fable-3d-world | JavaScript | three.js 0.187 | 无构建 | 多文件静态站点 | 地形、建筑与粒子由代码生成 | 作者说明使用 Fable 5.2 |
+| Tropical Island | Tarzno/tropical_island | GDScript | Godot 4.7.2 | Godot | macOS 应用 / Godot 源码项目 | Blender 脚本与程序化模型；Z Image Turbo / Stable Audio 3 | Opus 5.5 初始实现，Fable 5.2 进行后续实质扩展 |
+| CASCADE / MESOCYCLONE / ZERO | Prokopiy8247/Fable5-2-Natural-Disasters | C# | Unity HDRP / URP | Unity 6000.6.0f1 | Windows 构建 + Unity 源码（Git LFS） | 第三方贴图出处见各项目文档 | 作者说明使用 Fable 5.2 |
+| OUT OF REACH | alex-slovakia/out-of-reach | C# | Unity URP | Unity 6000.3.28f1 | Windows 程序 / Unity 源码项目 | 脚本制作模型贴图；合成语音与另列许可的音乐 | 作者披露 Fable 5.2、Opus / Sonnet 5.5 与 Codex 协作 |
+| ONE PROMPT WORLDS（Fable 5.2 的 8 作） | shioa2006-game/ONE_PROMPT_WORLDS | JavaScript | 原生 JavaScript | 无构建 | 多文件静态站点 | 原生脚本绘制与浏览器合成声音 | 每款由单个初始提示词启动自主制作；同仓库第 1–8 作标注为 Fable 5.2；第 9 作起的 Opus 5.5 作品未收录 |
+| FableFlight | Rolandjg/fableflight | Rust | wgpu + egui | Cargo | Rust 原生桌面程序 | OurAirports / ADS-B / METAR 等外部数据 | 作者披露由 Fable 5.2 与 Opus 5.5 协作制作 |
+| Liquid Labyrinth | tuki0918/maze-exit | TypeScript | three.js 0.187 | Vite + TypeScript | 浏览器站点 dist/ | — | 仓库 About 标注为 Fable 5.2 sample game |
+| Mini RPG | ertertwert/Mini-RPG | JavaScript | 原生 JavaScript | 无构建 | 多文件静态站点 | 作者配乐及第三方音乐，署名见 README | 作者说明使用 Fable 5.2 |
+| Rufus Crush | bhoult/phone-games | Rust | macroquad / WebGL | Rust → WebAssembly | 静态 WASM 站点；另有 Android WebView 构建 | SVG 绘图在构建时烘焙；声音启动时合成 | 作者说明使用 Fable 5.2 |
+| MAPLE RUN | nanha0130/maple-run-fable | JavaScript | PlayCanvas + Splat Engine / WebGPU | Vite | 浏览器站点 dist/ | PINOC 高斯泼溅角色与动作；环境和音乐由代码生成 | 作者说明使用 Fable 5.2 |
+| Escape the Fable | ai-gamez-r-funz/escape-the-fable | JavaScript | three.js | 无构建 | 多文件静态站点 | — | 作者说明使用 Fable 5.2 |
+| Circular Tic Tac Toe | muhammad-sayed-mahdy/circular-tic-tac-toe-web | JavaScript | SVG + JavaScript | 无构建 | 多文件静态站点 | — | 作者说明使用 Fable 5.2 |
+| EarthFM · Listening Game | Aarosunn/SpaceApps | TypeScript | Next.js + React + Tone.js | Next.js | Web 应用 | NASA 发布的图像数据；Tone.js 合成音乐 | 作者 AI use 披露 Fable 5.2 与其他 Claude 模型协作 |
+| T-Minus | XDracam/spaceappschallenge2026 | TypeScript | Preact + PeerJS / WebRTC | Vite + TypeScript | 浏览器站点 game/ | — | 作者披露 Fable 5.2、Opus 5.5 与 Sonnet 5.5 协作 |
+| Jester | aaron-sulbaran/jester | TypeScript | MediaPipe + three.js | Vite + TypeScript（Make） | 浏览器站点 app/dist | 动作数据与浏览器视觉模型；视频不随源码分发 | 作者披露 Fable 5.2、Opus 5.5 与 Sonnet 5.5 协作 |
+| Retro Sisters | rob0511-777/Retro-Sisters | JavaScript | Canvas + SID 音频 | 无构建 | 多文件静态站点 | 原创程序化像素美术与合成音乐 | 多模型协作；Fable 5.2 负责像素美术、动画与视差背景 |
+| Rawza Ring | Hashmatullahzaher/mazar-rawza-race | JavaScript | three.js | 无构建 | 多文件静态站点 | OpenStreetMap 地图数据；作者后加宣传素材 | 作者称单提示词、约 40 分钟；作者说明使用 Fable 5.2 |
+| Gifts for the Tall One | eyeb0l/catslop | JavaScript | three.js | 无构建 | 多文件静态站点 | 模型、贴图与声音由代码生成 | README 与 runs/claude-fable-5-2/NOTES.md 标明模型；这是作者的演示运行 |
 
-## 交付形态：单文件是主流，但不是全部
+## 交付形态与平台
 
-- **一个 HTML 文件搞定（17 款）**：Saltline、SUBLEVEL 07、No Return、Tidebell、MOTHLIGHT、青云宗、MISREMEMBER、Aquila、Dawnward、Soccer 3D、TukTuk、Emberdeep、Daedalus、Sternenjäger、Shuttle Strike、NEON RUNNER、Becario。
-- **无构建但多文件（6 款）**：FOG CITY、Dustline Outpost、Ironvale、Riftline、MAKINAMON、Tidemark；ES module 游戏需静态服务，Makinamon 和 Tidemark 的入口按各自 README 运行。
-- **工程化构建（9 款）**：Dustfall、Bayhaven、Hanford Reach、Boring Game、The County 用 Vite；盐线行动 Online 前后端同仓；BLAMELESS 带 Python 榜单与 headless 端测；Harvest Standoff 自写 `build.mjs`；SUPERFORGE GT 用 Make 和 ca65/ld65 构建 ROM。
-- **超出浏览器（2 款）**：Ironvale 另有 Windows exe；SUPERFORGE GT 构建为 SNES ROM，需模拟器运行。
+按主要交付形态归类，以下前三项合计 64 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。
+
+- **单 HTML 交付（18 款）**：原有 17 款（No Return 已更名为 Last Return）加上 Graveyard Shift。Last Return 与 Graveyard Shift 由源码构建为自包含 HTML。
+- **无构建但多文件（24 款）**：原有 6 款，加上 The Long Climb、The Boondocks、Duel Knights、Power the Spire、Mini RPG、ONE PROMPT WORLDS 的 8 款、Escape the Fable、Circular Tic Tac Toe、Retro Sisters、Rawza Ring、Gifts for the Tall One。需要静态服务的作品按条目说明启动。
+- **其余工程化构建（22 款）**：原有 9 款，加上 SHUTTERPINE、Tropical Island、CASCADE、MESOCYCLONE、ZERO、OUT OF REACH、FableFlight、Liquid Labyrinth、Rufus Crush、MAPLE RUN、EarthFM、T-Minus、Jester。包含 Vite / Next.js 站点、Rust / WASM 和 Unity / Godot 桌面项目。
+- **提供浏览器以外交付（9 款）**：原有 Ironvale、SUPERFORGE GT，加上 FableFlight、Tropical Island、CASCADE、MESOCYCLONE、ZERO、OUT OF REACH 和另可构建 Android 包的 Rufus Crush。Unity 三款成品使用 Git LFS。
 
 ## 素材来源谱系
 
-从「零外部素材」到「大量第三方资产」，这 32 款正好铺成一条光谱：
+从「零外部素材」到「大量第三方资产」，这 64 款覆盖不同的素材路线：
 
 1. **纯代码生成** — SUBLEVEL 07（着色器画积水与锈迹、Web Audio 合成 18 个音效）、TukTuk、NEON RUNNER、MOTHLIGHT。体积最小（131 KB ~ 数百 KB），加载最快。
 2. **代码生成 + 脚本建模** — Tidebell 四件套用 Blender Python 脚本生成 48 个模型；Harvest Standoff 用 Blender 脚本雕十名角色。

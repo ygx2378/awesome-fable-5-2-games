@@ -8,7 +8,7 @@ Fable 5.2 上线后，GitHub 上已经出现了一批不像「demo」的作品�
 
 | 文档 | 内容 |
 | --- | --- |
-| [TECH_STACK.md](TECH_STACK.md) | 51 个仓库的技术栈、构建方式、交付体积、生成成本横向对比 |
+| [TECH_STACK.md](TECH_STACK.md) | 60 个仓库的技术栈、构建方式、交付体积、生成成本横向对比 |
 | [PROMPTS.md](PROMPTS.md) | 可复现的原始提示词：一句话 FPS、21 句 RTS、三句需求做出三个游戏 |
 | [data/games.csv](data/games.csv) | 结构化数据，方便二次加工或做站 |
 

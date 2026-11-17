@@ -1,6 +1,6 @@
 # Awesome Fable 5.2 Games
 
-**64 款游戏 · 51 个游戏仓库 · 3 份社区合集 · 48 款附浏览器试玩链接 · 附录另有 18 款站点独占作品**
+**85 款游戏 · 60 个游戏仓库 · 3 份社区合集 · 67 款附浏览器试玩链接 · 附录另有 18 款站点独占作品**
 
 Fable 5.2 上线后，GitHub 上已经出现了一批不像「demo」的作品：能开车抢车被警察追的开放世界、骑马打猎的西部、能联机的港口 FPS、三国志式的 3D 即时战略、甚至单人用 21 句话写完的《帝国时代》替身。
 
@@ -12,10 +12,10 @@ Fable 5.2 上线后，GitHub 上已经出现了一批不像「demo」的作品�
 | [PROMPTS.md](PROMPTS.md) | 可复现的原始提示词：一句话 FPS、21 句 RTS、三句需求做出三个游戏 |
 | [data/games.csv](data/games.csv) | 结构化数据，方便二次加工或做站 |
 
-> **核验说明**：原有 26 款数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新已更名的 Last Return。新增条目的 Fable 5.2 依据来自作者 README 或 About，多模型协作作品在条目中注明；已测试本次新增和更新的 21 个试玩页面均返回 HTTP 200，未实际验证完整游玩流程。Star 数按各条目的抓取日期记录。
+> **核验说明**：原有 26 款数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新已更名的 Last Return；**2026-11-17** 新增 21 款、9 个仓库，其中《回声游戏厅》同一仓库含 13 款。新增条目的 Fable 5.2 依据来自作者 README 或 About，多模型协作作品在条目中注明；2026-11-16 新增及更新的 21 个试玩页面、2026-11-17 新增的 19 个试玩页面均返回 HTTP 200，未实际验证完整游玩流程。Star 数按各条目的抓取日期记录。
 > **2026-11-16 试玩链接迁移**：站内托管试玩由 fable52.games 统一换成 **aiarcade.games**（同站新域名，页面 slug 不变），覆盖站上全部 **42 款**，逐一实测返回 HTTP 200；Riftline 此前标注「无在线版本」，已在站上找到试玩页并补上；《潮汐战线》《The County》《MAKINAMON》改为站点试玩优先、作者站备份。
 > **2026-11-16 夜间补链**：aiarcade.games 试玩页由 42 个增至 **61 个**，清单里此前只有作者站或本地运行的 **18 款**作品找到站内页面（含 ONE PROMPT WORLDS 全 8 作、Last Return、Duel Knights、SHUTTERPINE、Mini RPG、Escape the Fable 等），已统一改为站点试玩优先、作者站备份；附录新增 1 款站点独占作品《太阳系三维沙盘》。61 个页面逐一实测返回 HTTP 200。
-> 作品包含开发中游戏、交互体验与多人原型；没有浏览器试玩链接的 16 款，需按条目说明本地运行、构建或下载作者发布包。
+> 作品包含开发中游戏、交互体验与多人原型；没有浏览器试玩链接的 18 款，需按条目说明本地运行、构建或下载作者发布包。
 
 ## 图例
 
@@ -29,7 +29,7 @@ Fable 5.2 上线后，GitHub 上已经出现了一批不像「demo」的作品�
 - [一、开放世界与动作（9 款）](#一开放世界与动作9-款)
 - [二、第一人称射击（8 款）](#二第一人称射击8-款)
 - [三、视觉效果与探索（14 款）](#三视觉效果与探索14-款)
-- [四、体育、竞速与其他（33 款）](#四体育竞速与其他33-款)
+- [四、体育、竞速与其他（54 款）](#四体育竞速与其他54-款)
 - [五、值得收藏的社区合集](#五值得收藏的社区合集)
 - [六、技术栈速查表](#六技术栈速查表)
 - [七、这些游戏是怎么被写出来的](#七这些游戏是怎么被写出来的)
@@ -167,7 +167,7 @@ Fable 5.2 上线后，GitHub 上已经出现了一批不像「demo」的作品�
 在古坟石室逐格移动，用视线控制背后靠近的埴轮，把它们引到对应台座；支持撤销。
 `原生 JavaScript` · 无构建 · [Play Online Live Demo](https://aiarcade.games/play/ushiro-no-haniwa) · [作者站](https://shioa2006-game.github.io/ONE_PROMPT_WORLDS/game6/index.html) · ONE PROMPT WORLDS 第 1–8 作，作者标注为 Fable 5.2
 
-## 四、体育、竞速与其他（33 款）
+## 四、体育、竞速与其他（54 款）
 
 **32 · Soccer 3D** — 7 人制 3D 足球 · [源码](https://github.com/ShaunPrice/soccer-3d) ⭐ 0
 有裁判、越位、红黄牌、点球与人墙、伤停补时和平局点球大战；阵型/心态/逼抢三档战术，体力、受伤、三个换人名额，进球慢镜回放，八级难度。
@@ -301,6 +301,71 @@ C64 风格原创平台跳跃游戏，使用程序化像素美术与 SID 风格�
 扮演小岛上的猫，潜行捕猎并带回家换零食，购买装备、毛色和帽子；同仓库其他模型的运行不计入本条。
 `three.js` · 无构建 · ⌨️ 暂无浏览器试玩链接，运行 `npm run serve` 后打开 `/runs/claude-fable-5-2/` · README 与 runs/claude-fable-5-2/NOTES.md 标明模型；这是作者的演示运行
 
+**65 · Fight Ring** — 2D 模型对战格斗 · [源码](https://github.com/ganson-labs/fight-ring) ⭐ 0（2026-11-17）
+Claude Fable 5.2 创作的 Цугцванг 对战 Gemini 4 Carbon 创作的 КАЙРОС；可观看可复现比赛，也可亲自挑战。`原生 JavaScript 2D 引擎` · 本地运行 `npm start` 后打开 <http://localhost:4848> · 多模型协作，Fable 负责其中一位斗士
+
+**66 · The Blooming Dark** — 叙事解谜 · [源码](https://github.com/Pandaemonium/Psychedelia) ⭐ 0（2026-11-17）
+六章夜间旅程，包含五类解谜；完成故事后解锁七个世界的自由万花筒。`HTML/CSS/JavaScript + WebGL` · 无构建，直接打开 `index.html` · 仓库 About 标注由 Fable 5.2 生成
+
+**67 · Лисёнок и огненный жёлудь** — 2D 平台跳跃 · [源码](https://github.com/sashatchersunov6-rgb/lisenok-game) ⭐ 0（2026-11-17）
+单文件横版平台游戏，键盘和手机触控均可操作。`Canvas 2D + Web Audio` · 无构建 · [Play Online Live Demo](https://sashatchersunov6-rgb.github.io/lisenok-game/) · 作者说明由 Claude Fable 5.2 编写
+
+**68 · Gabriel's Sweet Town** — 亲子角色扮演沙盒 · [源码](https://github.com/chomachomachoma/candyland_pwa) ⭐ 0（2026-11-17）
+在 17 个地点自由扮演、互动和探索，包含 240 多件可移动物品；安装后可离线游玩。`HTML/CSS/SVG + Web Audio` · PWA，无构建 · [Play Online Live Demo](https://chomachomachoma.github.io/candyland_pwa/) · 仓库 About 标注使用 Claude Code Fable 5.2
+
+> 《回声游戏厅》合集的 13 款小游戏均由作者说明为 Claude Fable 5.2 制作；以下链接分别进入各自游戏。
+
+**69 · 广州漂移（第 13 期）** — 3D 竞速 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+雨夜骑电动车在广州送外卖，穿光门接单送达并用漂移攒小费。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/gz/)
+
+**70 · 皮衣老黄（第 12 期）** — 回合制策略 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+在 12 个季度里经营芯片公司，通过研发、扩产和地盘争夺把市值拉回第一。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/chip/)
+
+**71 · 骑手（第 11 期）** — 3D 驾驶模拟 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+在老城骑车送外卖，赶订单时限并应对天气、车流、信号灯和突发路况。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/rider/)
+
+**72 · 怒砸办公室（第 10 期）** — 街机动作 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+在保安赶到前连续砸毁办公室物品，连击和怒气会提升破坏速度。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/smash/)
+
+**73 · 相亲角速配（第 9 期）** — 条件判断 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+按条件左右滑动判断候选人是否合适，条件会逐轮增加。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/match/)
+
+**74 · 夜市套圈（第 8 期）** — 街机技巧 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+用有限的套圈瞄准夜市摊位，争取圈中更值钱的物品。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/ring/)
+
+**75 · 捏泡泡纸（第 7 期）** — 休闲反应 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+划破泡泡纸争取连击与加时，避开带惩罚的泡泡。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/pop/)
+
+**76 · 挤地铁（第 6 期）** — 物理益智 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+在关门前把乘客推上车，同时先让下车的人通过。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/metro/)
+
+**77 · 摸鱼大师（第 5 期）** — 潜行反应 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+观察老板、摄像头和 HR 的动向，在工作场景里抓准摸鱼时机。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/moyu/)
+
+**78 · 搓澡大师（第 4 期）** — 街机技巧 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+在限时内搓掉顾客背上的泥，避开痛点并争取小费。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/scrub/)
+
+**79 · 吃啥拉啥（第 3 期）** — 动作街机 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+操纵小兽吃下不同食物，利用食物效果打倒身后的怪物。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/eat/)
+
+**80 · 清潮（第 2 期）** — 小队射击 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+带领自动开火的小队清除怪潮，并通过拾取强化队伍和武器。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/tide/)
+
+**81 · 晶塔守卫（第 1 期）** — 塔防策略 · [源码](https://github.com/zhgarylu/everyday-game) ⭐ 0（2026-11-17）
+沿路线布置九种防御塔、释放大招并逐关解锁四张地图。`three.js 0.170 + JavaScript` · 无构建 · [Play Online Live Demo](https://zhgarylu.github.io/everyday-game/td/)
+
+**82 · Apex Lap** — 3D 计时竞速 · [源码](https://github.com/ololo-dev/apex-lap-fable-5-2) ⭐ 1（2026-11-17）
+单车单赛道计时，三轮任务逐步增加对竞速感和对手的要求。`three.js 0.187 + Vite 8` · [Play Online Live Demo](https://ololo-dev.github.io/apex-lap-fable-5-2/) · 作者说明由 Claude Fable 5.2 构建
+
+**83 · Apex Lap: Blender Edition** — 3D 计时竞速 · [源码](https://github.com/ololo-dev/apex-lap-fable-5-2-blender) ⭐ 0（2026-11-17）
+同一竞速题目的独立实现，Fable 5.2 通过 Blender MCP 制作赛车、赛道组件和场景并导出 glTF。`three.js 0.187 + Vite 8` · [Play Online Live Demo](https://ololo-dev.github.io/apex-lap-fable-5-2-blender/)
+
+**84 · Raptor Race** — 3D 跑酷 · [源码](https://github.com/drew879/raptor-race-fable) ⭐ 0（2026-11-17）
+以不同史前时代为背景，操纵有羽恐龙向前奔跑。`three.js 0.187 + TypeScript + Vite 8` · [Play Online Live Demo](https://drew879.github.io/raptor-race-fable/) · 仓库 About 说明本版本由 Fable 5.2 制作
+
+**85 · Uno com escada（Fable 5.2 版）** — WebGPU 3D 赛车 · [源码](https://github.com/viktorkav/uno-com-escada) ⭐ 4（2026-11-17）
+驾驶车顶绑着梯子的 Fiat Uno，在山路赛道竞速；同仓库另有 Opus 5.5 版本，本条只列 Fable 5.2 版。`原生 JavaScript + WebGPU` · 单文件 `fable/index.html` · [Play Online Live Demo](https://viktorkav.com.br/apoio/uno-com-escada/fable/)
+
 ---
 
 ## 五、值得收藏的社区合集
@@ -418,7 +483,7 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 
 ## 附录：站上还有这 18 款
 
-以下作品在 aiarcade.games 上可以直接玩，但不在上面的 64 款里（多数没有公开仓库，或不在最初流传的清单中），一并列出。🆕 为 2026-11-16 新增。
+以下作品在 aiarcade.games 上可以直接玩，但不在上面的 85 款里（多数没有公开仓库，或不在最初流传的清单中），一并列出。🆕 为 2026-11-16 新增。
 
 | 作品 | 一句话 | 试玩 |
 | --- | --- | --- |

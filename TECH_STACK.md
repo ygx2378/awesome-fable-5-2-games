@@ -1,6 +1,6 @@
 # Fable 5.2 游戏技术栈对比
 
-51 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
+60 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return；**2026-11-17** 新增 21 款、9 个仓库（含《回声游戏厅》13 款）。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
 
 ## 一览
 
@@ -59,18 +59,28 @@
 | Rawza Ring | Hashmatullahzaher/mazar-rawza-race | JavaScript | three.js | 无构建 | 多文件静态站点 | OpenStreetMap 地图数据；作者后加宣传素材 | 作者称单提示词、约 40 分钟；作者说明使用 Fable 5.2 |
 | Gifts for the Tall One | eyeb0l/catslop | JavaScript | three.js | 无构建 | 多文件静态站点 | 模型、贴图与声音由代码生成 | README 与 runs/claude-fable-5-2/NOTES.md 标明模型；这是作者的演示运行 |
 
+| Fight Ring | ganson-labs/fight-ring | JavaScript | 原生 JavaScript 2D 格斗引擎 | Node.js `npm start` | 多文件网页 + 本地服务 | 模型生成两名斗士的造型、招式、语音与 AI | Claude Fable 5.2 与 Gemini 4 Carbon 各自创建一名参赛斗士 |
+| The Blooming Dark | Pandaemonium/Psychedelia | JavaScript | WebGL shader + Canvas | 无构建 | 多文件静态站点 | 程序化光效与合成音乐 | 仓库 About 标注由 Fable 5.2 生成 |
+| Лисёнок и огненный жёлудь | sashatchersunov6-rgb/lisenok-game | HTML | Canvas 2D + Web Audio | 无构建 | 单文件 HTML | 图形与声音由代码生成 | 作者称 Claude Fable 5.2 编写 |
+| Gabriel's Sweet Town | chomachomachoma/candyland_pwa | JavaScript | HTML/CSS/SVG + Web Audio | 无构建 | 离线 PWA，多文件静态站点 | SVG 与声音由代码生成 | 仓库 About 标注使用 Claude Code Fable 5.2 |
+| 回声游戏厅（13 款） | zhgarylu/everyday-game | JavaScript | three.js 0.170 | 无构建 | 13 款多文件静态网页游戏 | 主要由代码生成；《清潮》使用角色图素材 | 作者说明 13 款均由 Claude Fable 5.2 制作 |
+| Apex Lap | ololo-dev/apex-lap-fable-5-2 | JavaScript | three.js 0.187 | Vite 8 | 浏览器站点 | — | 作者说明由 Claude Fable 5.2 构建 |
+| Apex Lap: Blender Edition | ololo-dev/apex-lap-fable-5-2-blender | JavaScript | three.js 0.187 + Blender glTF | Vite 8 | 浏览器站点 | Fable 通过 Blender MCP 制作模型 | 作者说明由 Claude Fable 5.2 构建 |
+| Raptor Race | drew879/raptor-race-fable | TypeScript | three.js 0.187 | Vite 8 + TypeScript | 浏览器站点 | Blender 脚本生成 3D 模型 | 仓库 About 将本版本标为 Fable 5.2 remake |
+| Uno com escada（Fable 5.2 版） | viktorkav/uno-com-escada | HTML | 原生 JavaScript + WebGPU | 无构建 | 单文件 `fable/index.html` | 场景、汽车与音效由代码生成 | 作者同仓库对比 Fable 5.2 与 Opus 5.5 |
+
 ## 交付形态与平台
 
-按主要交付形态归类，以下前三项合计 64 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。
+按主要交付形态归类，以下前三项合计 85 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。
 
-- **单 HTML 交付（18 款）**：原有 17 款（No Return 已更名为 Last Return）加上 Graveyard Shift。Last Return 与 Graveyard Shift 由源码构建为自包含 HTML。
-- **无构建但多文件（24 款）**：原有 6 款，加上 The Long Climb、The Boondocks、Duel Knights、Power the Spire、Mini RPG、ONE PROMPT WORLDS 的 8 款、Escape the Fable、Circular Tic Tac Toe、Retro Sisters、Rawza Ring、Gifts for the Tall One。需要静态服务的作品按条目说明启动。
-- **其余工程化构建（22 款）**：原有 9 款，加上 SHUTTERPINE、Tropical Island、CASCADE、MESOCYCLONE、ZERO、OUT OF REACH、FableFlight、Liquid Labyrinth、Rufus Crush、MAPLE RUN、EarthFM、T-Minus、Jester。包含 Vite / Next.js 站点、Rust / WASM 和 Unity / Godot 桌面项目。
+- **单 HTML 交付（20 款）**：原有 18 款，加上《Лисёнок и огненный жёлудь》和《Uno com escada（Fable 5.2 版）》。Last Return 与 Graveyard Shift 由源码构建为自包含 HTML。
+- **无构建但多文件（40 款）**：原有 24 款，加上《回声游戏厅》的 13 款、《Gabriel's Sweet Town》、《The Blooming Dark》和 Fight Ring。需要静态服务的作品按条目说明启动。
+- **其余工程化构建（25 款）**：原有 22 款，加上 Apex Lap 两个独立版本和 Raptor Race。包含 Vite / Next.js 站点、Rust / WASM 和 Unity / Godot 桌面项目。
 - **提供浏览器以外交付（9 款）**：原有 Ironvale、SUPERFORGE GT，加上 FableFlight、Tropical Island、CASCADE、MESOCYCLONE、ZERO、OUT OF REACH 和另可构建 Android 包的 Rufus Crush。Unity 三款成品使用 Git LFS。
 
 ## 素材来源谱系
 
-从「零外部素材」到「大量第三方资产」，这 64 款覆盖不同的素材路线：
+从「零外部素材」到「大量第三方资产」，这 85 款覆盖不同的素材路线：
 
 1. **纯代码生成** — SUBLEVEL 07（着色器画积水与锈迹、Web Audio 合成 18 个音效）、TukTuk、NEON RUNNER、MOTHLIGHT。体积最小（131 KB ~ 数百 KB），加载最快。
 2. **代码生成 + 脚本建模** — Tidebell 四件套用 Blender Python 脚本生成 48 个模型；Harvest Standoff 用 Blender 脚本雕十名角色。

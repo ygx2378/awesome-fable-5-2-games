@@ -63,3 +63,24 @@ id,name,repo,play_url,author_demo,render,build,delivery,language,stars,category,
 62,Retro Sisters,rob0511-777/Retro-Sisters,,,Canvas + SID 音频,无构建,多文件静态站点,JavaScript,0,2D 平台跳跃,2026-11-16
 63,Rawza Ring,Hashmatullahzaher/mazar-rawza-race,https://aiarcade.games/play/rawza-ring,,three.js,无构建,多文件静态站点,JavaScript,0,3D 竞速,2026-11-16
 64,Gifts for the Tall One,eyeb0l/catslop,,,three.js,无构建,多文件静态站点,JavaScript,0,猫咪收集探索,2026-11-16
+65,Fight Ring,ganson-labs/fight-ring,,,原生 JavaScript 2D 引擎,Node.js npm start,多文件网页 + 本地服务,JavaScript,0,格斗,2026-11-17
+66,The Blooming Dark,Pandaemonium/Psychedelia,,,WebGL shader + Canvas,无构建,多文件静态站点,JavaScript,0,叙事解谜,2026-11-17
+67,Лисёнок и огненный жёлудь,sashatchersunov6-rgb/lisenok-game,https://sashatchersunov6-rgb.github.io/lisenok-game/,,Canvas 2D + Web Audio,无构建,单文件 HTML,HTML,0,2D 平台跳跃,2026-11-17
+68,Gabriel's Sweet Town,chomachomachoma/candyland_pwa,https://chomachomachoma.github.io/candyland_pwa/,,HTML/CSS/SVG + Web Audio,无构建,离线 PWA，多文件静态站点,JavaScript,0,亲子角色扮演沙盒,2026-11-17
+69,广州漂移（第 13 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/gz/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,3D 竞速,2026-11-17
+70,皮衣老黄（第 12 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/chip/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,回合制策略,2026-11-17
+71,骑手（第 11 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/rider/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,3D 驾驶模拟,2026-11-17
+72,怒砸办公室（第 10 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/smash/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,街机动作,2026-11-17
+73,相亲角速配（第 9 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/match/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,条件判断,2026-11-17
+74,夜市套圈（第 8 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/ring/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,街机技巧,2026-11-17
+75,捏泡泡纸（第 7 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/pop/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,休闲反应,2026-11-17
+76,挤地铁（第 6 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/metro/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,物理益智,2026-11-17
+77,摸鱼大师（第 5 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/moyu/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,潜行反应,2026-11-17
+78,搓澡大师（第 4 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/scrub/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,街机技巧,2026-11-17
+79,吃啥拉啥（第 3 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/eat/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,动作街机,2026-11-17
+80,清潮（第 2 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/tide/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,小队射击,2026-11-17
+81,晶塔守卫（第 1 期）,zhgarylu/everyday-game,https://zhgarylu.github.io/everyday-game/td/,,three.js 0.170,无构建,多文件静态站点,JavaScript,0,塔防策略,2026-11-17
+82,Apex Lap,ololo-dev/apex-lap-fable-5-2,https://ololo-dev.github.io/apex-lap-fable-5-2/,,three.js 0.187 + Vite 8,Vite 8,浏览器站点,JavaScript,1,3D 竞速,2026-11-17
+83,Apex Lap: Blender Edition,ololo-dev/apex-lap-fable-5-2-blender,https://ololo-dev.github.io/apex-lap-fable-5-2-blender/,,three.js 0.187 + Vite 8,Vite 8,浏览器站点（Blender / glTF）,JavaScript,0,3D 竞速,2026-11-17
+84,Raptor Race,drew879/raptor-race-fable,https://drew879.github.io/raptor-race-fable/,,three.js 0.187 + Vite 8,Vite 8 + TypeScript,浏览器站点,TypeScript,0,3D 跑酷,2026-11-17
+85,Uno com escada（Fable 5.2 版）,viktorkav/uno-com-escada,https://viktorkav.com.br/apoio/uno-com-escada/fable/,,原生 JavaScript + WebGPU,无构建,单文件 HTML,HTML,4,WebGPU 3D 赛车,2026-11-17

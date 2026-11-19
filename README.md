@@ -1,29 +1,29 @@
 # Awesome Fable 5.2 & GPT-6.2 Astra Games
 
-**88 款游戏 · 62 个游戏仓库 · 3 份社区合集 · 70 款附浏览器试玩链接 · 附录另有 21 款站点独占作品**
+**107 款游戏与交互作品 · 72 个游戏仓库 · 4 份社区合集 · 77 款附浏览器试玩链接 · 附录另有 21 款站点独占作品**
 
 Claude Fable 5.2 与 GPT-6.2 Astra 带来的游戏作品，已经从小型 demo 延伸到能开车抢车被警察追的开放世界、骑马打猎的西部、能联机的港口 FPS、三国志式的 3D 即时战略，甚至单人用 21 句话写完的《帝国时代》替身。
 
 这个仓库把它们整理成一份可检索的清单：**每款都有源码地址、玩法说明、模型归属和真实技术栈；有在线试玩的附链接，没有试玩页的写清本地运行方式**。多模型协作和同一仓库里的不同模型版本分开标注，方便比较不同模型做出的作品。
 
-按模型分：**78 款由 Claude Fable 5.2 独立完成，2 款出自 GPT-6.2 Astra，8 款为多模型协作**（涉及 Claude Opus 5.5、Sonnet 5.5、Gemini 4 Carbon 等，按作者披露记录，未说明的不推测）。
+按模型分：**84 款由 Claude Fable 5.2 独立完成，10 款出自 GPT-6.2 Astra，13 款为多模型协作**（涉及 Claude Opus 5.5、Sonnet 5.5、Gemini 4 Carbon 等，按作者披露记录，未说明的不推测）。
 
 | 文档 | 内容 |
 | --- | --- |
-| [TECH_STACK.md](TECH_STACK.md) | 62 个仓库的技术栈、模型归属、构建方式、交付体积、生成成本横向对比 |
+| [TECH_STACK.md](TECH_STACK.md) | 72 个仓库的技术栈、模型归属、构建方式、交付体积、生成成本横向对比 |
 | [PROMPTS.md](PROMPTS.md) | 可复现的原始提示词：一句话 FPS、21 句 RTS、三句需求做出三个游戏 |
 | [GAME_DEV_SKILLS.md](GAME_DEV_SKILLS.md) | 12 个游戏制作 Skill：对应作品、试玩入口与公开情况 |
 | [data/games.csv](data/games.csv) | 含模型归属的结构化数据，方便二次加工或做站 |
 
-> **核验说明**：原有 26 款数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新已更名的 Last Return；**2026-11-17** 新增 21 款、9 个仓库，其中《回声游戏厅》同一仓库含 13 款；**2026-11-18** 新增 3 款、2 个仓库：《柑仔的晚霞航空信》（Claude Fable 5.2 版）、《夕阳邮航》（GPT-6.2 Astra 版）和《Santa Express: Chimney Panic!》（GPT-6.2 Astra）。前两款共用一个仓库，但模型版本分别列出。模型归属依据作者 README 或项目说明；协作模型按披露记录，不推测未说明的模型。两个托管页面均返回 HTTP 200，未实际验证完整游玩流程。Star 数按各条目的抓取日期记录。
+> **核验说明**：原有 26 款数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新已更名的 Last Return；**2026-11-17** 新增 21 款、9 个仓库，其中《回声游戏厅》同一仓库含 13 款；**2026-11-18** 新增 3 款、2 个仓库：《柑仔的晚霞航空信》（Claude Fable 5.2 版）、《夕阳邮航》（GPT-6.2 Astra 版）和《Santa Express: Chimney Panic!》（GPT-6.2 Astra）。前两款共用一个仓库，但模型版本分别列出。模型归属依据作者 README 或项目说明；协作模型按披露记录，不推测未说明的模型。两个托管页面均返回 HTTP 200，未实际验证完整游玩流程。**2026-11-19** 新增 19 款、10 个新仓库：Claude Fable 5.2 新作 11 款（6 款单模型、5 款与 Claude Opus 5.5 协作），GPT-6.2 Astra 新作 8 款；同一仓库内的模型对照版本分别记录。原自然灾害项目仓库已不可访问，三款既有作品的源码链接改为目前可访问的同名项目仓库。新增的 7 条浏览器试玩记录对应 6 个网址均返回 HTTP 200，仅核验可访问性，未逐款验证完整流程。Star 数按各条目的抓取日期记录。
 > **2026-11-16 试玩链接迁移**：站内托管试玩由 fable52.games 统一换成 **aiarcade.games**（同站新域名，页面 slug 不变），覆盖站上全部 **42 款**，逐一实测返回 HTTP 200；Riftline 此前标注「无在线版本」，已在站上找到试玩页并补上；《潮汐战线》《The County》《MAKINAMON》改为站点试玩优先、作者站备份。
 > **2026-11-16 夜间补链**：aiarcade.games 试玩页由 42 个增至 **61 个**，清单里此前只有作者站或本地运行的 **18 款**作品找到站内页面（含 ONE PROMPT WORLDS 全 8 作、Last Return、Duel Knights、SHUTTERPINE、Mini RPG、Escape the Fable 等），已统一改为站点试玩优先、作者站备份；附录新增 1 款站点独占作品《太阳系三维沙盘》。61 个页面逐一实测返回 HTTP 200。
-> 作品包含开发中游戏、交互体验与多人原型；没有浏览器试玩链接的 18 款，需按条目说明本地运行、构建或下载作者发布包。
+> 作品包含开发中游戏、交互体验与多人原型；没有浏览器试玩链接的 30 款，需按条目说明本地运行、构建或下载作者发布包。
 > **2026-11-18 试玩页巡检**：站点试玩页由 61 个增至 **87 个**，新增 26 个页面。其中 23 个是清单内作品在 aiarcade 的镜像（这些作品此前已列作者站试玩，本次不改动链接），另 3 款《Ripcore》《三借芭蕉扇》《Starship Dogfight》不在清单内，已按附录处理并入。清单里仍缺试玩链接的 18 款没有新增页面。3 个新链接逐一实测返回 HTTP 200。
 
 ## 图例
 
-- 🎮 `[Play Online Live Demo]` —— aiarcade.games 托管镜像，点开即玩，无需安装；作者自建站作为备份一并给出（[技术栈速查表](#七技术栈速查表)里的「🎮 试玩」同样可直接点）
+- 🎮 `[Play Online Live Demo]` —— aiarcade.games 托管镜像，点开即玩，无需安装；作者自建站作为备份一并给出（[技术栈速查表](#八技术栈速查表)里的「🎮 试玩」同样可直接点）
 - 🖥 作者自建站 / GitHub Pages —— 作者本人托管的版本，通常与源码同步更新
 - ⌨️ 暂无浏览器试玩链接 —— 按条目说明起静态服务、构建程序，或使用作者提供的桌面版本
 - ⭐ —— Star 数（日期见条目）
@@ -34,10 +34,11 @@ Claude Fable 5.2 与 GPT-6.2 Astra 带来的游戏作品，已经从小型 demo 
 - [二、第一人称射击（8 款）](#二第一人称射击8-款)
 - [三、视觉效果与探索（14 款）](#三视觉效果与探索14-款)
 - [四、体育、竞速与其他（55 款）](#四体育竞速与其他55-款)
-- [五、GPT-6.2 Astra 新作（2 款）](#五gpt62-astra-新作2-款)
-- [六、值得收藏的社区合集](#六值得收藏的社区合集)
-- [七、技术栈速查表](#七技术栈速查表)
-- [八、这些游戏是怎么被写出来的](#八这些游戏是怎么被写出来的)
+- [五、Claude Fable 5.2 新作（11 款）](#五claude-fable-52-新作11-款)
+- [六、GPT-6.2 Astra 作品（10 款）](#六gpt62-astra-作品10-款)
+- [七、值得收藏的社区合集](#七值得收藏的社区合集)
+- [八、技术栈速查表](#八技术栈速查表)
+- [九、这些游戏是怎么被写出来的](#九这些游戏是怎么被写出来的)
 - [附录：站上还有这 21 款](#附录站上还有这-21-款)
 
 ---
@@ -152,17 +153,17 @@ Claude Fable 5.2 与 GPT-6.2 Astra 带来的游戏作品，已经从小型 demo 
 在塞舌尔风格海岛步行、游泳、潜水和拍照，观察植物、动物、日月与潮汐；没有战斗目标。
 `Godot 4.7.2` · Godot · ⌨️ 暂无浏览器试玩链接，用 Godot 4.7.2 打开项目后运行；[macOS 构建](https://github.com/Tarzno/tropical_island/releases) · Opus 5.5 初始实现，Fable 5.2 进行后续实质扩展
 
-**27 · CASCADE** — 自然灾害体验 · [源码](https://github.com/Prokopiy8247/Fable5-2-Natural-Disasters) ⭐ 1（2026-11-16）
+**27 · CASCADE** — 自然灾害体验 · [源码](https://github.com/Cryptopiy/Claude-Fable-5.2-Natural-Disasters) ⭐ 0（2026-11-19）
 第一人称观测火山喷发、山体坍塌与海啸的自然灾害体验。作者提供约 11 分钟的流程与可切换的自动镜头模式。
-`Unity HDRP` · Unity 6000.6.0f1 · ⌨️ 暂无浏览器试玩链接，拉取 Git LFS 文件后运行 `START_HERE.bat`；或 `games/01-cascade/PLAY.bat` · 作者说明使用 Fable 5.2
+`Unity HDRP` · Unity 6000.6.0f1 · ⌨️ 无浏览器试玩 · [Windows 下载](https://github.com/Cryptopiy/Claude-Fable-5.2-Natural-Disasters/releases/download/v1.0/CASCADE-Windows-x64.zip) · [源码目录](https://github.com/Cryptopiy/Claude-Fable-5.2-Natural-Disasters/tree/main/games/1-cascade) · Claude Fable 5.2（Ultracode）
 
-**28 · MESOCYCLONE** — 自然灾害体验 · [源码](https://github.com/Prokopiy8247/Fable5-2-Natural-Disasters) ⭐ 1（2026-11-16）
+**28 · MESOCYCLONE** — 自然灾害体验 · [源码](https://github.com/Cryptopiy/Claude-Fable-5.2-Natural-Disasters) ⭐ 0（2026-11-19）
 第一人称观测超级单体雷暴、冰雹与龙卷风的自然灾害体验。作者提供约 11 分钟的流程与可切换的自动镜头模式。
-`Unity HDRP` · Unity 6000.6.0f1 · ⌨️ 暂无浏览器试玩链接，拉取 Git LFS 文件后运行 `START_HERE.bat`；或 `games/02-mesocyclone/PLAY.bat` · 作者说明使用 Fable 5.2
+`Unity HDRP` · Unity 6000.6.0f1 · ⌨️ 无浏览器试玩 · [Windows 下载](https://github.com/Cryptopiy/Claude-Fable-5.2-Natural-Disasters/releases/download/v1.0/MESOCYCLONE-Windows-x64.zip) · [源码目录](https://github.com/Cryptopiy/Claude-Fable-5.2-Natural-Disasters/tree/main/games/2-mesocyclone) · Claude Fable 5.2（Ultracode）
 
-**29 · ZERO** — 自然灾害体验 · [源码](https://github.com/Prokopiy8247/Fable5-2-Natural-Disasters) ⭐ 1（2026-11-16）
+**29 · ZERO** — 自然灾害体验 · [源码](https://github.com/Cryptopiy/Claude-Fable-5.2-Natural-Disasters) ⭐ 0（2026-11-19）
 第一人称观测小行星撞击与冲击波的自然灾害体验。作者提供约 11 分钟的流程与可切换的自动镜头模式。
-`Unity URP` · Unity 6000.6.0f1 · ⌨️ 暂无浏览器试玩链接，拉取 Git LFS 文件后运行 `START_HERE.bat`；或 `games/03-zero/PLAY.bat` · 作者说明使用 Fable 5.2
+`Unity URP` · Unity 6000.6.0f1 · ⌨️ 无浏览器试玩 · [Windows 下载](https://github.com/Cryptopiy/Claude-Fable-5.2-Natural-Disasters/releases/download/v1.0/ZERO-Windows-x64.zip) · [源码目录](https://github.com/Cryptopiy/Claude-Fable-5.2-Natural-Disasters/tree/main/games/3-zero) · Claude Fable 5.2（Ultracode）
 
 **30 · OUT OF REACH** — 太空生存 · [源码](https://github.com/alex-slovakia/out-of-reach) ⭐ 1（2026-11-16）
 为 NASA Space Apps 制作的第一人称太空生存游戏，先设计任务，再管理飞船资源并应对零重力环境。
@@ -376,17 +377,83 @@ Claude Fable 5.2 创作的 Цугцванг 对战 Gemini 4 Carbon 创作的 К�
 
 ---
 
-## 五、GPT-6.2 Astra 新作（2 款）
+## 五、Claude Fable 5.2 新作（11 款）
 
-**87 · 夕阳邮航（GPT-6.2 Astra 版）** — 2D 邮航游戏 · [源码](https://github.com/jambocoder159/ai-game-duel) ⭐ 0（2026-11-18）
-与同仓库的《柑仔的晚霞航空信》（Claude Fable 5.2 版）使用同一组素材，是独立的 Astra 模型版本。`Canvas 2D` · 无构建 · [试玩 GPT-6.2 Astra 版](https://jambocoder159.github.io/ai-game-duel/#astra)
+其中 6 款的项目说明只归于 Claude Fable 5.2，另 5 款明确披露 Claude Opus 5.5 参与；《Papertrails》是自由漫游体验，没有关卡目标。
 
-**88 · Santa Express: Chimney Panic!** — 3D 圣诞街机游戏 · [源码](https://github.com/thestringtheories/Santa-Game) ⭐ 0（2026-11-18）
-作者说明首个可玩原型由一个提示词交给 GPT-6.2 Astra 生成，后续又完成电影感画面迭代。`three.js 0.186 + TypeScript + WebGL 2` · Vite 构建 · [在线试玩](https://thestringtheories.github.io/Santa-Game/)
+**87 · Port Fable (Low)** — 低多边形岛屿开放世界，含车辆、船只、飞机、武器与通缉系统 · Claude Fable 5.2（Low） · [Windows 下载](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/releases/download/v1.0/PortFable-Low-Windows-x64.zip) · [源码](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/tree/main/games/1-low-port-fable) ⭐ 0（2026-11-19）
+`Godot 4.7.2` · Windows x64 可执行文件与 Godot 源码
+
+**88 · Port Cinder (Medium)** — 海岸岛屿沙盒，15 辆车，含航空、地铁、商店、车库、天气与警察系统 · Claude Fable 5.2（Medium） · [Windows 下载](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/releases/download/v1.0/PortCinder-Medium-Windows-x64.zip) · [源码](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/tree/main/games/2-medium-port-cinder) ⭐ 0（2026-11-19）
+`Godot 4.7.2` · Windows x64 可执行文件与 Godot 源码
+
+**89 · Marlow Bay (High)** — 八个街区的明亮城市，含交通、警察、航空、单轨列车与改装车库 · Claude Fable 5.2（High） · [Windows 下载](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/releases/download/v1.0/MarlowBay-High-Windows-x64.zip) · [源码](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/tree/main/games/3-high-marlow-bay) ⭐ 0（2026-11-19）
+`Godot 4.7.2` · Windows x64 可执行文件与 Godot 源码
+
+**90 · Neon Tide (Max)** — 霓虹夜景岛屿开放世界，含 19 辆车、17 种武器与电台 · Claude Fable 5.2（Max）；作者说明部分过程由 Claude Opus 5.5 继续 · [Windows 下载](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/releases/download/v1.0/NeonTide-Max-Windows-x64.zip) · [源码](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/tree/main/games/4-max-neon-tide) ⭐ 0（2026-11-19）
+`Godot 4.7.2` · Windows x64 可执行文件与 Godot 源码
+
+**91 · Cinder Bay (Extra)** — 含 21 辆车、掩体潜行、警察追捕、特技跳跃与计时赛的开放世界 · Claude Fable 5.2（Extra）；作者说明部分过程由 Claude Opus 5.5 继续 · [Windows 下载](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/releases/download/v1.0/CinderBay-Extra-Windows-x64.zip) · [源码](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/tree/main/games/5-extra-cinder-bay) ⭐ 0（2026-11-19）
+`Godot 4.7.2` · Windows x64 可执行文件与 Godot 源码
+
+**92 · Halcyon Bay (Ultracode)** — 八个街区、22 辆车、17 种武器，另有 Rodin 模型素材版 · Claude Fable 5.2（Ultracode）；作者说明部分过程由 Claude Opus 5.5 继续 · [Windows 下载](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/releases/download/v1.0/HalcyonBay-Ultracode-Windows-x64.zip) · [源码](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/tree/main/games/6-ultracode-halcyon-bay) ⭐ 0（2026-11-19）
+`Godot 4.7.2` · Windows x64 可执行文件与 Godot 源码
+
+**93 · Помехи / Pomehi (Low)** — 1987 年针叶林无线电中继站的生存恐怖游戏 · Claude Fable 5.2（Low） · [Windows 下载](https://github.com/Cryptopiy/Claude-Fable-5.2-vs-Opus-5.5-Horror-Games/releases/download/v1.0/Pomehi-Windows-x64.zip) · [源码](https://github.com/Cryptopiy/Claude-Fable-5.2-vs-Opus-5.5-Horror-Games/tree/main/games/1-pomehi-fable-low) ⭐ 0（2026-11-19）
+`Godot 4.7.2` · Windows x64 可执行文件与 Godot 源码
+
+**94 · ЛЕЕР / Leer (Max + Ultracode)** — 极地气象站的五夜恐怖游戏，含四种结局 · Claude Fable 5.2（Max + Ultracode） · [Windows 下载](https://github.com/Cryptopiy/Claude-Fable-5.2-vs-Opus-5.5-Horror-Games/releases/download/v1.0/Leer-Windows-x64.zip) · [源码](https://github.com/Cryptopiy/Claude-Fable-5.2-vs-Opus-5.5-Horror-Games/tree/main/games/2-leer-fable-max) ⭐ 0（2026-11-19）
+`Godot 4.7.2` · Windows x64 可执行文件与 Godot 源码
+
+**95 · Backrooms: The Complex** — 摄像机视角的后室恐怖游戏 · Claude Opus 5.5 与 Claude Fable 5.2（Ultracode）协作 · [Windows 下载](https://github.com/Cryptopiy/Claude-Opus-5.5-Backrooms/releases/download/v1.0/BackroomsComplex-Windows-x64.zip) · [源码](https://github.com/Cryptopiy/Claude-Opus-5.5-Backrooms/tree/main/games/backrooms-the-complex) ⭐ 0（2026-11-19）
+`Godot 4.7.2` · Windows x64 可执行文件与 Godot 源码
+
+**96 · LAST LIGHT — Rooftop Run** — 高楼屋顶计时跑酷；Model Arena 的 Fable 5.2 独立版本，与 Astra、Opus、Sol 使用同一提示词 · Claude Fable 5.2（High） · [浏览器试玩](https://clockendbader.github.io/model-arena/) · [源码](https://github.com/clockendbader/model-arena/tree/main/fable-5.2/parkour) ⭐ 0（2026-11-19）
+`Canvas 2D` · 无构建 · 单文件 HTML
+
+**97 · Papertrails** — 纸艺立体书风格的自由漫游世界，支持地图、昼夜与视角切换；作者称无胜负目标 · Claude Fable 5.2 与 Claude Opus 5.5 协作 · [浏览器试玩](https://xikhar.github.io/papertrails/) · [作者模型说明](https://x.com/xikhar/status/2122682962647122403) · [源码](https://github.com/xikhar/papertrails) ⭐ 83（2026-11-19）
+`Three.js 0.187` · Vite 8.3.8 · 浏览器站点 · 无需下载源码
 
 ---
 
-## 六、值得收藏的社区合集
+## 六、GPT-6.2 Astra 作品（10 款）
+
+**98 · 夕阳邮航（GPT-6.2 Astra 版）** — 2D 邮航游戏 · [源码](https://github.com/jambocoder159/ai-game-duel) ⭐ 0（2026-11-18）
+与同仓库的《柑仔的晚霞航空信》（Claude Fable 5.2 版）使用同一组素材，是独立的 Astra 模型版本。`Canvas 2D` · 无构建 · [试玩 GPT-6.2 Astra 版](https://jambocoder159.github.io/ai-game-duel/#astra)
+
+**99 · Santa Express: Chimney Panic!** — 3D 圣诞街机游戏 · [源码](https://github.com/thestringtheories/Santa-Game) ⭐ 0（2026-11-18）
+作者说明首个可玩原型由一个提示词交给 GPT-6.2 Astra 生成，后续又完成电影感画面迭代。`three.js 0.186 + TypeScript + WebGL 2` · Vite 构建 · [在线试玩](https://thestringtheories.github.io/Santa-Game/)
+
+**100 · Operation Fracture** — 离线第一人称区域作战游戏；作者标注为模型能力测试产物 · GPT-6.2 Astra · [离线试玩包](https://github.com/Thweki/operation-fracture/releases) · [源码](https://github.com/Thweki/operation-fracture) ⭐ 0（2026-11-19）
+`Three.js 0.187 + WebGL 2` · esbuild 0.28.2 · ZIP 中的单文件 HTML（需桌面浏览器）
+
+**101 · Tidepost（潮邮局）** — 中文像素风航邮冒险，包含实时邮航与回合制海图解谜 · GPT-6.2 Astra · [桌面版与 Web 下载包](https://github.com/Thweki/tidepost/releases) · [源码](https://github.com/Thweki/tidepost) ⭐ 0（2026-11-19）
+`Godot 4.7.2` · macOS、Windows、Linux 桌面版及 Web ZIP；预发布
+
+**102 · Blackburn Type D** — 驾驶 1912 年 Blackburn Type D 穿越四个圆环 · GPT-6.2 Astra · [浏览器试玩](https://blackburn-flight.pages.dev/) · [离线单文件版](https://github.com/Dun4ev/blackburn-flight/releases/latest/download/Blackburn-Flight.html) · [源码](https://github.com/Dun4ev/blackburn-flight) ⭐ 0（2026-11-19）
+`Three.js 0.186.1 + WebGL` · Python 构建脚本 + esbuild · Cloudflare Pages 站点
+
+**103 · Spillway Run** — 可设计球洞的迷你高尔夫，支持真实物理、计杆与标准杆 · GPT-6.2 Astra（X-High，单提示词） · [浏览器试玩](https://kostikoneuro.github.io/astra-6-2-solo/4-minigolf/?lang=ru) · [源码](https://github.com/KostiKoNeuro/astra-6-2-solo/tree/main/4-minigolf) ⭐ 0（2026-11-19）
+`HTML + Canvas 2D` · 无构建 · 浏览器小游戏
+
+**104 · Hamster Colony（仓鼠群落）** — 低多边形笼舍里的仓鼠会自行觅食、饮水、奔轮、社交、繁殖和老化；可暂停、调速、查看个体状态 · GPT-6.2 Astra（X-High，单提示词） · [浏览器试玩](https://kostikoneuro.github.io/astra-6-2-solo/5-hamsters/?lang=ru) · [源码](https://github.com/KostiKoNeuro/astra-6-2-solo/tree/main/5-hamsters) ⭐ 0（2026-11-19）
+`Three.js`（CDN）· 无构建 · 单文件 HTML
+
+**105 · Dusk Runner — Rooftop Time Trial** — 高楼屋顶计时跑酷；Model Arena 的 GPT-6.2 Astra 独立版本，与 Fable、Opus、Sol 使用同一提示词 · GPT-6.2 Astra（High） · [浏览器试玩](https://clockendbader.github.io/model-arena/) · [源码](https://github.com/clockendbader/model-arena/tree/main/astra-6.2/parkour) ⭐ 0（2026-11-19）
+`Three.js + WebGL` · 无构建 · 多文件静态站点
+
+**106 · Uno com escada（GPT-6.2 Astra 版）** — 同仓库 Fable 与 Opus 版本使用相同需求的独立实现 · GPT-6.2 Astra · [浏览器试玩](https://viktorkav.com.br/apoio/uno-com-escada/astra/) · [源码](https://github.com/viktorkav/uno-com-escada) ⭐ 135（2026-11-19）
+`原生 JavaScript + WebGPU` · 无构建 · 单文件 HTML
+
+**107 · FAULTLINE — Cold Relay** — 一句话生成的第一人称射击，冷色调无线电站小关卡 · GPT-6.2 Astra（X-High） · ⌨️ 暂无线上试玩；按作者说明下载或 clone 后，用 Chrome / Edge 打开 `index.html` · [源码目录](https://github.com/Yari-tuber/gpt62-vs-opus55-tests/tree/main/05_%E4%B8%80%E5%8F%A5%E8%AF%9D3A%E5%B0%84%E5%87%BB/gpt-6.2-astra) ⭐ 0（2026-11-19）
+`WebGL 2 + GLSL` · 无构建 · 单文件 HTML（约 88 KB）
+
+---
+
+## 七、值得收藏的社区合集
+
+**GPT-6.2 Astra 与 Sol 游戏、3D 世界及创意作品合集** — [AI-Terrarium/awesome-gpt-6.2](https://github.com/AI-Terrarium/awesome-gpt-6.2)
+截至 2026-11-19 收录 55 个 GPT-6.2 项目，标注 29 个 Astra、24 个 Sol 与 2 个混合项目；部分条目提供源码和作者归属。
 
 **Fable 5.2 视频与游戏案例合集** — [sandbase-lab/awesome-fable-5-2](https://github.com/sandbase-lab/awesome-fable-5-2) ⭐ 0
 Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比，每天从 SandBase Lab 同步。
@@ -397,7 +464,7 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 **76 个 HTML 作品与完整提示词** — [MiaAI-Lab/Claude-Fable-5.2-HTML-Files](https://github.com/MiaAI-Lab/Claude-Fable-5.2-HTML-Files) ⭐ 109
 76 个视觉小作品，每个都附截图和原始提示词，适合当「提示词语料库」翻。
 
-## 七、技术栈速查表
+## 八、技术栈速查表
 
 表中的 🎮 可以直接点开玩；⌨️ 表示无在线版本，需按上方条目的说明在本地运行。
 
@@ -470,7 +537,7 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 
 完整的体积、依赖、素材来源、生成成本对照见 **[TECH_STACK.md](TECH_STACK.md)**。
 
-## 八、这些游戏是怎么被写出来的
+## 九、这些游戏是怎么被写出来的
 
 三个数字最能说明问题：
 
@@ -502,7 +569,7 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 
 ## 附录：站上还有这 21 款
 
-以下作品在 aiarcade.games 上可以直接玩，但不在上面的 88 款里（多数没有公开仓库，或不在最初流传的清单中），一并列出。🆕 为 2026-11-16 新增，✨ 为 2026-11-18 新增。
+以下作品在 aiarcade.games 上可以直接玩，但不在上面的 107 款里（多数没有公开仓库，或不在最初流传的清单中），一并列出。🆕 为 2026-11-16 新增，✨ 为 2026-11-18 新增。
 
 | 作品 | 一句话 | 试玩 |
 | --- | --- | --- |

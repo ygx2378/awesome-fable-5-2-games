@@ -1,6 +1,6 @@
 # Claude Fable 5.2 与 GPT-6.2 Astra 游戏技术栈对比
 
-62 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return；**2026-11-17** 新增 21 款、9 个仓库（含《回声游戏厅》13 款）；**2026-11-18** 新增 3 款、2 个仓库，并为 88 款作品补充模型归属。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
+72 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return；**2026-11-17** 新增 21 款、9 个仓库（含《回声游戏厅》13 款）；**2026-11-18** 新增 3 款、2 个仓库，并为 88 款作品补充模型归属；**2026-11-19** 新增 19 款、10 个仓库，并替换 3 款自然灾害体验的失效源码地址。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
 
 ## 一览
 
@@ -42,7 +42,7 @@
 | SHUTTERPINE | DQuanBui/shutterpine | JavaScript | three.js | Vite | 浏览器站点 dist/ | — | 作者说明使用 Fable 5.2 | Claude Fable 5.2 |
 | Power the Spire | cdurgun/claude-fable-3d-world | JavaScript | three.js 0.187 | 无构建 | 多文件静态站点 | 地形、建筑与粒子由代码生成 | 作者说明使用 Fable 5.2 | Claude Fable 5.2 |
 | Tropical Island | Tarzno/tropical_island | GDScript | Godot 4.7.2 | Godot | macOS 应用 / Godot 源码项目 | Blender 脚本与程序化模型；Z Image Turbo / Stable Audio 3 | Opus 5.5 初始实现，Fable 5.2 进行后续实质扩展 | Claude Opus 5.5; Claude Fable 5.2 |
-| CASCADE / MESOCYCLONE / ZERO | Prokopiy8247/Fable5-2-Natural-Disasters | C# | Unity HDRP / URP | Unity 6000.6.0f1 | Windows 构建 + Unity 源码（Git LFS） | 第三方贴图出处见各项目文档 | 作者说明使用 Fable 5.2 | Claude Fable 5.2 |
+| CASCADE / MESOCYCLONE / ZERO | Cryptopiy/Claude-Fable-5.2-Natural-Disasters | C# | Unity HDRP / URP | Unity 6000.6.0f1 | Windows x64 构建 + Unity 源码项目 | 第三方贴图出处见各项目文档 | 作者说明使用 Fable 5.2（Ultracode） | Claude Fable 5.2 |
 | OUT OF REACH | alex-slovakia/out-of-reach | C# | Unity URP | Unity 6000.3.28f1 | Windows 程序 / Unity 源码项目 | 脚本制作模型贴图；合成语音与另列许可的音乐 | 作者披露 Fable 5.2、Opus / Sonnet 5.5 与 Codex 协作 | Claude Fable 5.2; Claude Opus 5.5; Claude Sonnet 5.5 |
 | ONE PROMPT WORLDS（Fable 5.2 的 8 作） | shioa2006-game/ONE_PROMPT_WORLDS | JavaScript | 原生 JavaScript | 无构建 | 多文件静态站点 | 原生脚本绘制与浏览器合成声音 | 每款由单个初始提示词启动自主制作；同仓库第 1–8 作标注为 Fable 5.2；第 9 作起的 Opus 5.5 作品未收录 | Claude Fable 5.2 |
 | FableFlight | Rolandjg/fableflight | Rust | wgpu + egui | Cargo | Rust 原生桌面程序 | OurAirports / ADS-B / METAR 等外部数据 | 作者披露由 Fable 5.2 与 Opus 5.5 协作制作 | Claude Fable 5.2; Claude Opus 5.5 |
@@ -71,18 +71,38 @@
 | Raptor Race | drew879/raptor-race-fable | TypeScript | three.js 0.187 | Vite 8 + TypeScript | 浏览器站点 | Blender 脚本生成 3D 模型 | — | Claude Fable 5.2 |
 | Uno com escada（Fable 5.2 版） | viktorkav/uno-com-escada | HTML | 原生 JavaScript + WebGPU | 无构建 | 单文件 `fable/index.html` | 场景、汽车与音效由代码生成 | — | Claude Fable 5.2 |
 
+| Port Fable (Low) | Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World | GDScript | Godot 4.7.2 | Godot 导出 | Windows x64 可执行文件 + Godot 源码 | Blender MCP 制作模型；第三方依赖见 NOTICE | 同一提示词，Low | Claude Fable 5.2 |
+| Port Cinder (Medium) | Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World | GDScript | Godot 4.7.2 | Godot 导出 | Windows x64 可执行文件 + Godot 源码 | Blender MCP 制作模型；第三方依赖见 NOTICE | 同一提示词，Medium | Claude Fable 5.2 |
+| Marlow Bay (High) | Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World | GDScript | Godot 4.7.2 | Godot 导出 | Windows x64 可执行文件 + Godot 源码 | Blender MCP 制作模型；第三方依赖见 NOTICE | 同一提示词，High | Claude Fable 5.2 |
+| Neon Tide (Max) | Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World | GDScript | Godot 4.7.2 | Godot 4.7.2 | Windows x64 可执行文件 + Godot 源码 | Blender MCP 制作模型；第三方依赖见 NOTICE | 同一提示词，部分流程由 Opus 5.5 续做 | Claude Fable 5.2; Claude Opus 5.5 |
+| Cinder Bay (Extra) | Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World | GDScript | Godot 4.7.2 | Godot 导出 | Windows x64 可执行文件 + Godot 源码 | Blender MCP 制作模型；第三方依赖见 NOTICE | 同一提示词，部分流程由 Opus 5.5 续做 | Claude Fable 5.2; Claude Opus 5.5 |
+| Halcyon Bay (Ultracode) | Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World | GDScript | Godot 4.7.2 | Godot 导出 | Windows x64 可执行文件 + Godot 源码 | Blender MCP / 可选 Rodin 模型；第三方依赖见 NOTICE | 同一提示词，部分流程由 Opus 5.5 续做 | Claude Fable 5.2; Claude Opus 5.5 |
+| Помехи / Pomehi | Cryptopiy/Claude-Fable-5.2-vs-Opus-5.5-Horror-Games | GDScript | Godot 4.7.2 | Godot 导出 | Windows x64 可执行文件 + Godot 源码 | 原始资源与第三方依赖见 LICENSE-ASSETS / NOTICE | 对照测试，Low | Claude Fable 5.2 |
+| ЛЕЕР / Leer | Cryptopiy/Claude-Fable-5.2-vs-Opus-5.5-Horror-Games | GDScript | Godot 4.7.2 | Godot 导出 | Windows x64 可执行文件 + Godot 源码 | 原始资源与第三方依赖见 LICENSE-ASSETS / NOTICE | 对照测试，Max + Ultracode | Claude Fable 5.2 |
+| Backrooms: The Complex | Cryptopiy/Claude-Opus-5.5-Backrooms | GDScript | Godot 4.7.2 | Godot 导出 | Windows x64 可执行文件 + Godot 源码 | 原始资源与第三方依赖见 LICENSE-ASSETS / NOTICE | 多模型协作；Fable 使用 Ultracode | Claude Opus 5.5; Claude Fable 5.2 |
+| LAST LIGHT — Rooftop Run | clockendbader/model-arena | HTML | Canvas 2D | 无构建 | 单文件 HTML | 作品构建随仓库发布；素材授权按目录说明 | 四模型同提示词独立生成，High effort | Claude Fable 5.2 |
+| Papertrails | xikhar/papertrails | JavaScript | Three.js 0.187 | Vite 8.3.8 | 浏览器静态站点 | 作者生成的纸艺图集与音频，来源见项目说明 | 单提示词、多子 Agent 与盲评流程 | Claude Fable 5.2; Claude Opus 5.5 |
+| Operation Fracture | Thweki/operation-fracture | JavaScript | Three.js 0.187 + WebGL 2 | esbuild 0.28.2 | ZIP 内离线单文件 HTML | 模型能力测试交付；第三方依赖许可见 licenses/ | 原始提示与参数未提供 | GPT-6.2 Astra |
+| 潮邮局 / Tidepost | Thweki/tidepost | GDScript | Godot 4.7.2 | Godot 4.7.2 | macOS / Windows / Linux 桌面版 + Web ZIP | 第三方许可见 notices/ | 模型能力测试交付；原始评分未提供 | GPT-6.2 Astra |
+| Blackburn Type D | Dun4ev/blackburn-flight | JavaScript | Three.js 0.186.1 + WebGL | Python build.py + esbuild 0.25.12 | Cloudflare Pages + 单文件离线模拟器 | Blender 重建与历史照片，摄影许可见 CREDITS | 简化飞行动力学与环线挑战 | GPT-6.2 Astra |
+| Spillway Run | KostiKoNeuro/astra-6-2-solo | HTML | Canvas 2D | 无构建 | 浏览器小游戏 | 自绘球洞与内嵌字体 | X-High，单提示词 | GPT-6.2 Astra |
+| Hamster Colony（仓鼠群落） | KostiKoNeuro/astra-6-2-solo | HTML | Three.js（CDN） | 无构建 | 单文件 HTML / GitHub Pages | 笼舍与仓鼠行为由代码生成 | X-High，单提示词 | GPT-6.2 Astra |
+| Dusk Runner — Rooftop Time Trial | clockendbader/model-arena | JavaScript | Three.js + WebGL（本地 vendor） | 无构建 | 多文件静态站点 | 仓库包含模型独立生成的完整构建 | 四模型同提示词独立生成，High effort | GPT-6.2 Astra |
+| Uno com escada（GPT-6.2 Astra 版） | viktorkav/uno-com-escada | HTML | 原生 JavaScript + WebGPU | 无构建 | 单文件 HTML | 车、赛道、场景与声音由代码生成 | 同一需求，19 轮，作者记录 0 个严重缺陷 | GPT-6.2 Astra |
+| FAULTLINE — Cold Relay | Yari-tuber/gpt62-vs-opus55-tests | HTML | WebGL 2 + GLSL | 无构建 | 单文件 HTML（本地浏览器打开） | 场景、材质与声音由代码和着色器生成 | 同提示词三模型对照，X-High | GPT-6.2 Astra |
+
 ## 交付形态与平台
 
-按主要交付形态归类，以下前三项合计 88 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。
+按主要交付形态归类，以下前三项合计 107 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。
 
-- **单 HTML 交付（20 款）**：原有 18 款，加上《Лисёнок и огненный жёлудь》和《Uno com escada（Fable 5.2 版）》。Last Return 与 Graveyard Shift 由源码构建为自包含 HTML。
-- **无构建但多文件（42 款）**：原有 24 款，加上《回声游戏厅》的 13 款、《Gabriel's Sweet Town》、《The Blooming Dark》、Fight Ring，以及《柑仔的晚霞航空信》和《夕阳邮航》两个模型版本。需要静态服务的作品按条目说明启动。
-- **其余工程化构建（26 款）**：原有 22 款，加上 Apex Lap 两个独立版本、Raptor Race 和 Santa Express: Chimney Panic!。包含 Vite / Next.js 站点、Rust / WASM 和 Unity / Godot 桌面项目。
-- **提供浏览器以外交付（9 款）**：原有 Ironvale、SUPERFORGE GT，加上 FableFlight、Tropical Island、CASCADE、MESOCYCLONE、ZERO、OUT OF REACH 和另可构建 Android 包的 Rufus Crush。Unity 三款成品使用 Git LFS。
+- **单 HTML 交付（27 款）**：原有 20 款，加上 Operation Fracture、LAST LIGHT、Blackburn Type D 离线版、Spillway Run、Hamster Colony、Uno com escada（GPT-6.2 Astra 版）和 FAULTLINE — Cold Relay。Last Return 与 Graveyard Shift 由源码构建为自包含 HTML。
+- **无构建但多文件（43 款）**：原有 24 款，加上《回声游戏厅》的 13 款、《Gabriel's Sweet Town》、《The Blooming Dark》、Fight Ring、《柑仔的晚霞航空信》和《夕阳邮航》，以及 Model Arena 的 Dusk Runner（Astra 版）。需要静态服务的作品按条目说明启动。
+- **其余工程化构建（37 款）**：原有 26 款，加上 9 款 Godot Windows 构建、Papertrails、Tidepost 桌面版。包含 Vite / Next.js 站点、Rust / WASM 和 Unity / Godot 桌面项目。
+- **提供浏览器以外交付（19 款）**：原有 9 款，加上本轮 9 款 Godot Windows 构建，以及 Tidepost 的桌面版。
 
 ## 素材来源谱系
 
-从「零外部素材」到「大量第三方资产」，这 88 款覆盖不同的素材路线：
+从「零外部素材」到「大量第三方资产」，这 107 款覆盖不同的素材路线：
 
 1. **纯代码生成** — SUBLEVEL 07（着色器画积水与锈迹、Web Audio 合成 18 个音效）、TukTuk、NEON RUNNER、MOTHLIGHT。体积最小（131 KB ~ 数百 KB），加载最快。
 2. **代码生成 + 脚本建模** — Tidebell 四件套用 Blender Python 脚本生成 48 个模型；Harvest Standoff 用 Blender 脚本雕十名角色。

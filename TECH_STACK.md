@@ -1,6 +1,6 @@
 # Claude Fable 5.2 与 GPT-6.2 Astra 游戏技术栈对比
 
-72 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return；**2026-11-17** 新增 21 款、9 个仓库（含《回声游戏厅》13 款）；**2026-11-18** 新增 3 款、2 个仓库，并为 88 款作品补充模型归属；**2026-11-19** 新增 19 款、10 个仓库，并替换 3 款自然灾害体验的失效源码地址。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
+83 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return；**2026-11-17** 新增 21 款、9 个仓库（含《回声游戏厅》13 款）；**2026-11-18** 新增 3 款、2 个仓库，并为 88 款作品补充模型归属；**2026-11-19** 新增 19 款、10 个仓库，并替换 3 款自然灾害体验的失效源码地址；**2026-11-20** 新增 15 款、11 个仓库（3 款 Fable 单模型、11 款 GPT-6.2 Astra、1 款多模型协作），并增加 10 条在线试玩。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
 
 ## 一览
 
@@ -91,18 +91,34 @@
 | Uno com escada（GPT-6.2 Astra 版） | viktorkav/uno-com-escada | HTML | 原生 JavaScript + WebGPU | 无构建 | 单文件 HTML | 车、赛道、场景与声音由代码生成 | 同一需求，19 轮，作者记录 0 个严重缺陷 | GPT-6.2 Astra |
 | FAULTLINE — Cold Relay | Yari-tuber/gpt62-vs-opus55-tests | HTML | WebGL 2 + GLSL | 无构建 | 单文件 HTML（本地浏览器打开） | 场景、材质与声音由代码和着色器生成 | 同提示词三模型对照，X-High | GPT-6.2 Astra |
 
+| Boo-mas | robinduckett/boo-mas | JavaScript | Three.js r187 | 无构建（可选 esbuild） | 多文件 ES modules 站点 | 几何、贴图、音乐与音效由代码生成 | 作者称单提示词、Fable 5.2 Max | Claude Fable 5.2 |
+| Wildlife Odyssey 3D — The Living World | quanap5/wildlife-odyssey-3d | TypeScript | React 19 + React Three Fiber 9 + Three.js r187 / WebGL 2 | Vite 8 | 浏览器游戏，需本地启动 | 地形、动植物、纹理与声音程序化生成 | — | Claude Fable 5.2 |
+| 星烬原野 · Demo | weit0529/gamedemo_by_Fable5.2 | TypeScript | Three.js 0.187 + WebGL 2 | Vite 8.3.8 + TypeScript | 浏览器游戏，需本地启动 | 角色模型、动作与音效由代码生成 | — | Claude Fable 5.2 |
+| Space 2601AE | AJankovic234/fable-space-engine | F# | Fable 5.2 + 原生 WebGL 2 | Fable + Vite 8.3.8 | 浏览器 ES modules / Docker 静态服务 | 详见作者资源清单 | 多阶段基准，作者逐项记录模型、贡献和 token | Claude Fable 5.2; GPT-6.2 Astra; GPT-6.2 Sol; Claude Opus 5.5; Claude Sonnet 5.5; Claude Haiku 5.5; Gemini 3.8 Flash; Gemini (version unreported); Gemini 4 Neon; Gemini 4 Hydrogen; OpenAI ImageGen (version unreported); Microsoft Neural TTS (version unreported) |
+| Saltwake: The Drowned Abbey | chojondocho/single-html-game-bench | HTML | — | 无构建 | 单文件 HTML | — | Codex GPT-6.2 Astra Max；单提示词基准 | GPT-6.2 Astra |
+| Mall Action（GPT-6.2 Astra xhigh 版） | rlorca/mall-action | JavaScript | Canvas 2D | Node.js `scripts/build.mjs` | 单 HTML 构建产物 + 多文件源码 | — | 作者记录约半小时构建与键盘实测 | GPT-6.2 Astra |
+| Lantern Drift · 天灯漂流（GPT-6.2 Astra 第二回合） | jambocoder159/ai-game-duel | TypeScript | React 19；渲染方式未标注 | — | 预构建静态包 + assets | 作者记录本轮模型生成素材 | 42 分 11 秒，作者记录零人工介入 | GPT-6.2 Astra |
+| Undertow FM（逆潮电台） | Thweki/undertow-fm | GDScript | Godot 4.7.2 / Compatibility | Godot 4.7.2 | Godot 源码 + macOS / Windows / Linux / Web ZIP | 项目含图像、音乐与音效资源；来源待逐项查阅 notices | 模型能力测试；原始 prompt 与版本参数未公开 | GPT-6.2 Astra |
+| Pocket Roads: Midnight Pass | aartiles/local-model-benchmarks-site | HTML | HTML + CSS + SVG | 无构建 | 多文件静态站点 | 车模与场景素材来源见作者披露 | GPT-6.2 Astra 编码运行；作者另披露图像与车辆模型工具 | GPT-6.2 Astra |
+| Flying Anglia | baturyilmaz/flying-anglia | TypeScript | Gea3D + 原生渲染器 | GeaStack + ESP-IDF 6 | ESP32-S3 Touch AMOLED 2.06 硬件游戏 | 按项目资源清单 | — | GPT-6.2 Astra |
+| Bitcade Pac-Man（GPT-6.2 Astra 版） | jonclegg/pacman-bakeoff | HTML | Canvas 2D | 无构建 | 单文件 HTML | 程序化 2D 图形与合成音频 | Codex API-key fair cell；high effort | GPT-6.2 Astra |
+| Fault in the Bath | MiaAI-Lab/GPT-6.2-Astra-100-HTML-Files | HTML | CSS / DOM | 无构建 | 单文件 HTML / GitHub Pages | CSS 生成瓷砖图案 | 100 个 Astra HTML 作品中的目标型拼图 | GPT-6.2 Astra |
+| The Chalk Yard | MiaAI-Lab/GPT-6.2-Astra-100-HTML-Files | HTML | DOM geometry | 无构建 | 单文件 HTML / GitHub Pages | CSS / DOM 几何 | 100 个 Astra HTML 作品中的堆叠游戏 | GPT-6.2 Astra |
+| The Patient Egg | MiaAI-Lab/GPT-6.2-Astra-100-HTML-Files | HTML | CSS / DOM | 无构建 | 单文件 HTML / GitHub Pages | CSS 生成蛋、梁与动画 | 100 个 Astra HTML 作品中的平衡游戏 | GPT-6.2 Astra |
+| The Keyless Works | MiaAI-Lab/GPT-6.2-Astra-100-HTML-Files | HTML | SVG / DOM | 无构建 | 单文件 HTML / GitHub Pages | 程序化齿轮轮廓与动画 | 100 个 Astra HTML 作品中的齿轮拼图 | GPT-6.2 Astra |
+
 ## 交付形态与平台
 
-按主要交付形态归类，以下前三项合计 107 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。
+按主要交付形态归类，以下前三项合计 122 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。
 
-- **单 HTML 交付（27 款）**：原有 20 款，加上 Operation Fracture、LAST LIGHT、Blackburn Type D 离线版、Spillway Run、Hamster Colony、Uno com escada（GPT-6.2 Astra 版）和 FAULTLINE — Cold Relay。Last Return 与 Graveyard Shift 由源码构建为自包含 HTML。
-- **无构建但多文件（43 款）**：原有 24 款，加上《回声游戏厅》的 13 款、《Gabriel's Sweet Town》、《The Blooming Dark》、Fight Ring、《柑仔的晚霞航空信》和《夕阳邮航》，以及 Model Arena 的 Dusk Runner（Astra 版）。需要静态服务的作品按条目说明启动。
-- **其余工程化构建（37 款）**：原有 26 款，加上 9 款 Godot Windows 构建、Papertrails、Tidepost 桌面版。包含 Vite / Next.js 站点、Rust / WASM 和 Unity / Godot 桌面项目。
-- **提供浏览器以外交付（19 款）**：原有 9 款，加上本轮 9 款 Godot Windows 构建，以及 Tidepost 的桌面版。
+- **单 HTML 交付（34 款）**：含 Saltwake、Mall Action 构建版、Bitcade Pac-Man 和 4 款 GPT-6.2 Astra 单文件拼图，以及原有单文件作品。Last Return 与 Graveyard Shift 由源码构建为自包含 HTML。
+- **无构建但多文件（45 款）**：在原有多文件作品基础上增加 Boo-mas 与 Pocket Roads，加上《回声游戏厅》的 13 款、《Gabriel's Sweet Town》、《The Blooming Dark》、Fight Ring、《柑仔的晚霞航空信》和《夕阳邮航》，以及 Model Arena 的 Dusk Runner（Astra 版）。需要静态服务的作品按条目说明启动。
+- **其余工程化构建（43 款）**：在原有工程化作品基础上增加 Wildlife Odyssey 3D、星烬原野、Space 2601AE、Lantern Drift、Undertow FM 与 Flying Anglia，加上 9 款 Godot Windows 构建、Papertrails、Tidepost 桌面版。包含 Vite / Next.js 站点、Rust / WASM 和 Unity / Godot 桌面项目。
+- **提供浏览器以外交付（21 款）**：在原有桌面作品基础上增加 Undertow FM 与 Flying Anglia，加上本轮 9 款 Godot Windows 构建，以及 Tidepost 的桌面版。
 
 ## 素材来源谱系
 
-从「零外部素材」到「大量第三方资产」，这 107 款覆盖不同的素材路线：
+从「零外部素材」到「大量第三方资产」，这 122 款覆盖不同的素材路线：
 
 1. **纯代码生成** — SUBLEVEL 07（着色器画积水与锈迹、Web Audio 合成 18 个音效）、TukTuk、NEON RUNNER、MOTHLIGHT。体积最小（131 KB ~ 数百 KB），加载最快。
 2. **代码生成 + 脚本建模** — Tidebell 四件套用 Blender Python 脚本生成 48 个模型；Harvest Standoff 用 Blender 脚本雕十名角色。

@@ -1,24 +1,25 @@
 # Awesome Fable 5.2 & GPT-6.2 Astra Games
 
-**107 款游戏与交互作品 · 72 个游戏仓库 · 4 份社区合集 · 77 款附浏览器试玩链接 · 附录另有 21 款站点独占作品**
+**122 款游戏与交互作品 · 83 个游戏仓库 · 4 份社区合集 · 87 款附浏览器试玩链接 · 附录另有 21 款站点独占作品**
 
 Claude Fable 5.2 与 GPT-6.2 Astra 带来的游戏作品，已经从小型 demo 延伸到能开车抢车被警察追的开放世界、骑马打猎的西部、能联机的港口 FPS、三国志式的 3D 即时战略，甚至单人用 21 句话写完的《帝国时代》替身。
 
 这个仓库把它们整理成一份可检索的清单：**每款都有源码地址、玩法说明、模型归属和真实技术栈；有在线试玩的附链接，没有试玩页的写清本地运行方式**。多模型协作和同一仓库里的不同模型版本分开标注，方便比较不同模型做出的作品。
 
-按模型分：**84 款由 Claude Fable 5.2 独立完成，10 款出自 GPT-6.2 Astra，13 款为多模型协作**（涉及 Claude Opus 5.5、Sonnet 5.5、Gemini 4 Carbon 等，按作者披露记录，未说明的不推测）。
+按作者披露的模型归属分：**87 款由 Claude Fable 5.2 独立完成，21 款由 GPT-6.2 Astra 独立完成，14 款为多模型协作**。同一仓库中的不同模型版本分别列出；没有披露的模型不推测。
 
 | 文档 | 内容 |
 | --- | --- |
-| [TECH_STACK.md](TECH_STACK.md) | 72 个仓库的技术栈、模型归属、构建方式、交付体积、生成成本横向对比 |
+| [TECH_STACK.md](TECH_STACK.md) | 83 个仓库的技术栈、模型归属、构建方式、交付体积、生成成本横向对比 |
 | [PROMPTS.md](PROMPTS.md) | 可复现的原始提示词：一句话 FPS、21 句 RTS、三句需求做出三个游戏 |
 | [GAME_DEV_SKILLS.md](GAME_DEV_SKILLS.md) | 12 个游戏制作 Skill：对应作品、试玩入口与公开情况 |
 | [data/games.csv](data/games.csv) | 含模型归属的结构化数据，方便二次加工或做站 |
 
 > **核验说明**：原有 26 款数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新已更名的 Last Return；**2026-11-17** 新增 21 款、9 个仓库，其中《回声游戏厅》同一仓库含 13 款；**2026-11-18** 新增 3 款、2 个仓库：《柑仔的晚霞航空信》（Claude Fable 5.2 版）、《夕阳邮航》（GPT-6.2 Astra 版）和《Santa Express: Chimney Panic!》（GPT-6.2 Astra）。前两款共用一个仓库，但模型版本分别列出。模型归属依据作者 README 或项目说明；协作模型按披露记录，不推测未说明的模型。两个托管页面均返回 HTTP 200，未实际验证完整游玩流程。**2026-11-19** 新增 19 款、10 个新仓库：Claude Fable 5.2 新作 11 款（6 款单模型、5 款与 Claude Opus 5.5 协作），GPT-6.2 Astra 新作 8 款；同一仓库内的模型对照版本分别记录。原自然灾害项目仓库已不可访问，三款既有作品的源码链接改为目前可访问的同名项目仓库。新增的 7 条浏览器试玩记录对应 6 个网址均返回 HTTP 200，仅核验可访问性，未逐款验证完整流程。Star 数按各条目的抓取日期记录。
+> **2026-11-20** 新增 15 款、11 个新仓库：Claude Fable 5.2 单模型作品 3 款、GPT-6.2 Astra 作品 11 款，以及 1 款包含 Fable 5.2 与多模型协作的作品。10 条试玩链接返回 HTTP 200；另 5 款按作者文档在本地或指定硬件运行。GPT-6.2 Astra 与未注明 6.2 的旧版 GPT-6 Astra 分开处理。
 > **2026-11-16 试玩链接迁移**：站内托管试玩由 fable52.games 统一换成 **aiarcade.games**（同站新域名，页面 slug 不变），覆盖站上全部 **42 款**，逐一实测返回 HTTP 200；Riftline 此前标注「无在线版本」，已在站上找到试玩页并补上；《潮汐战线》《The County》《MAKINAMON》改为站点试玩优先、作者站备份。
 > **2026-11-16 夜间补链**：aiarcade.games 试玩页由 42 个增至 **61 个**，清单里此前只有作者站或本地运行的 **18 款**作品找到站内页面（含 ONE PROMPT WORLDS 全 8 作、Last Return、Duel Knights、SHUTTERPINE、Mini RPG、Escape the Fable 等），已统一改为站点试玩优先、作者站备份；附录新增 1 款站点独占作品《太阳系三维沙盘》。61 个页面逐一实测返回 HTTP 200。
-> 作品包含开发中游戏、交互体验与多人原型；没有浏览器试玩链接的 30 款，需按条目说明本地运行、构建或下载作者发布包。
+> 作品包含开发中游戏、交互体验与多人原型；没有浏览器试玩链接的 35 款，需按条目说明本地运行、构建或下载作者发布包。
 > **2026-11-18 试玩页巡检**：站点试玩页由 61 个增至 **87 个**，新增 26 个页面。其中 23 个是清单内作品在 aiarcade 的镜像（这些作品此前已列作者站试玩，本次不改动链接），另 3 款《Ripcore》《三借芭蕉扇》《Starship Dogfight》不在清单内，已按附录处理并入。清单里仍缺试玩链接的 18 款没有新增页面。3 个新链接逐一实测返回 HTTP 200。
 
 ## 图例
@@ -34,8 +35,8 @@ Claude Fable 5.2 与 GPT-6.2 Astra 带来的游戏作品，已经从小型 demo 
 - [二、第一人称射击（8 款）](#二第一人称射击8-款)
 - [三、视觉效果与探索（14 款）](#三视觉效果与探索14-款)
 - [四、体育、竞速与其他（55 款）](#四体育竞速与其他55-款)
-- [五、Claude Fable 5.2 新作（11 款）](#五claude-fable-52-新作11-款)
-- [六、GPT-6.2 Astra 作品（10 款）](#六gpt62-astra-作品10-款)
+- [五、Claude Fable 5.2 新作（15 款）](#五claude-fable-52-新作15-款)
+- [六、GPT-6.2 Astra 作品（21 款）](#六gpt62-astra-作品21-款)
 - [七、值得收藏的社区合集](#七值得收藏的社区合集)
 - [八、技术栈速查表](#八技术栈速查表)
 - [九、这些游戏是怎么被写出来的](#九这些游戏是怎么被写出来的)
@@ -377,7 +378,7 @@ Claude Fable 5.2 创作的 Цугцванг 对战 Gemini 4 Carbon 创作的 К�
 
 ---
 
-## 五、Claude Fable 5.2 新作（11 款）
+## 五、Claude Fable 5.2 新作（15 款）
 
 其中 6 款的项目说明只归于 Claude Fable 5.2，另 5 款明确披露 Claude Opus 5.5 参与；《Papertrails》是自由漫游体验，没有关卡目标。
 
@@ -414,39 +415,86 @@ Claude Fable 5.2 创作的 Цугцванг 对战 Gemini 4 Carbon 创作的 К�
 **97 · Papertrails** — 纸艺立体书风格的自由漫游世界，支持地图、昼夜与视角切换；作者称无胜负目标 · Claude Fable 5.2 与 Claude Opus 5.5 协作 · [浏览器试玩](https://xikhar.github.io/papertrails/) · [作者模型说明](https://x.com/xikhar/status/2122682962647122403) · [源码](https://github.com/xikhar/papertrails) ⭐ 83（2026-11-19）
 `Three.js 0.187` · Vite 8.3.8 · 浏览器站点 · 无需下载源码
 
+
+**98 · Boo-mas** — 在雪花球星球上绕行，用灯串闭合圈点亮地表、躲避 Humbugs，在午夜前救下圣诞 · Claude Fable 5.2（作者称单提示词、Max thinking） · [在线试玩](https://robinduckett.github.io/boo-mas/) · [源码](https://github.com/robinduckett/boo-mas) ⭐ 1（2026-11-20）
+`Three.js r187` · 无构建，ES modules · [作者模型说明](https://news.ycombinator.com/item?id=50553152)
+
+**99 · Wildlife Odyssey 3D — The Living World** — 东南亚野生动物探索与科学发现：观察 36 种动物、拍摄、识别物种并建立野外日志 · Claude Fable 5.2（仓库 About 标为模型测试） · [源码](https://github.com/quanap5/wildlife-odyssey-3d) ⭐ 1（2026-11-20）
+`React 19 + TypeScript 6 + Three.js r187 + React Three Fiber 9` · Vite 8 · 本地运行：Node.js 20.19+，`npm install && npm run dev`
+
+**100 · 星烬原野 · Demo** — 八位可切换角色的 3D 开放世界动作 demo，包含探索、战斗、采集与区域任务 · Claude Fable 5.2 · [源码](https://github.com/weit0529/gamedemo_by_Fable5.2) ⭐ 1（2026-11-20）
+`TypeScript 7 + Three.js 0.187 + WebGL 2` · Vite 8.3.8 · 本地运行：Node.js 20.19+，`npm install && npm run dev`
+
+**101 · Space 2601AE** — 九个星区中的太空贸易、货运任务、飞船战斗与存档战役；作者将它作为多模型长期协作基准 · Claude Fable 5.2、GPT-6.2 Astra 等模型协作（[作者模型日志](https://github.com/AJankovic234/fable-space-engine#change-log)） · [源码](https://github.com/AJankovic234/fable-space-engine) ⭐ 0（2026-11-20）
+`F# + Fable 5.2 + WebGL 2` · Vite 8.3.8 · 本地运行需 .NET SDK 10 与 Node.js 22.12+：`npm install`、`npm run restore`、`npm run dev`
+
 ---
 
-## 六、GPT-6.2 Astra 作品（10 款）
+## 六、GPT-6.2 Astra 作品（21 款）
 
-**98 · 夕阳邮航（GPT-6.2 Astra 版）** — 2D 邮航游戏 · [源码](https://github.com/jambocoder159/ai-game-duel) ⭐ 0（2026-11-18）
+**102 · 夕阳邮航（GPT-6.2 Astra 版）** — 2D 邮航游戏 · [源码](https://github.com/jambocoder159/ai-game-duel) ⭐ 0（2026-11-18）
 与同仓库的《柑仔的晚霞航空信》（Claude Fable 5.2 版）使用同一组素材，是独立的 Astra 模型版本。`Canvas 2D` · 无构建 · [试玩 GPT-6.2 Astra 版](https://jambocoder159.github.io/ai-game-duel/#astra)
 
-**99 · Santa Express: Chimney Panic!** — 3D 圣诞街机游戏 · [源码](https://github.com/thestringtheories/Santa-Game) ⭐ 0（2026-11-18）
+**103 · Santa Express: Chimney Panic!** — 3D 圣诞街机游戏 · [源码](https://github.com/thestringtheories/Santa-Game) ⭐ 0（2026-11-18）
 作者说明首个可玩原型由一个提示词交给 GPT-6.2 Astra 生成，后续又完成电影感画面迭代。`three.js 0.186 + TypeScript + WebGL 2` · Vite 构建 · [在线试玩](https://thestringtheories.github.io/Santa-Game/)
 
-**100 · Operation Fracture** — 离线第一人称区域作战游戏；作者标注为模型能力测试产物 · GPT-6.2 Astra · [离线试玩包](https://github.com/Thweki/operation-fracture/releases) · [源码](https://github.com/Thweki/operation-fracture) ⭐ 0（2026-11-19）
+**104 · Operation Fracture** — 离线第一人称区域作战游戏；作者标注为模型能力测试产物 · GPT-6.2 Astra · [离线试玩包](https://github.com/Thweki/operation-fracture/releases) · [源码](https://github.com/Thweki/operation-fracture) ⭐ 0（2026-11-19）
 `Three.js 0.187 + WebGL 2` · esbuild 0.28.2 · ZIP 中的单文件 HTML（需桌面浏览器）
 
-**101 · Tidepost（潮邮局）** — 中文像素风航邮冒险，包含实时邮航与回合制海图解谜 · GPT-6.2 Astra · [桌面版与 Web 下载包](https://github.com/Thweki/tidepost/releases) · [源码](https://github.com/Thweki/tidepost) ⭐ 0（2026-11-19）
+**105 · Tidepost（潮邮局）** — 中文像素风航邮冒险，包含实时邮航与回合制海图解谜 · GPT-6.2 Astra · [桌面版与 Web 下载包](https://github.com/Thweki/tidepost/releases) · [源码](https://github.com/Thweki/tidepost) ⭐ 0（2026-11-19）
 `Godot 4.7.2` · macOS、Windows、Linux 桌面版及 Web ZIP；预发布
 
-**102 · Blackburn Type D** — 驾驶 1912 年 Blackburn Type D 穿越四个圆环 · GPT-6.2 Astra · [浏览器试玩](https://blackburn-flight.pages.dev/) · [离线单文件版](https://github.com/Dun4ev/blackburn-flight/releases/latest/download/Blackburn-Flight.html) · [源码](https://github.com/Dun4ev/blackburn-flight) ⭐ 0（2026-11-19）
+**106 · Blackburn Type D** — 驾驶 1912 年 Blackburn Type D 穿越四个圆环 · GPT-6.2 Astra · [浏览器试玩](https://blackburn-flight.pages.dev/) · [离线单文件版](https://github.com/Dun4ev/blackburn-flight/releases/latest/download/Blackburn-Flight.html) · [源码](https://github.com/Dun4ev/blackburn-flight) ⭐ 0（2026-11-19）
 `Three.js 0.186.1 + WebGL` · Python 构建脚本 + esbuild · Cloudflare Pages 站点
 
-**103 · Spillway Run** — 可设计球洞的迷你高尔夫，支持真实物理、计杆与标准杆 · GPT-6.2 Astra（X-High，单提示词） · [浏览器试玩](https://kostikoneuro.github.io/astra-6-2-solo/4-minigolf/?lang=ru) · [源码](https://github.com/KostiKoNeuro/astra-6-2-solo/tree/main/4-minigolf) ⭐ 0（2026-11-19）
+**107 · Spillway Run** — 可设计球洞的迷你高尔夫，支持真实物理、计杆与标准杆 · GPT-6.2 Astra（X-High，单提示词） · [浏览器试玩](https://kostikoneuro.github.io/astra-6-2-solo/4-minigolf/?lang=ru) · [源码](https://github.com/KostiKoNeuro/astra-6-2-solo/tree/main/4-minigolf) ⭐ 0（2026-11-19）
 `HTML + Canvas 2D` · 无构建 · 浏览器小游戏
 
-**104 · Hamster Colony（仓鼠群落）** — 低多边形笼舍里的仓鼠会自行觅食、饮水、奔轮、社交、繁殖和老化；可暂停、调速、查看个体状态 · GPT-6.2 Astra（X-High，单提示词） · [浏览器试玩](https://kostikoneuro.github.io/astra-6-2-solo/5-hamsters/?lang=ru) · [源码](https://github.com/KostiKoNeuro/astra-6-2-solo/tree/main/5-hamsters) ⭐ 0（2026-11-19）
+**108 · Hamster Colony（仓鼠群落）** — 低多边形笼舍里的仓鼠会自行觅食、饮水、奔轮、社交、繁殖和老化；可暂停、调速、查看个体状态 · GPT-6.2 Astra（X-High，单提示词） · [浏览器试玩](https://kostikoneuro.github.io/astra-6-2-solo/5-hamsters/?lang=ru) · [源码](https://github.com/KostiKoNeuro/astra-6-2-solo/tree/main/5-hamsters) ⭐ 0（2026-11-19）
 `Three.js`（CDN）· 无构建 · 单文件 HTML
 
-**105 · Dusk Runner — Rooftop Time Trial** — 高楼屋顶计时跑酷；Model Arena 的 GPT-6.2 Astra 独立版本，与 Fable、Opus、Sol 使用同一提示词 · GPT-6.2 Astra（High） · [浏览器试玩](https://clockendbader.github.io/model-arena/) · [源码](https://github.com/clockendbader/model-arena/tree/main/astra-6.2/parkour) ⭐ 0（2026-11-19）
+**109 · Dusk Runner — Rooftop Time Trial** — 高楼屋顶计时跑酷；Model Arena 的 GPT-6.2 Astra 独立版本，与 Fable、Opus、Sol 使用同一提示词 · GPT-6.2 Astra（High） · [浏览器试玩](https://clockendbader.github.io/model-arena/) · [源码](https://github.com/clockendbader/model-arena/tree/main/astra-6.2/parkour) ⭐ 0（2026-11-19）
 `Three.js + WebGL` · 无构建 · 多文件静态站点
 
-**106 · Uno com escada（GPT-6.2 Astra 版）** — 同仓库 Fable 与 Opus 版本使用相同需求的独立实现 · GPT-6.2 Astra · [浏览器试玩](https://viktorkav.com.br/apoio/uno-com-escada/astra/) · [源码](https://github.com/viktorkav/uno-com-escada) ⭐ 135（2026-11-19）
+**110 · Uno com escada（GPT-6.2 Astra 版）** — 同仓库 Fable 与 Opus 版本使用相同需求的独立实现 · GPT-6.2 Astra · [浏览器试玩](https://viktorkav.com.br/apoio/uno-com-escada/astra/) · [源码](https://github.com/viktorkav/uno-com-escada) ⭐ 135（2026-11-19）
 `原生 JavaScript + WebGPU` · 无构建 · 单文件 HTML
 
-**107 · FAULTLINE — Cold Relay** — 一句话生成的第一人称射击，冷色调无线电站小关卡 · GPT-6.2 Astra（X-High） · ⌨️ 暂无线上试玩；按作者说明下载或 clone 后，用 Chrome / Edge 打开 `index.html` · [源码目录](https://github.com/Yari-tuber/gpt62-vs-opus55-tests/tree/main/05_%E4%B8%80%E5%8F%A5%E8%AF%9D3A%E5%B0%84%E5%87%BB/gpt-6.2-astra) ⭐ 0（2026-11-19）
+**111 · FAULTLINE — Cold Relay** — 一句话生成的第一人称射击，冷色调无线电站小关卡 · GPT-6.2 Astra（X-High） · ⌨️ 暂无线上试玩；按作者说明下载或 clone 后，用 Chrome / Edge 打开 `index.html` · [源码目录](https://github.com/Yari-tuber/gpt62-vs-opus55-tests/tree/main/05_%E4%B8%80%E5%8F%A5%E8%AF%9D3A%E5%B0%84%E5%87%BB/gpt-6.2-astra) ⭐ 0（2026-11-19）
 `WebGL 2 + GLSL` · 无构建 · 单文件 HTML（约 88 KB）
+
+
+**112 · Saltwake: The Drowned Abbey** — 单文件恐怖 RPG / roguelike，深入沉没修道院；该版本是统一提示词、无迭代修改的 Codex GPT-6.2 Astra Max 基准产物 · [在线试玩](https://chojondocho.github.io/single-html-game-bench/codex-gpt-6-2-astra-max.html) · [源码文件](https://github.com/chojondocho/single-html-game-bench/blob/main/codex-gpt-6-2-astra-max.html) ⭐ 11（2026-11-20）
+`HTML` · 无构建 · 单文件游戏 · [作者模型与提示词说明](https://github.com/chojondocho/single-html-game-bench#prompt-used)
+
+**113 · Mall Action（GPT-6.2 Astra xhigh 版）** — 商场多层横版动作游戏：搜寻目标、射击、跳踢间谍并完成逃离任务；与其他模型版本分支分开记录 · GPT-6.2 Astra（xhigh） · [在线试玩](https://rlorca.github.io/mall-action/gpt-6.2-astra-xhigh/) · [Astra 源码分支](https://github.com/rlorca/mall-action/tree/gpt-6-2-astra-xhigh) ⭐ 0（2026-11-20）
+`JavaScript + Canvas 2D` · Node 构建脚本生成单 HTML · [作者模型与实测说明](https://github.com/rlorca/mall-action/tree/gpt-6-2-astra-xhigh)
+
+**114 · Lantern Drift · 天灯漂流（GPT-6.2 Astra 第二回合）** — 与 Fable 5.2 使用同一任务、分别生成的独立游戏版本；作者记录 Astra 用时 42 分 11 秒、零人工介入 · [在线试玩](https://jambocoder159.github.io/ai-game-duel/#r2-astra) · [Astra 构建目录](https://github.com/jambocoder159/ai-game-duel/tree/main/versions/r2-astra) ⭐ 0（2026-11-20）
+`React 19 + TypeScript` · 仓库提供预构建静态包 · [作者模型对照说明](https://github.com/jambocoder159/ai-game-duel)
+
+**115 · Undertow FM（逆潮电台）** — 中文单人像素横版冒险游戏源码快照；作者明确标为 GPT-6.2 Astra 能力测试产物，并说明它不是成熟成品 · GPT-6.2 Astra · [桌面与 Web 下载包](https://github.com/Thweki/undertow-fm/releases/tag/v1.0.0-preview) · [源码与运行说明](https://github.com/Thweki/undertow-fm) ⭐ 0（2026-11-20）
+`Godot 4.7.2` · 暂无托管试玩页；作者提供 macOS、Windows、Linux 和 Web ZIP，也可用 Godot 打开 `project.godot` 并运行 `game/Main.tscn`
+
+**116 · Pocket Roads: Midnight Pass** — 瑞士阿尔卑斯山午夜山道计时赛，左右转向并完成路线挑战 · GPT-6.2 Astra · [在线试玩](https://aartiles.github.io/local-model-benchmarks-site/demos/pocket-roads/) · [源码目录](https://github.com/aartiles/local-model-benchmarks-site/tree/main/demos/pocket-roads) · [作者模型说明](https://x.com/aartiles24/status/2122811749019824368) ⭐ 0（2026-11-20）
+`HTML + CSS + JavaScript + SVG` · 多文件静态站点
+
+**117 · Flying Anglia** — 在 ESP32-S3 触摸屏上倾斜操控蓝色 Anglia 飞过山谷，在蒸汽火车进隧道前追上它 · GPT-6.2 Astra · [源码与硬件运行说明](https://github.com/baturyilmaz/flying-anglia) ⭐ 0（2026-11-20）
+`TypeScript + Gea3D` · 无浏览器试玩；需 Waveshare ESP32-S3 Touch AMOLED 2.06 硬件、Node.js 24 与 ESP-IDF 6
+
+**118 · Bitcade Pac-Man（GPT-6.2 Astra 版）** — 同一短提示词下的 Pac-Man 迷宫追逐独立模型构建；实验记录注明 Codex API-key fair-cell 与 high effort · [在线试玩](https://jonclegg.github.io/pacman-bakeoff/entries/gpt-6.2-astra.html) · [源码文件](https://github.com/jonclegg/pacman-bakeoff/blob/main/entries/gpt-6.2-astra.html) ⭐ 5（2026-11-20）
+`HTML + Canvas 2D` · 无构建 · 单文件 HTML · [模型运行记录](https://github.com/jonclegg/pacman-bakeoff/blob/main/entries/meta.json)
+
+**119 · Fault in the Bath** — 旋转九块瓷砖，让断开的同心圆纹样重新对齐 · GPT-6.2 Astra · [在线试玩](https://miaai-lab.github.io/GPT-6.2-Astra-100-HTML-Files/009-tile-fault.html) · [单文件源码](https://github.com/MiaAI-Lab/GPT-6.2-Astra-100-HTML-Files/blob/main/009-tile-fault.html) ⭐ 0（2026-11-20）
+`HTML + CSS + JavaScript` · 无构建 · 单文件 HTML
+
+**120 · The Chalk Yard** — 把移动中的粉笔石板落在堆叠物上，累计七层并避免失衡 · GPT-6.2 Astra · [在线试玩](https://miaai-lab.github.io/GPT-6.2-Astra-100-HTML-Files/042-chalk-quarry.html) · [单文件源码](https://github.com/MiaAI-Lab/GPT-6.2-Astra-100-HTML-Files/blob/main/042-chalk-quarry.html) ⭐ 0（2026-11-20）
+`HTML + CSS + JavaScript` · 无构建 · 单文件 HTML
+
+**121 · The Patient Egg** — 调整平衡梁坡度，让滚动的鸡蛋在窝中稳定两秒 · GPT-6.2 Astra · [在线试玩](https://miaai-lab.github.io/GPT-6.2-Astra-100-HTML-Files/074-egg-balance.html) · [单文件源码](https://github.com/MiaAI-Lab/GPT-6.2-Astra-100-HTML-Files/blob/main/074-egg-balance.html) ⭐ 0（2026-11-20）
+`HTML + CSS + JavaScript` · 无构建 · 单文件 HTML
+
+**122 · The Keyless Works** — 逐齿转动黄铜齿轮，让两处校准线对齐并锁住定位销 · GPT-6.2 Astra · [在线试玩](https://miaai-lab.github.io/GPT-6.2-Astra-100-HTML-Files/097-lockstep.html) · [单文件源码](https://github.com/MiaAI-Lab/GPT-6.2-Astra-100-HTML-Files/blob/main/097-lockstep.html) ⭐ 0（2026-11-20）
+`HTML + CSS + JavaScript` · 无构建 · 单文件 HTML
 
 ---
 
@@ -535,6 +583,22 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 | Rawza Ring | three.js | 无构建 | 多文件静态站点 | [🎮 试玩](https://aiarcade.games/play/rawza-ring) |
 | Gifts for the Tall One | three.js | 无构建 | 多文件静态站点 | ⌨️ |
 
+| Boo-mas | Three.js r187 | 无构建 | 多文件 ES modules | [🎮 试玩](https://robinduckett.github.io/boo-mas/) |
+| Wildlife Odyssey 3D | React Three Fiber + Three.js r187 | Vite 8 | 浏览器站点（本地启动） | ⌨️ |
+| 星烬原野 · Demo | Three.js 0.187 + WebGL 2 | Vite 8.3.8 | 浏览器站点（本地启动） | ⌨️ |
+| Space 2601AE | Fable + 原生 WebGL 2 | Vite 8.3.8 | 浏览器 ES modules / Docker | ⌨️ |
+| Saltwake: The Drowned Abbey | 单文件 HTML | 无构建 | 单文件 HTML | [🎮 试玩](https://chojondocho.github.io/single-html-game-bench/codex-gpt-6-2-astra-max.html) |
+| Mall Action（Astra xhigh） | Canvas 2D | Node 构建脚本 | 单 HTML 构建产物 + 源码 | [🎮 试玩](https://rlorca.github.io/mall-action/gpt-6.2-astra-xhigh/) |
+| Lantern Drift · 天灯漂流（Astra） | React 19 | 预构建 | 静态站点与 assets | [🎮 试玩](https://jambocoder159.github.io/ai-game-duel/#r2-astra) |
+| Undertow FM · 逆潮电台 | Godot 4.7.2 | Godot | Godot 项目 / 桌面发行说明 | ⌨️ |
+| Pocket Roads: Midnight Pass | HTML + CSS + SVG | 无构建 | 多文件静态站点 | [🎮 试玩](https://aartiles.github.io/local-model-benchmarks-site/demos/pocket-roads/) |
+| Flying Anglia | Gea3D + 原生渲染器 | GeaStack + ESP-IDF 6 | ESP32-S3 固件 / 硬件游戏 | ⌨️ |
+| Bitcade Pac-Man（Astra） | Canvas 2D | 无构建 | 单文件 HTML | [🎮 试玩](https://jonclegg.github.io/pacman-bakeoff/entries/gpt-6.2-astra.html) |
+| Fault in the Bath | CSS / DOM | 无构建 | 单文件 HTML | [🎮 试玩](https://miaai-lab.github.io/GPT-6.2-Astra-100-HTML-Files/009-tile-fault.html) |
+| The Chalk Yard | DOM geometry | 无构建 | 单文件 HTML | [🎮 试玩](https://miaai-lab.github.io/GPT-6.2-Astra-100-HTML-Files/042-chalk-quarry.html) |
+| The Patient Egg | CSS / DOM | 无构建 | 单文件 HTML | [🎮 试玩](https://miaai-lab.github.io/GPT-6.2-Astra-100-HTML-Files/074-egg-balance.html) |
+| The Keyless Works | SVG / DOM | 无构建 | 单文件 HTML | [🎮 试玩](https://miaai-lab.github.io/GPT-6.2-Astra-100-HTML-Files/097-lockstep.html) |
+
 完整的体积、依赖、素材来源、生成成本对照见 **[TECH_STACK.md](TECH_STACK.md)**。
 
 ## 九、这些游戏是怎么被写出来的
@@ -565,11 +629,12 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 - 本仓库只做索引，不托管任何游戏代码，版权归各作者所有，请遵守各仓库的 LICENSE。
 - 部分作品借鉴既有游戏玩法，也有明确标注的同人作品；素材、角色与第三方资源的使用范围以作者 README 和许可证为准。
 - 部分作品仍在开发中，完成度差异很大；「在线可玩」只代表能打开，不代表完成度。
-- 原有条目快照为 2026-11-12、2026-11-14；新增 32 款与 Last Return 更新记录于 2026-11-16，新增 21 款记录于 2026-11-17，新增三款作品及模型归属字段记录于 2026-11-18，Star 数与在线状态会随时间变化。
+- 原有条目快照为 2026-11-12、2026-11-14；新增 32 款与 Last Return 更新记录于 2026-11-16，新增 21 款记录于 2026-11-17，新增三款作品及模型归属字段记录于 2026-11-18，后续核验记录见上方；Star 数与在线状态会随时间变化。
+- 只有作者明确标注 GPT-6.2 Astra 的作品才计入该模型；未注明 6.2 的 GPT-6 Astra 旧版和 GPT-6.2 Sol 均单独区分，不并入 Astra 统计。
 
 ## 附录：站上还有这 21 款
 
-以下作品在 aiarcade.games 上可以直接玩，但不在上面的 107 款里（多数没有公开仓库，或不在最初流传的清单中），一并列出。🆕 为 2026-11-16 新增，✨ 为 2026-11-18 新增。
+以下作品在 aiarcade.games 上可以直接玩，但不在上面的 122 款里（多数没有公开仓库，或不在最初流传的清单中），一并列出。🆕 为 2026-11-16 新增，✨ 为 2026-11-18 新增。
 
 | 作品 | 一句话 | 试玩 |
 | --- | --- | --- |

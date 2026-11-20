@@ -1,12 +1,14 @@
 # Awesome Fable 5.2 & GPT-6.2 Astra Games
 
-**122 款游戏与交互作品 · 83 个游戏仓库 · 4 份社区合集 · 87 款附浏览器试玩链接 · 附录另有 22 款站点独占作品**
+**127 款游戏与交互作品 · 83 个游戏仓库 · 4 份社区合集 · 92 款附浏览器试玩链接 · 附录另有 22 款站点独占作品**
 
 Claude Fable 5.2 与 GPT-6.2 Astra 带来的游戏作品，已经从小型 demo 延伸到能开车抢车被警察追的开放世界、骑马打猎的西部、能联机的港口 FPS、三国志式的 3D 即时战略，甚至单人用 21 句话写完的《帝国时代》替身。
 
 这个仓库把它们整理成一份可检索的清单：**每款都有源码地址、玩法说明、模型归属和真实技术栈；有在线试玩的附链接，没有试玩页的写清本地运行方式**。多模型协作和同一仓库里的不同模型版本分开标注，方便比较不同模型做出的作品。
 
-按作者披露的模型归属分：**87 款由 Claude Fable 5.2 独立完成，21 款由 GPT-6.2 Astra 独立完成，14 款为多模型协作**。同一仓库中的不同模型版本分别列出；没有披露的模型不推测。
+按作者披露的模型归属分：**89 款由 Claude Fable 5.2 独立完成，21 款由 GPT-6.2 Astra 独立完成，3 款是 Claude Opus 5.5 的同款对照版本，14 款为多模型协作**（协作方还包括 Claude Sonnet 5.5、Gemini 4 Carbon 等）。同一仓库、同一提示词下的不同模型版本分别列出；没有披露的模型不推测。
+
+同款对照现在有了一条完整的对照链：Model Arena 的屋顶跑酷有 Fable 5.2、Astra、Opus 5.5、Sol 四个实现，Mall Action 有 Fable、Astra、Opus 三个分支，Lantern Drift 是 Fable 与 Astra 各跑一轮。编号相邻，可以直接比较各家模型在同一任务上的完成度和耗时。
 
 | 文档 | 内容 |
 | --- | --- |
@@ -22,6 +24,7 @@ Claude Fable 5.2 与 GPT-6.2 Astra 带来的游戏作品，已经从小型 demo 
 > 作品包含开发中游戏、交互体验与多人原型；没有浏览器试玩链接的 35 款，需按条目说明本地运行、构建或下载作者发布包。
 > **2026-11-18 试玩页巡检**：站点试玩页由 61 个增至 **87 个**，新增 26 个页面。其中 23 个是清单内作品在 aiarcade 的镜像（这些作品此前已列作者站试玩，本次不改动链接），另 3 款《Ripcore》《三借芭蕉扇》《Starship Dogfight》不在清单内，已按附录处理并入。清单里仍缺试玩链接的 18 款没有新增页面。3 个新链接逐一实测返回 HTTP 200。
 > **2026-11-20 试玩页巡检**：站点试玩页由 88 个增至 **91 个**，新增 3 个页面。其中《LAST LIGHT — Rooftop Run》《Papertrails》是清单内作品（#96、#97）的流式镜像，页面仍从作者站加载，这两款已有作者站试玩链接，本次不改动；另 1 款《Fault Line Echoes · 断层回声》不在清单内，已按附录处理并入。新增的 1 个链接实测返回 HTTP 200。
+> **2026-11-20 同款对照补录**：新增 5 款，均出自已收录的仓库分支或基准项目——Claude Fable 5.2 版 2 款（Lantern Drift、Mall Action），Claude Opus 5.5 版 3 款（HIGHLINE、The Tallow Deep、Mall Action）；后 3 款与清单内的 Fable 5.2 / GPT-6.2 Astra 版本使用同一提示词，单列成「附」便于对照。5 个试玩链接均返回 HTTP 200，并已在浏览器中实际进入游戏。Model Arena 第三回合 breath 是互动解剖展览而非游戏，未收录。
 
 ## 图例
 
@@ -36,7 +39,7 @@ Claude Fable 5.2 与 GPT-6.2 Astra 带来的游戏作品，已经从小型 demo 
 - [二、第一人称射击（8 款）](#二第一人称射击8-款)
 - [三、视觉效果与探索（14 款）](#三视觉效果与探索14-款)
 - [四、体育、竞速与其他（55 款）](#四体育竞速与其他55-款)
-- [五、Claude Fable 5.2 新作（15 款）](#五claude-fable-52-新作15-款)
+- [五、Claude Fable 5.2 新作（17 款）](#五claude-fable-52-新作17-款)
 - [六、GPT-6.2 Astra 作品（21 款）](#六gpt62-astra-作品21-款)
 - [七、值得收藏的社区合集](#七值得收藏的社区合集)
 - [八、技术栈速查表](#八技术栈速查表)
@@ -379,9 +382,9 @@ Claude Fable 5.2 创作的 Цугцванг 对战 Gemini 4 Carbon 创作的 К�
 
 ---
 
-## 五、Claude Fable 5.2 新作（15 款）
+## 五、Claude Fable 5.2 新作（17 款）
 
-其中 6 款的项目说明只归于 Claude Fable 5.2，另 5 款明确披露 Claude Opus 5.5 参与；《Papertrails》是自由漫游体验，没有关卡目标。
+其中 8 款的项目说明只归于 Claude Fable 5.2，另 5 款明确披露 Claude Opus 5.5 参与；《Papertrails》是自由漫游体验，没有关卡目标。
 
 **87 · Port Fable (Low)** — 低多边形岛屿开放世界，含车辆、船只、飞机、武器与通缉系统 · Claude Fable 5.2（Low） · [Windows 下载](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/releases/download/v1.0/PortFable-Low-Windows-x64.zip) · [源码](https://github.com/Cryptopiy/Claude-Fable-5.2-Effort-Test-Open-World/tree/main/games/1-low-port-fable) ⭐ 0（2026-11-19）
 `Godot 4.7.2` · Windows x64 可执行文件与 Godot 源码
@@ -428,6 +431,25 @@ Claude Fable 5.2 创作的 Цугцванг 对战 Gemini 4 Carbon 创作的 К�
 
 **101 · Space 2601AE** — 九个星区中的太空贸易、货运任务、飞船战斗与存档战役；作者将它作为多模型长期协作基准 · Claude Fable 5.2、GPT-6.2 Astra 等模型协作（[作者模型日志](https://github.com/AJankovic234/fable-space-engine#change-log)） · [源码](https://github.com/AJankovic234/fable-space-engine) ⭐ 0（2026-11-20）
 `F# + Fable 5.2 + WebGL 2` · Vite 8.3.8 · 本地运行需 .NET SDK 10 与 Node.js 22.12+：`npm install`、`npm run restore`、`npm run dev`
+
+**123 · Lantern Drift · 天灯漂流（Claude Fable 5.2 第二回合）** — 与 GPT-6.2 Astra 使用同一任务、同一 GG-skills v4.0 技能包分别生成的独立版本；剪纸画风，美术由 Fable 通过 Codex 调用 GPT 图片生成；作者记录跑到 47 分钟上限被停下，介入 1 次请它收尾 · Claude Fable 5.2 · [在线试玩](https://jambocoder159.github.io/ai-game-duel/#r2-fable) · [Fable 构建目录](https://github.com/jambocoder159/ai-game-duel/tree/main/versions/r2-fable) ⭐ 0（2026-11-20）
+`React 19 + TypeScript` · 仓库提供预构建静态包 · 浏览器静态站点与 assets · [作者模型对照说明](https://github.com/jambocoder159/ai-game-duel)
+
+**126 · Mall Action（Claude Fable 5.2 版）** — 商场多层横版谍战 + 俯视角店铺搜索；与 Astra、Opus 等版本分支分开记录。分支说明记录：Claude Code（开启 advisor 工具）约 1 小时 15 分，无人工介入，151 个自动化测试 · Claude Fable 5.2 · [在线试玩](https://rlorca.github.io/mall-action/fable-5.2/) · [Fable 源码分支](https://github.com/rlorca/mall-action/tree/fable-5-2) ⭐ 0（2026-11-20）
+`TypeScript + WebGL` · Vite 构建 · 所有像素图、字体、音乐由代码生成
+
+### 附：同款对照中的 Claude Opus 5.5 版本（3 款）
+
+以下作品与本清单已收录的 Claude Fable 5.2 / GPT-6.2 Astra 版本使用同一提示词，单独记录以便对照。
+
+**124 · HIGHLINE — A Rooftop Run at Golden Hour** — 高楼屋顶计时跑酷；Model Arena 的 Opus 5.5 独立版本，与 Fable（#96）、Astra（#109）、Sol 使用同一提示词，Arena 记录用时 55 分钟 · Claude Opus 5.5（High） · [浏览器试玩](https://clockendbader.github.io/model-arena/opus-5.5/parkour/) · [源码](https://github.com/clockendbader/model-arena/tree/main/opus-5.5/parkour) ⭐ 0（2026-11-20）
+`Three.js r170 + WebGL` · 无构建 · 多文件静态站点 · 仅桌面键鼠
+
+**125 · The Tallow Deep** — 单文件第一人称恐怖 roguelike，提灯下探十层；与 Saltwake（#112）同一基准提示词，作者个人排名 21 个作品中第一 · Claude Code · Opus 5.5 Max · [在线试玩](https://chojondocho.github.io/single-html-game-bench/claudecode-opus-5-5-max.html) · [源码文件](https://github.com/chojondocho/single-html-game-bench/blob/main/claudecode-opus-5-5-max.html) ⭐ 11（2026-11-20）
+`HTML + WebGL 2` · 无构建 · 单文件 HTML · [作者模型与提示词说明](https://github.com/chojondocho/single-html-game-bench#prompt-used)
+
+**127 · Mall Action（Claude Opus 5.5 版）** — 商场多层横版谍战 + 俯视角店铺搜索；与 Fable（#126）、Astra（#113）版本分支分开记录 · Claude Opus 5.5 · [在线试玩](https://rlorca.github.io/mall-action/opus-5.5/) · [Opus 源码分支](https://github.com/rlorca/mall-action/tree/opus-5-5) ⭐ 0（2026-11-20）
+`JavaScript + PixiJS 8` · Vite 构建 · 无素材文件，300+ 单元测试
 
 ---
 
@@ -599,6 +621,11 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 | The Chalk Yard | DOM geometry | 无构建 | 单文件 HTML | [🎮 试玩](https://miaai-lab.github.io/GPT-6.2-Astra-100-HTML-Files/042-chalk-quarry.html) |
 | The Patient Egg | CSS / DOM | 无构建 | 单文件 HTML | [🎮 试玩](https://miaai-lab.github.io/GPT-6.2-Astra-100-HTML-Files/074-egg-balance.html) |
 | The Keyless Works | SVG / DOM | 无构建 | 单文件 HTML | [🎮 试玩](https://miaai-lab.github.io/GPT-6.2-Astra-100-HTML-Files/097-lockstep.html) |
+| Lantern Drift · 天灯漂流（Fable） | React 19 | 预构建 | 静态站点与 assets | [🎮 试玩](https://jambocoder159.github.io/ai-game-duel/#r2-fable) |
+| HIGHLINE | Three.js r170 | 无构建 | 多文件静态站点 | [🎮 试玩](https://clockendbader.github.io/model-arena/opus-5.5/parkour/) |
+| The Tallow Deep | WebGL 2 | 无构建 | 单文件 HTML | [🎮 试玩](https://chojondocho.github.io/single-html-game-bench/claudecode-opus-5-5-max.html) |
+| Mall Action（Fable 5.2） | WebGL | Vite | 浏览器静态站点 | [🎮 试玩](https://rlorca.github.io/mall-action/fable-5.2/) |
+| Mall Action（Opus 5.5） | PixiJS 8 | Vite | 浏览器静态站点 | [🎮 试玩](https://rlorca.github.io/mall-action/opus-5.5/) |
 
 完整的体积、依赖、素材来源、生成成本对照见 **[TECH_STACK.md](TECH_STACK.md)**。
 

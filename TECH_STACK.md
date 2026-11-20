@@ -106,14 +106,19 @@
 | The Chalk Yard | MiaAI-Lab/GPT-6.2-Astra-100-HTML-Files | HTML | DOM geometry | 无构建 | 单文件 HTML / GitHub Pages | CSS / DOM 几何 | 100 个 Astra HTML 作品中的堆叠游戏 | GPT-6.2 Astra |
 | The Patient Egg | MiaAI-Lab/GPT-6.2-Astra-100-HTML-Files | HTML | CSS / DOM | 无构建 | 单文件 HTML / GitHub Pages | CSS 生成蛋、梁与动画 | 100 个 Astra HTML 作品中的平衡游戏 | GPT-6.2 Astra |
 | The Keyless Works | MiaAI-Lab/GPT-6.2-Astra-100-HTML-Files | HTML | SVG / DOM | 无构建 | 单文件 HTML / GitHub Pages | 程序化齿轮轮廓与动画 | 100 个 Astra HTML 作品中的齿轮拼图 | GPT-6.2 Astra |
+| Lantern Drift · 天灯漂流（Fable 第二回合） | jambocoder159/ai-game-duel | TypeScript | React 19（渲染方式未标注） | 预构建静态包 | 浏览器静态站点与 assets | 美术由 Fable 经 Codex 调 GPT 图片生成 | 与 Astra 版同一任务对照；47 分钟上限被停，人工介入 1 次 | Claude Fable 5.2 |
+| HIGHLINE | clockendbader/model-arena | JavaScript | Three.js r170 + WebGL | 无构建 | 多文件静态站点 | 程序化几何与光照 | 同提示词四模型对照；Arena 记录 55 分钟 | Claude Opus 5.5 |
+| The Tallow Deep | chojondocho/single-html-game-bench | HTML | WebGL 2 | 无构建 | 单文件 HTML | 程序化场景与音效 | 与 Saltwake 同一基准提示词；作者排名 21 作第一 | Claude Opus 5.5 |
+| Mall Action（Fable 5.2 版） | rlorca/mall-action | TypeScript | WebGL 像素帧缓冲 | Vite | 浏览器静态站点 | 像素图、字体、音乐由代码生成 | 约 1 小时 15 分，151 个自动化测试 | Claude Fable 5.2 |
+| Mall Action（Opus 5.5 版） | rlorca/mall-action | JavaScript | PixiJS 8 | Vite | 浏览器静态站点 | 无素材文件 | 300+ 单元测试 | Claude Opus 5.5 |
 
 ## 交付形态与平台
 
-按主要交付形态归类，以下前三项合计 122 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。
+按主要交付形态归类，以下前三项合计 127 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。
 
-- **单 HTML 交付（34 款）**：含 Saltwake、Mall Action 构建版、Bitcade Pac-Man 和 4 款 GPT-6.2 Astra 单文件拼图，以及原有单文件作品。Last Return 与 Graveyard Shift 由源码构建为自包含 HTML。
-- **无构建但多文件（45 款）**：在原有多文件作品基础上增加 Boo-mas 与 Pocket Roads，加上《回声游戏厅》的 13 款、《Gabriel's Sweet Town》、《The Blooming Dark》、Fight Ring、《柑仔的晚霞航空信》和《夕阳邮航》，以及 Model Arena 的 Dusk Runner（Astra 版）。需要静态服务的作品按条目说明启动。
-- **其余工程化构建（43 款）**：在原有工程化作品基础上增加 Wildlife Odyssey 3D、星烬原野、Space 2601AE、Lantern Drift、Undertow FM 与 Flying Anglia，加上 9 款 Godot Windows 构建、Papertrails、Tidepost 桌面版。包含 Vite / Next.js 站点、Rust / WASM 和 Unity / Godot 桌面项目。
+- **单 HTML 交付（35 款）**：含 Saltwake、Mall Action 构建版、Bitcade Pac-Man 和 4 款 GPT-6.2 Astra 单文件拼图，以及原有单文件作品。Last Return 与 Graveyard Shift 由源码构建为自包含 HTML。
+- **无构建但多文件（46 款）**：在原有多文件作品基础上增加 Boo-mas 与 Pocket Roads，加上《回声游戏厅》的 13 款、《Gabriel's Sweet Town》、《The Blooming Dark》、Fight Ring、《柑仔的晚霞航空信》和《夕阳邮航》，以及 Model Arena 的 Dusk Runner（Astra 版）。需要静态服务的作品按条目说明启动。
+- **其余工程化构建（46 款）**：在原有工程化作品基础上增加 Wildlife Odyssey 3D、星烬原野、Space 2601AE、Lantern Drift、Undertow FM 与 Flying Anglia，加上 9 款 Godot Windows 构建、Papertrails、Tidepost 桌面版。包含 Vite / Next.js 站点、Rust / WASM 和 Unity / Godot 桌面项目。
 - **提供浏览器以外交付（21 款）**：在原有桌面作品基础上增加 Undertow FM 与 Flying Anglia，加上本轮 9 款 Godot Windows 构建，以及 Tidepost 的桌面版。
 
 ## 素材来源谱系

@@ -1,6 +1,6 @@
-# Claude Fable 5.2 与 GPT-6.2 Astra 游戏技术栈对比
+# Claude Fable 5.2、GPT-6.2 Astra 与 Gemini 4 游戏技术栈对比
 
-83 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return；**2026-11-17** 新增 21 款、9 个仓库（含《回声游戏厅》13 款）；**2026-11-18** 新增 3 款、2 个仓库，并为 88 款作品补充模型归属；**2026-11-19** 新增 19 款、10 个仓库，并替换 3 款自然灾害体验的失效源码地址；**2026-11-20** 新增 15 款、11 个仓库（3 款 Fable 单模型、11 款 GPT-6.2 Astra、1 款多模型协作），并增加 10 条在线试玩。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
+89 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return；**2026-11-17** 新增 21 款、9 个仓库（含《回声游戏厅》13 款）；**2026-11-18** 新增 3 款、2 个仓库，并为 88 款作品补充模型归属；**2026-11-19** 新增 19 款、10 个仓库，并替换 3 款自然灾害体验的失效源码地址；**2026-11-20** 新增 15 款、11 个仓库（3 款 Fable 单模型、11 款 GPT-6.2 Astra、1 款多模型协作），并增加 10 条在线试玩；**2026-11-21** 新增 6 款、6 个仓库（Fable 独立作品 1 款、Fable/Opus 协作 1 款、Gemini 4 Carbon 1 款及 Carbon/GPT-6 Astra 未注明版本协作 1 款、Gemini 4 Neon 2 款），新增 4 个浏览器试玩地址。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
 
 ## 一览
 
@@ -112,18 +112,25 @@
 | Mall Action（Fable 5.2 版） | rlorca/mall-action | TypeScript | WebGL 像素帧缓冲 | Vite | 浏览器静态站点 | 像素图、字体、音乐由代码生成 | 约 1 小时 15 分，151 个自动化测试 | Claude Fable 5.2 |
 | Mall Action（Opus 5.5 版） | rlorca/mall-action | JavaScript | PixiJS 8 | Vite | 浏览器静态站点 | 无素材文件 | 300+ 单元测试 | Claude Opus 5.5 |
 
+| Crash Quota | Mythfinity/crash-quota-fable | JavaScript | 自制 WebGL 2 引擎 | 无构建 | 浏览器 ES modules 站点 | 程序化模型与 Web Audio 合成 | 作者记录 Fable Max Ultracode，约 3 小时 30 分、222 项自动化测试 | Claude Fable 5.2 |
+| NIGHTSHIFT（Fable 5.2） | EddizEge/nightshift-fable | TypeScript | Three.js 0.187 + Rapier + WebGL 2 | Vite + TypeScript | 浏览器静态站点 | Blender 自制车辆；纹理与字体见 ASSETS.md | 作者记录约 16 小时 36 分；Opus 子 Agent 协作 | Claude Fable 5.2; Claude Opus 5.5 |
+| NIGHTSHIFT（Gemini 4 Carbon） | EddizEge/nightshift | TypeScript | Three.js 0.187 + Rapier3D WASM + WebGL 2 | Vite + TypeScript | 浏览器静态站点 | Blender 脚本自制车辆；授权素材见 ASSETS.md | 作者记录单提示词、约 2 小时 8 分、无人工编写代码 | Gemini 4 Carbon |
+| After the Tide | MichaelCao1/after-the-tide | HTML | Three.js 0.187 + WebGL 2 + Web Audio | Vite / scripts/build_dist.py | 本地服务 / 单文件 HTML | 场景几何、纹理、标识和音效由项目生成 | GPT-6 Astra 负责规划，Gemini 4 Carbon 负责编码与游戏设计 | Gemini 4 Carbon; GPT-6 Astra (version unreported) |
+| Kurogane III | HaroonBadshahAI/gemini-4-neon-3d-game-benchmark | TypeScript | Next.js + React + Three.js | Next.js + tsx server | 浏览器站点 | — | README 称为 Gemini 4 Neon 游戏开发评估；提示词、模型设置和生成日志未提供 | Gemini 4 Neon |
+| Street Trash: Dezombifier | Twarga/Street-Trash-III-Dezombifie-Clone- | GDScript | Godot 4.6 | Godot 4.6 | Windows / Linux / Android 发布包 | 基于游戏画面复刻；素材出处按仓库文档 | 作者称由 Antigravity (Gemini 4 Neon) 从画面重新制作 | Gemini 4 Neon |
+
 ## 交付形态与平台
 
-按主要交付形态归类，以下前三项合计 127 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。
+按主要交付形态归类，以下前三项合计 133 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。
 
 - **单 HTML 交付（35 款）**：含 Saltwake、Mall Action 构建版、Bitcade Pac-Man 和 4 款 GPT-6.2 Astra 单文件拼图，以及原有单文件作品。Last Return 与 Graveyard Shift 由源码构建为自包含 HTML。
-- **无构建但多文件（46 款）**：在原有多文件作品基础上增加 Boo-mas 与 Pocket Roads，加上《回声游戏厅》的 13 款、《Gabriel's Sweet Town》、《The Blooming Dark》、Fight Ring、《柑仔的晚霞航空信》和《夕阳邮航》，以及 Model Arena 的 Dusk Runner（Astra 版）。需要静态服务的作品按条目说明启动。
-- **其余工程化构建（46 款）**：在原有工程化作品基础上增加 Wildlife Odyssey 3D、星烬原野、Space 2601AE、Lantern Drift、Undertow FM 与 Flying Anglia，加上 9 款 Godot Windows 构建、Papertrails、Tidepost 桌面版。包含 Vite / Next.js 站点、Rust / WASM 和 Unity / Godot 桌面项目。
-- **提供浏览器以外交付（21 款）**：在原有桌面作品基础上增加 Undertow FM 与 Flying Anglia，加上本轮 9 款 Godot Windows 构建，以及 Tidepost 的桌面版。
+- **无构建但多文件（47 款）**：在原有多文件作品基础上增加 Boo-mas 与 Pocket Roads，加上《回声游戏厅》的 13 款、《Gabriel's Sweet Town》、《The Blooming Dark》、Fight Ring、《柑仔的晚霞航空信》和《夕阳邮航》，以及 Model Arena 的 Dusk Runner（Astra 版）、Crash Quota。需要静态服务的作品按条目说明启动。
+- **其余工程化构建（51 款）**：在原有工程化作品基础上增加 Wildlife Odyssey 3D、星烬原野、Space 2601AE、Lantern Drift、Undertow FM 与 Flying Anglia，加上 9 款 Godot Windows 构建、Papertrails、Tidepost 桌面版、两版 NIGHTSHIFT、After the Tide、Kurogane III 与 Street Trash: Dezombifier。包含 Vite / Next.js 站点、Rust / WASM 和 Unity / Godot 桌面项目。
+- **提供浏览器以外交付（22 款）**：在原有桌面作品基础上增加 Undertow FM 与 Flying Anglia，加上本轮 9 款 Godot Windows 构建、Tidepost 桌面版与 Street Trash: Dezombifier 的原生发布包。
 
 ## 素材来源谱系
 
-从「零外部素材」到「大量第三方资产」，这 122 款覆盖不同的素材路线：
+从「零外部素材」到「大量第三方资产」，这 133 款覆盖不同的素材路线：
 
 1. **纯代码生成** — SUBLEVEL 07（着色器画积水与锈迹、Web Audio 合成 18 个音效）、TukTuk、NEON RUNNER、MOTHLIGHT。体积最小（131 KB ~ 数百 KB），加载最快。
 2. **代码生成 + 脚本建模** — Tidebell 四件套用 Blender Python 脚本生成 48 个模型；Harvest Standoff 用 Blender 脚本雕十名角色。

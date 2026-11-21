@@ -20,7 +20,7 @@ Claude Fable 5.2、GPT-6.2 Astra、Gemini 4 Carbon 与 Gemini 4 Neon 带来的�
 > **核验说明**：原有 26 款数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新已更名的 Last Return；**2026-11-17** 新增 21 款、9 个仓库，其中《回声游戏厅》同一仓库含 13 款；**2026-11-18** 新增 3 款、2 个仓库：《柑仔的晚霞航空信》（Claude Fable 5.2 版）、《夕阳邮航》（GPT-6.2 Astra 版）和《Santa Express: Chimney Panic!》（GPT-6.2 Astra）。前两款共用一个仓库，但模型版本分别列出。模型归属依据作者 README 或项目说明；协作模型按披露记录，不推测未说明的模型。两个托管页面均返回 HTTP 200，未实际验证完整游玩流程。**2026-11-19** 新增 19 款、10 个新仓库：Claude Fable 5.2 新作 11 款（6 款单模型、5 款与 Claude Opus 5.5 协作），GPT-6.2 Astra 新作 8 款；同一仓库内的模型对照版本分别记录。原自然灾害项目仓库已不可访问，三款既有作品的源码链接改为目前可访问的同名项目仓库。新增的 7 条浏览器试玩记录对应 6 个网址均返回 HTTP 200，仅核验可访问性，未逐款验证完整流程。Star 数按各条目的抓取日期记录。
 > **2026-11-20** 新增 15 款、11 个新仓库：Claude Fable 5.2 单模型作品 3 款、GPT-6.2 Astra 作品 11 款，以及 1 款包含 Fable 5.2 与多模型协作的作品。10 条试玩链接返回 HTTP 200；另 5 款按作者文档在本地或指定硬件运行。GPT-6.2 Astra 与未注明 6.2 的旧版 GPT-6 Astra 分开处理。
 > **2026-11-21** 新增 6 款、6 个新仓库：Claude Fable 5.2 独立作品 1 款、Fable 与 Opus 5.5 协作 1 款、Gemini 4 Carbon 独立作品 1 款、Carbon 与未注明版本的 GPT-6 Astra 协作 1 款、Gemini 4 Neon 独立作品 2 款；本轮未发现符合明确版本要求的新 GPT-6.2 Astra 游戏。4 个浏览器试玩链接返回 HTTP 200，未逐款验证完整流程；《After the Tide》按 README 的本地服务方式运行，《Street Trash: Dezombifier》提供桌面与 Android 下载。Kurogane III 的模型设置与生成日志尚未公开，项目 README 也说明它不是官方或独立验证的基准。
-> **2026-11-21 补录**：附录新增《重庆（试玩版）》一款——浏览器里的重庆观光 demo，来自 Gary 的深海 AI 视频实验室独立站点（lab.ytdeepsea.com，非 aiarcade 镜像）。它没有公开源码仓库，也不属于 Fable / Astra / Opus / Gemini 编码生成的作品：素材多为现成资源，AI 负责挑选、拼装与调光，立面与列车贴图由 GPT Image 2.5 生成、3D 模型由腾讯 Hunyuan3D-2 本地生成，属于素材生成类特例，故只列入附录、不计入主榜 133 款。试玩链接返回 HTTP 200，Credits 页面已注明全部素材来源。
+> **2026-11-21 补录（含更正）**：附录新增《重庆（试玩版）》一款——浏览器里的重庆观光 demo，来自 Gary 的深海 AI 视频实验室独立站点（lab.ytdeepsea.com，非 aiarcade 镜像）。作者 Gary 曹淦（@GaryAIytb）在[发布推文](https://x.com/GaryAIytb/status/2123331645046714382)中明确说明：这是 **Claude Fable 5.2** 的作品，25 亿 token、187 轮修改、5 天，AI 自己写 Python 指挥 Blender 逐栋建模，作者一行代码没写、只发了 23 条消息。素材层面另用 GPT Image 2.5 出图、腾讯 Hunyuan3D-2 生成 3D 模型（Credits 页有完整清单）。因作者未公开源码仓库、且不在主榜的 GitHub 索引口径内，仍列附录、不计入主榜 133 款；但模型归属按作者原话记为 Fable 5.2，而非先前据 Credits 误判的「素材生成特例」。试玩链接返回 HTTP 200。
 > **2026-11-16 试玩链接迁移**：站内托管试玩由 fable52.games 统一换成 **aiarcade.games**（同站新域名，页面 slug 不变），覆盖站上全部 **42 款**，逐一实测返回 HTTP 200；Riftline 此前标注「无在线版本」，已在站上找到试玩页并补上；《潮汐战线》《The County》《MAKINAMON》改为站点试玩优先、作者站备份。
 > **2026-11-16 夜间补链**：aiarcade.games 试玩页由 42 个增至 **61 个**，清单里此前只有作者站或本地运行的 **18 款**作品找到站内页面（含 ONE PROMPT WORLDS 全 8 作、Last Return、Duel Knights、SHUTTERPINE、Mini RPG、Escape the Fable 等），已统一改为站点试玩优先、作者站备份；附录新增 1 款站点独占作品《太阳系三维沙盘》。61 个页面逐一实测返回 HTTP 200。
 > 作品包含开发中游戏、交互体验与多人原型；没有浏览器试玩链接的 37 款，需按条目说明本地运行、构建或下载作者发布包。
@@ -724,7 +724,7 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 | 三借芭蕉扇 ✨ | 西游回合制 RPG：三借芭蕉扇灭火焰山，五行相克、七十二变，约一小时流程 | [Play](https://aiarcade.games/play/sanjie-bajiaoshan) |
 | Starship Dogfight ✨ | 小行星带上的第三人称太空缠斗：无尽波次、六发导弹，每五波一艘无畏舰 | [Play](https://aiarcade.games/play/starship-dogfight) |
 | Fault Line Echoes · 断层回声 ✦ | 白石都城与四片荒野的第一人称冒险 RPG：四种行者流派，接委托、签那份没盖章的汛报 | [Play](https://aiarcade.games/play/fault-line-echoes-hkbbj1) |
-| 重庆（试玩版）★ | 浏览器里观光重庆：李子坝轻轨穿楼、洪崖洞夜景，可飞行、坐轻轨、驾车与计时赛；素材生成类特例——GPT Image 2.5 出图、腾讯 Hunyuan3D-2 生成 3D 模型，AI 负责挑选拼装与调光，无公开仓库（作者独立站） | [Play](https://lab.ytdeepsea.com/games/chongqing/) |
+| 重庆（试玩版）★ | 浏览器里观光重庆：李子坝轻轨穿楼、洪崖洞夜景，可飞行、坐轻轨、驾车与计时赛；作者称由 Claude Fable 5.2 用 25 亿 token、187 轮、5 天生成，AI 自己写 Python 指挥 Blender 建模，零人工代码（素材另用 GPT Image 2.5 / Hunyuan3D-2；无公开仓库） | [Play](https://lab.ytdeepsea.com/games/chongqing/) |
 
 ---
 

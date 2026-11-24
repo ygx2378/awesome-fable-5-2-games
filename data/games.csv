@@ -146,3 +146,6 @@ id,name,repo,model,play_url,author_demo,render,build,delivery,language,stars,cat
 145,Modernist Mosaic,MiaAI-Lab/Gemini-4-Neon-100-HTML-Files,Gemini 4 Neon,https://miaai-lab.github.io/Gemini-4-Neon-100-HTML-Files/094-modernist-sliding-tile-puzzle.html,https://github.com/MiaAI-Lab/Gemini-4-Neon-100-HTML-Files,SVG + JavaScript,无构建,单文件 HTML / GitHub Pages,HTML,0,滑块谜题,2026-11-23
 146,Chamonix // Mont Blanc Freeride,techkwon/neon-webgl-rematch,Gemini 4 Neon,https://techkwon.github.io/neon-webgl-rematch/runs/ski/neon/,https://github.com/techkwon/neon-webgl-rematch/blob/main/data.json,Raw WebGL 2 + Web Audio,无构建,单文件 HTML / GitHub Pages,HTML,0,滑雪模拟,2026-11-23
 147,霜谷铲雪社（Frosthollow Plow）,enhen-x/Frosthollow_PLOW_CO.,Gemini 4 Neon,,https://github.com/enhen-x/Frosthollow_PLOW_CO./blob/main/README.md,React 19 + TypeScript + Three.js,Vite 8,浏览器静态站点（需本地启动）,TypeScript,0,3D 铲雪经营,2026-11-23
+148,Solar Drift,souranyp-stack/solar-drift,GPT-6.2 Astra,https://souranyp-stack.github.io/solar-drift/,,Three.js + WebGL,Vite,浏览器静态站点,JavaScript,0,3D 竞速,2026-11-23
+149,Token 花园（Token Garden）,XYUUrbuu/Bubble-Fighter,Gemini 4 Neon,,,Godot 4.7.2 Compatibility,Godot 4.7.2,Godot 源码项目；可导出 Windows 包,GDScript,1,竞技,2026-11-23
+150,PrimeWordle,P1ayerWp/PrimeWordle,Gemini 4 Neon,,,Python 本地 HTTP 服务 + HTML/CSS/JavaScript,无构建,多文件网页小游戏与模型训练工程,Python + JavaScript,0,逻辑谜题,2026-11-24

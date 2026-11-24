@@ -1,18 +1,18 @@
 # Claude Fable 5.2 / GPT-6.2 Astra / Gemini 4 游戏合集
 
-**147 款游戏与交互作品 · 98 个游戏仓库 · 4 份社区合集 · 109 款附浏览器试玩链接 · 附录另有 23 款补充作品**
+**150 款游戏与交互作品 · 101 个游戏仓库 · 4 份社区合集 · 110 款附浏览器试玩链接 · 附录另有 23 款补充作品**
 
 Claude Fable 5.2、GPT-6.2 Astra、Gemini 4 Carbon 与 Gemini 4 Neon 带来的游戏作品，已经从小型 demo 延伸到开放世界、3D 竞速、第一人称恐怖与多人格斗。
 
 这个仓库把它们整理成一份可检索的清单：**每款都有源码地址、玩法说明、模型归属和真实技术栈；有在线试玩的附链接，没有试玩页的写清本地运行方式**。多模型协作和同一仓库里的不同模型版本分开标注，方便比较不同模型做出的作品。
 
-按作者披露的模型归属分：**93 款由 Claude Fable 5.2 独立完成，22 款由 GPT-6.2 Astra 独立完成，4 款是 Claude Opus 5.5 的同款对照版本，Gemini 4 Carbon 独立作品 2 款、Gemini 4 Neon 独立作品 10 款，另有 16 款多模型协作**。同一仓库、同一提示词下的不同模型版本分别列出；版本未注明的 GPT-6 Astra 不计入 GPT-6.2 Astra。
+按作者披露的模型归属分：**93 款由 Claude Fable 5.2 独立完成，23 款由 GPT-6.2 Astra 独立完成，4 款是 Claude Opus 5.5 的同款对照版本，Gemini 4 Carbon 独立作品 2 款、Gemini 4 Neon 独立作品 12 款，另有 16 款多模型协作**。同一仓库、同一提示词下的不同模型版本分别列出；版本未注明的 GPT-6 Astra 不计入 GPT-6.2 Astra。
 
 同款对照现在有了一条完整的对照链：Model Arena 的屋顶跑酷有 Fable 5.2、Astra、Opus 5.5、Sol 四个实现，Mall Action 有 Fable、Astra、Opus 三个分支，Lantern Drift 是 Fable 与 Astra 各跑一轮。编号相邻，可以直接比较各家模型在同一任务上的完成度和耗时。
 
 | 文档 | 内容 |
 | --- | --- |
-| [TECH_STACK.md](TECH_STACK.md) | 98 个仓库的技术栈、模型归属、构建方式、交付体积、生成成本横向对比 |
+| [TECH_STACK.md](TECH_STACK.md) | 101 个仓库的技术栈、模型归属、构建方式、交付体积、生成成本横向对比 |
 | [PROMPTS.md](PROMPTS.md) | 可复现的原始提示词：一句话 FPS、21 句 RTS、三句需求做出三个游戏 |
 | [GAME_DEV_SKILLS.md](GAME_DEV_SKILLS.md) | 12 个游戏制作 Skill：对应作品、试玩入口与公开情况 |
 | [data/games.csv](data/games.csv) | 含模型归属的结构化数据，方便二次加工或做站 |
@@ -20,11 +20,12 @@ Claude Fable 5.2、GPT-6.2 Astra、Gemini 4 Carbon 与 Gemini 4 Neon 带来的�
 > **核验说明**：原有 26 款数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新已更名的 Last Return；**2026-11-17** 新增 21 款、9 个仓库，其中《回声游戏厅》同一仓库含 13 款；**2026-11-18** 新增 3 款、2 个仓库：《柑仔的晚霞航空信》（Claude Fable 5.2 版）、《夕阳邮航》（GPT-6.2 Astra 版）和《Santa Express: Chimney Panic!》（GPT-6.2 Astra）。前两款共用一个仓库，但模型版本分别列出。模型归属依据作者 README 或项目说明；协作模型按披露记录，不推测未说明的模型。两个托管页面均返回 HTTP 200，未实际验证完整游玩流程。**2026-11-19** 新增 19 款、10 个新仓库：Claude Fable 5.2 新作 11 款（6 款单模型、5 款与 Claude Opus 5.5 协作），GPT-6.2 Astra 新作 8 款；同一仓库内的模型对照版本分别记录。原自然灾害项目仓库已不可访问，三款既有作品的源码链接改为目前可访问的同名项目仓库。新增的 7 条浏览器试玩记录对应 6 个网址均返回 HTTP 200，仅核验可访问性，未逐款验证完整流程。Star 数按各条目的抓取日期记录。
 > **2026-11-20** 新增 15 款、11 个新仓库：Claude Fable 5.2 单模型作品 3 款、GPT-6.2 Astra 作品 11 款，以及 1 款包含 Fable 5.2 与多模型协作的作品。10 条试玩链接返回 HTTP 200；另 5 款按作者文档在本地或指定硬件运行。GPT-6.2 Astra 与未注明 6.2 的旧版 GPT-6 Astra 分开处理。
 > **2026-11-21** 新增 6 款、6 个新仓库：Claude Fable 5.2 独立作品 1 款、Fable 与 Opus 5.5 协作 1 款、Gemini 4 Carbon 独立作品 1 款、Carbon 与未注明版本的 GPT-6 Astra 协作 1 款、Gemini 4 Neon 独立作品 2 款；本轮未发现符合明确版本要求的新 GPT-6.2 Astra 游戏。4 个浏览器试玩链接返回 HTTP 200，未逐款验证完整流程；《After the Tide》按 README 的本地服务方式运行，《Street Trash: Dezombifier》提供桌面与 Android 下载。Kurogane III 的模型设置与生成日志尚未公开，项目 README 也说明它不是官方或独立验证的基准。
-> **2026-11-21 补录（含更正）**：附录新增《重庆（试玩版）》一款——浏览器里的重庆观光 demo，来自 Gary 的深海 AI 视频实验室独立站点（lab.ytdeepsea.com，非 aiarcade 镜像）。作者 Gary 曹淦（@GaryAIytb）在[发布推文](https://x.com/GaryAIytb/status/2123331645046714382)中明确说明：这是 **Claude Fable 5.2** 的作品，25 亿 token、187 轮修改、5 天，AI 自己写 Python 指挥 Blender 逐栋建模，作者一行代码没写、只发了 23 条消息。素材层面另用 GPT Image 2.5 出图、腾讯 Hunyuan3D-2 生成 3D 模型（Credits 页有完整清单）。因作者未公开源码仓库、且不在主榜的 GitHub 索引口径内，仍列附录、不计入主榜 147 款；但模型归属按作者原话记为 Fable 5.2，而非先前据 Credits 误判的「素材生成特例」。试玩链接返回 HTTP 200。
+> **2026-11-21 补录（含更正）**：附录新增《重庆（试玩版）》一款——浏览器里的重庆观光 demo，来自 Gary 的深海 AI 视频实验室独立站点（lab.ytdeepsea.com，非 aiarcade 镜像）。作者 Gary 曹淦（@GaryAIytb）在[发布推文](https://x.com/GaryAIytb/status/2123331645046714382)中明确说明：这是 **Claude Fable 5.2** 的作品，25 亿 token、187 轮修改、5 天，AI 自己写 Python 指挥 Blender 逐栋建模，作者一行代码没写、只发了 23 条消息。素材层面另用 GPT Image 2.5 出图、腾讯 Hunyuan3D-2 生成 3D 模型（Credits 页有完整清单）。因作者未公开源码仓库、且不在主榜的 GitHub 索引口径内，仍列附录，不计入主榜；但模型归属按作者原话记为 Fable 5.2，而非先前据 Credits 误判的「素材生成特例」。试玩链接返回 HTTP 200。
 > **2026-11-23** 新增 14 款、9 个新仓库（另在既有《回声游戏厅》仓库补录第 14 期）：Claude Fable 5.2 作品 3 款、GPT-6.2 Astra 1 款、Gemini 4 Carbon 1 款、Gemini 4 Neon 8 款，以及同提示词的 Claude Opus 5.5 对照版 1 款。Neon 的 100 个 HTML studies 中只选入 4 款有明确胜负或解题目标的游戏；纯视觉研究未计入。13 个浏览器试玩网址返回 HTTP 200，仅核验可访问性，未逐款实际通关；《霜谷铲雪社》无托管试玩页，README 提供本地启动方法。模型归属按作者 README、仓库 About 或模型日志标注，Astra、Carbon、Neon 与 Fable 分组记录。
+> **2026-11-24** 新增 3 款、3 个新仓库：GPT-6.2 Astra 新作《Solar Drift》1 款；Gemini 4 Neon 新作《Token 花园》《PrimeWordle》2 款。Solar Drift 的浏览器试玩页返回 HTTP 200，仅核验可访问性；《Token 花园》需 Godot 4.7.2 本地启动，《PrimeWordle》可运行 `python run_web.py` 启动本地网页。Fable 5.2 与 Gemini 4 Carbon 本轮未发现符合收录条件的新仓库。另发现两组共 12 款 Astra 小游戏展示页带 `noindex,nofollow`，本轮未纳入公开目录；Neon 的 Heartwood Hollow 仓库说明尚无实际玩法，也未收录。
 > **2026-11-16 试玩链接迁移**：站内托管试玩由 fable52.games 统一换成 **aiarcade.games**（同站新域名，页面 slug 不变），覆盖站上全部 **42 款**，逐一实测返回 HTTP 200；Riftline 此前标注「无在线版本」，已在站上找到试玩页并补上；《潮汐战线》《The County》《MAKINAMON》改为站点试玩优先、作者站备份。
 > **2026-11-16 夜间补链**：aiarcade.games 试玩页由 42 个增至 **61 个**，清单里此前只有作者站或本地运行的 **18 款**作品找到站内页面（含 ONE PROMPT WORLDS 全 8 作、Last Return、Duel Knights、SHUTTERPINE、Mini RPG、Escape the Fable 等），已统一改为站点试玩优先、作者站备份；附录新增 1 款站点独占作品《太阳系三维沙盘》。61 个页面逐一实测返回 HTTP 200。
-> 作品包含开发中游戏、交互体验与多人原型；没有浏览器试玩链接的 38 款，需按条目说明本地运行、构建或下载作者发布包。
+> 作品包含开发中游戏、交互体验与多人原型；没有浏览器试玩链接的 40 款，需按条目说明本地运行、构建或下载作者发布包。
 > **2026-11-18 试玩页巡检**：站点试玩页由 61 个增至 **87 个**，新增 26 个页面。其中 23 个是清单内作品在 aiarcade 的镜像（这些作品此前已列作者站试玩，本次不改动链接），另 3 款《Ripcore》《三借芭蕉扇》《Starship Dogfight》不在清单内，已按附录处理并入。清单里仍缺试玩链接的 18 款没有新增页面。3 个新链接逐一实测返回 HTTP 200。
 > **2026-11-20 试玩页巡检**：站点试玩页由 88 个增至 **91 个**，新增 3 个页面。其中《LAST LIGHT — Rooftop Run》《Papertrails》是清单内作品（#96、#97）的流式镜像，页面仍从作者站加载，这两款已有作者站试玩链接，本次不改动；另 1 款《Fault Line Echoes · 断层回声》不在清单内，已按附录处理并入。新增的 1 个链接实测返回 HTTP 200。
 > **2026-11-20 同款对照补录**：新增 5 款，均出自已收录的仓库分支或基准项目——Claude Fable 5.2 版 2 款（Lantern Drift、Mall Action），Claude Opus 5.5 版 3 款（HIGHLINE、The Tallow Deep、Mall Action）；后 3 款与清单内的 Fable 5.2 / GPT-6.2 Astra 版本使用同一提示词，单列成「附」便于对照。5 个试玩链接均返回 HTTP 200，并已在浏览器中实际进入游戏。Model Arena 第三回合 breath 是互动解剖展览而非游戏，未收录。
@@ -43,9 +44,9 @@ Claude Fable 5.2、GPT-6.2 Astra、Gemini 4 Carbon 与 Gemini 4 Neon 带来的�
 - [三、视觉效果与探索（14 款）](#三视觉效果与探索14-款)
 - [四、体育、竞速与其他（56 款）](#四体育竞速与其他56-款)
 - [五、Claude Fable 5.2 新作（21 款）](#五claude-fable-52-新作21-款)
-- [六、GPT-6.2 Astra 作品（22 款）](#六gpt62-astra-作品22-款)
+- [六、GPT-6.2 Astra 作品（23 款）](#六gpt62-astra-作品23-款)
 - [七、Gemini 4 Carbon 作品（3 款）](#七gemini-4-carbon-作品3-款)
-- [八、Gemini 4 Neon 作品（10 款）](#八gemini-4-neon-作品10-款)
+- [八、Gemini 4 Neon 作品（12 款）](#八gemini-4-neon-作品12-款)
 - [九、值得收藏的社区合集](#九值得收藏的社区合集)
 - [十、技术栈速查表](#十技术栈速查表)
 - [十一、这些游戏是怎么被写出来的](#十一这些游戏是怎么被写出来的)
@@ -476,7 +477,7 @@ Claude Fable 5.2 创作的 Цугцванг 对战 Gemini 4 Carbon 创作的 К�
 
 ---
 
-## 六、GPT-6.2 Astra 作品（22 款）
+## 六、GPT-6.2 Astra 作品（23 款）
 
 **102 · 夕阳邮航（GPT-6.2 Astra 版）** — 2D 邮航游戏 · [源码](https://github.com/jambocoder159/ai-game-duel) ⭐ 0（2026-11-18）
 与同仓库的《柑仔的晚霞航空信》（Claude Fable 5.2 版）使用同一组素材，是独立的 Astra 模型版本。`Canvas 2D` · 无构建 · [试玩 GPT-6.2 Astra 版](https://jambocoder159.github.io/ai-game-duel/#astra)
@@ -545,6 +546,9 @@ Claude Fable 5.2 创作的 Цугцванг 对战 Gemini 4 Carbon 创作的 К�
 **138 · 荆棘誓约 · 黑棘森林** — 3D 剑盾战斗 demo：近战积攒怒气，用突进斩、回旋飞盾与旋风斩击败半兽人和首领 · GPT-6.2 Astra（Ultra） · [浏览器试玩](https://chan-yuu.github.io/thornbound-gpt-6.2-astra-ultra/) · [源码与模型说明](https://github.com/chan-yuu/thornbound-gpt-6.2-astra-ultra) ⭐ 0（2026-11-23）
 `HTML5 + Three.js（CDN）` · 无构建 · 多文件静态站点
 
+**148 · Solar Drift** — 驾驶悬浮摩托穿越沙漠峡谷计时赛：漂移、加速并通过 12 道路标 · GPT-6.2 Astra（Codex，作者称 6 次提示词、未手写代码） · [浏览器试玩](https://souranyp-stack.github.io/solar-drift/) · [源码、提示词与本地运行说明](https://github.com/souranyp-stack/solar-drift) ⭐ 0（2026-11-23）
+`Three.js + WebGL` · Vite · 浏览器静态站点
+
 ---
 
 ## 七、Gemini 4 Carbon 作品（3 款）
@@ -560,7 +564,7 @@ Claude Fable 5.2 创作的 Цугцванг 对战 Gemini 4 Carbon 创作的 К�
 **139 · 林间血战 · 剑盾怒气** — 3D 森林战斗 demo：近战积攒怒气，使用三种技能击败半兽人和首领 · Gemini 4 Carbon（High） · [浏览器试玩](https://chan-yuu.github.io/forest-warrior-3d-gemini-4-carbon-high/forest_warrior_demo/) · [源码与模型说明](https://github.com/chan-yuu/forest-warrior-3d-gemini-4-carbon-high) ⭐ 0（2026-11-23）
 `HTML5 + Three.js（CDN）` · 无构建 · 单文件 HTML
 
-## 八、Gemini 4 Neon 作品（10 款）
+## 八、Gemini 4 Neon 作品（12 款）
 
 **132 · Kurogane III** — 3D 格斗游戏，含锦标赛、双人本地对战与 CPU 对手；源码另含联机房间 · Gemini 4 Neon（仓库定位为模型开发评估；生成日志、原始提示词和模型设置未披露） · [浏览器试玩](https://gemini-4-neon-3d-game-benchmark.vercel.app/) · [源码与说明](https://github.com/HaroonBadshahAI/gemini-4-neon-3d-game-benchmark) ⭐ 0（2026-11-21）
 `TypeScript + Next.js + React + Three.js + WebSocket` · `npm run dev`，默认使用 `http://localhost:3000`；README 说明 Vercel 部署的 WebSocket 联机还需单独服务，作者报告的移动端试玩不代表我们已独立验证全部模式
@@ -591,6 +595,12 @@ Claude Fable 5.2 创作的 Цугцванг 对战 Gemini 4 Carbon 创作的 К�
 
 **147 · 霜谷铲雪社（Frosthollow Plow）** — 驾驶铲雪车清理三段雪村道路、救出埋在雪下的信箱并升级车辆 · Gemini 4 Neon（仓库 About 标注） · [源码与本地运行方法](https://github.com/enhen-x/Frosthollow_PLOW_CO.) ⭐ 0（2026-11-23）
 `React 19 + TypeScript + Three.js` · Vite 8；在仓库目录执行 `npm install && npm run dev`
+
+**149 · Token 花园（Token Garden）** — 4 人泡泡堂式竞技：放置 Token 炸弹、抢道具并利用机关淘汰对手 · Gemini 4 Neon（仓库 About 标注） · [源码与本地运行说明](https://github.com/XYUUrbuu/Bubble-Fighter) ⭐ 1（2026-11-23）
+`Godot 4.7.2` · 在 Godot 打开 `project.godot` 并按 F5；可导出 Windows 版本
+
+**150 · PrimeWordle** — 将 Wordle / Mastermind 扩展为多符号逻辑解谜；仓库还包含规则求解器与 25M 参数 Transformer 实验 · Gemini 4 Neon（仓库 About 标注） · [源码与本地网页启动说明](https://github.com/P1ayerWp/PrimeWordle) · ⌨️ `python run_web.py` ⭐ 0（2026-11-24）
+`Python + HTML/CSS/JavaScript` · 无构建 · 本地 HTTP 服务启动网页小游戏
 
 ---
 
@@ -741,7 +751,7 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 
 ## 附录：站上还有这 23 款
 
-以下作品不在上面的 147 款里（多数没有公开仓库，或不在最初流传的清单中），一并列出；除特别注明外均在 aiarcade.games 上可以直接玩。🆕 为 2026-11-16 新增，✨ 为 2026-11-18 新增，✦ 为 2026-11-20 新增，★ 为 2026-11-21 新增。
+以下作品不在上面的 150 款里（多数没有公开仓库，或不在最初流传的清单中），一并列出；除特别注明外均在 aiarcade.games 上可以直接玩。🆕 为 2026-11-16 新增，✨ 为 2026-11-18 新增，✦ 为 2026-11-20 新增，★ 为 2026-11-21 新增。
 
 | 作品 | 一句话 | 试玩 |
 | --- | --- | --- |

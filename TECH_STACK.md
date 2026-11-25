@@ -1,6 +1,6 @@
-# Claude Fable 5.2、GPT-6.2 Astra 与 Gemini 4 游戏技术栈对比
+# Claude Fable 5.2、GPT-6.2 Astra、Gemini 4 与 GLM-5.4 游戏技术栈对比
 
-101 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return；**2026-11-17** 新增 21 款、9 个仓库（含《回声游戏厅》13 款）；**2026-11-18** 新增 3 款、2 个仓库，并为 88 款作品补充模型归属；**2026-11-19** 新增 19 款、10 个仓库，并替换 3 款自然灾害体验的失效源码地址；**2026-11-20** 新增 15 款、11 个仓库（3 款 Fable 单模型、11 款 GPT-6.2 Astra、1 款多模型协作），并增加 10 条在线试玩；**2026-11-21** 新增 6 款、6 个仓库（Fable 独立作品 1 款、Fable/Opus 协作 1 款、Gemini 4 Carbon 1 款及 Carbon/GPT-6 Astra 未注明版本协作 1 款、Gemini 4 Neon 2 款），新增 4 个浏览器试玩地址。**2026-11-23** 新增 14 款、9 个新仓库（Fable 3 款、GPT-6.2 Astra 1 款、Gemini 4 Carbon 1 款、Gemini 4 Neon 8 款、Claude Opus 5.5 对照版 1 款），并在既有《回声游戏厅》仓库补录第 14 期；13 个浏览器试玩网址返回 HTTP 200，未逐款完整游玩。《霜谷铲雪社》仅提供源码与本地启动方式。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
+116 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return；**2026-11-17** 新增 21 款、9 个仓库（含《回声游戏厅》13 款）；**2026-11-18** 新增 3 款、2 个仓库，并为 88 款作品补充模型归属；**2026-11-19** 新增 19 款、10 个仓库，并替换 3 款自然灾害体验的失效源码地址；**2026-11-20** 新增 15 款、11 个仓库（3 款 Fable 单模型、11 款 GPT-6.2 Astra、1 款多模型协作），并增加 10 条在线试玩；**2026-11-21** 新增 6 款、6 个仓库（Fable 独立作品 1 款、Fable/Opus 协作 1 款、Gemini 4 Carbon 1 款及 Carbon/GPT-6 Astra 未注明版本协作 1 款、Gemini 4 Neon 2 款），新增 4 个浏览器试玩地址。**2026-11-23** 新增 14 款、9 个新仓库（Fable 3 款、GPT-6.2 Astra 1 款、Gemini 4 Carbon 1 款、Gemini 4 Neon 8 款、Claude Opus 5.5 对照版 1 款），并在既有《回声游戏厅》仓库补录第 14 期；13 个浏览器试玩网址返回 HTTP 200，未逐款完整游玩。《霜谷铲雪社》仅提供源码与本地启动方式。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
 
 **2026-11-24** 新增 3 款、3 个仓库：GPT-6.2 Astra 1 款、Gemini 4 Neon 2 款。Solar Drift 的浏览器试玩返回 HTTP 200；另两款按作者说明本地运行。
 
@@ -137,18 +137,58 @@
 | Token 花园（Token Garden） | XYUUrbuu/Bubble-Fighter | GDScript | Godot 4.7.2 Compatibility | Godot 4.7.2 | Godot 源码项目；可导出 Windows 包 | 作者自制像素美术与合成音效 | 仓库 About 标注 Gemini 4 Neon | Gemini 4 Neon |
 | PrimeWordle | P1ayerWp/PrimeWordle | Python + JavaScript | Python 本地 HTTP 服务 + HTML/CSS/JS | 无构建 | 多文件网页小游戏与模型训练工程 | — | 仓库 About 称全程由 Gemini 4 Neon 操作；游戏网页无需第三方依赖 | Gemini 4 Neon |
 
+| Cinderwatch | kevintngo/cinderwatch | HTML | 自制等距 3D 渲染 | 无构建 | 单文件 HTML | — | AI 自动游玩，可随时手动接管 | Claude Fable 5.2 |
+| Brushwild | kevintngo/procedural-rpg | JavaScript | 自制 WebGL shader | 无构建 | 浏览器静态站点 | — | 无图片、模型和外部库 | Claude Fable 5.2 |
+| 雪迹 · Cold Smoke | huiskylabs/cold-smoke | HTML | Canvas 2D + Web Audio | 无构建 | 单文件 HTML | — | 作者称主要使用 Fable 5.2 | Claude Fable 5.2 |
+| Grand Tel Aviv 6 | LorelDev/grand-tel-aviv-6 | JavaScript | Three.js | npm run dev | 浏览器站点 | — | — | Claude Fable 5.2 |
+| UNWRITTEN | Tetriss22/unwritten | JavaScript | Canvas 2D | 无构建 | GitHub Pages 静态站点 | — | — | Claude Fable 5.2 |
+| 叠塔（Tower Stack） | YHY-coding/fable-works | HTML | HTML Canvas | 无构建 | 单文件 HTML（本地打开） | — | tower/ | Claude Fable 5.2 |
+| 光的顺序（Simon 记忆游戏） | YHY-coding/fable-works | HTML | HTML + Web Audio | 无构建 | 单文件 HTML（本地打开） | — | simon/ | Claude Fable 5.2 |
+| Palmera Heat | ModelBehaviorYT/claude-vs-chatgpt-ai-games | JavaScript | WebGL 3D | 无构建 | 浏览器静态站点 | — | 与 GPT-6.2 Astra 使用同一提示词的一小时对照 | Claude Fable 5.2 |
+| NeonCoast | ModelBehaviorYT/claude-vs-chatgpt-ai-games | C++ | Unreal Engine 5.8 | Unreal Engine 5.8 | Windows x64 游戏包 + Unreal 源项目 | — | 作者提供 Windows 构建包 | Claude Fable 5.2 |
+| Beatbound | ModelBehaviorYT/claude-vs-chatgpt-dash-game | JavaScript | HTML Canvas | 无构建 | 浏览器静态站点 | — | — | Claude Fable 5.2 |
+| Turbo Critters | ModelBehaviorYT/claude-ai-kart-racer | JavaScript | 浏览器 Canvas | 无构建 | 浏览器静态站点 | — | — | Claude Fable 5.2 |
+| Zoomie Dash Grand Prix | ModelBehaviorYT/claude-ai-kart-racer | JavaScript | 浏览器 Canvas | 无构建 | 浏览器静态站点 | — | — | Claude Fable 5.2 |
+| Turbo Pals Grand Prix | ModelBehaviorYT/claude-ai-kart-racer | JavaScript | 浏览器 Canvas | 无构建 | 浏览器静态站点 | — | — | Claude Fable 5.2 |
+| Atlantis | Noniv/atlantis | JavaScript | WebGPU | 无构建 | 浏览器 ES modules 站点 | — | — | Claude Fable 5.2 |
+| Jet Arm | LeeHongji/last-light-arcade | HTML | Canvas 2D | 无构建 | 单文件 HTML / Workers | — | — | Claude Fable 5.2 |
+| Knee Down | LeeHongji/last-light-arcade | HTML | Canvas 2D | 无构建 | 单文件 HTML / Workers | — | — | Claude Fable 5.2 |
+| Dusk Rotor | LeeHongji/last-light-arcade | HTML | Canvas 2D | 无构建 | 单文件 HTML / Workers | — | — | Claude Fable 5.2 |
+| Dusk Depths | LeeHongji/last-light-arcade | HTML | Canvas 2D | 无构建 | 多文件静态网页 / Workers | — | — | Claude Fable 5.2 |
+| Sundown Syndicate: Port Azure | ModelBehaviorYT/claude-vs-chatgpt-ai-games | JavaScript | WebGL 3D | 无构建 | 浏览器静态站点 | — | 与 Palmera Heat 使用同一提示词的一小时对照 | GPT-6.2 Astra |
+| Sunbreak | ModelBehaviorYT/claude-vs-chatgpt-ai-games | C++ | Unreal Engine 5.8 | Unreal Engine 5.8 | Windows x64 游戏包 + Unreal 源项目 | — | 作者提供 Windows 构建包 | GPT-6.2 Astra |
+| Slipwake · Relay Yard | Itckt/token-burn-games | JavaScript | Raw WebGL | 无构建 | 多文件网页（本地浏览器） | — | games/002 | GPT-6.2 Astra |
+| Neon Causeway | Itckt/token-burn-games | JavaScript | HTML + CSS + JavaScript | 无构建 | 多文件网页（本地浏览器） | — | games/003 | GPT-6.2 Astra |
+| Twistlab | Itckt/token-burn-games | JavaScript | Three.js / WebGL | 无构建 | 多文件网页（本地浏览器） | — | games/007 | GPT-6.2 Astra |
+| Loop Foundry | Itckt/token-burn-games | JavaScript | Three.js / WebGL | 无构建 | 多文件网页（本地浏览器） | — | games/009 | GPT-6.2 Astra |
+| Street Cantonese · 街談 | Itckt/token-burn-games | JavaScript | HTML + CSS + JavaScript | 无构建 | 多文件网页（本地浏览器） | — | games/080 | GPT-6.2 Astra |
+| The Eleventh Morning | Itckt/token-burn-games | Python | 终端文字游戏 | Python | Python CLI | — | games/018 | GPT-6.2 Astra |
+| Gutterlight Relay | Itckt/token-burn-games | Python | 终端文字游戏 | Python | Python CLI | — | games/034 | GPT-6.2 Astra |
+| Pinchline Six | Itckt/token-burn-games | Python | 终端 ASCII 战场 | Python | Python CLI | — | games/035 | GPT-6.2 Astra |
+| Kowloon Stack | Itckt/token-burn-games | JavaScript | 终端字符界面 | Node.js | Node.js CLI | — | games/040 | GPT-6.2 Astra |
+| Terminal Snake | Itckt/token-burn-games | JavaScript | 终端字符界面 | Node.js | Node.js CLI | — | games/041 | GPT-6.2 Astra |
+| 2048 | Kowloon Tong study break | Itckt/token-burn-games | Python | 终端字符界面 | Python | Python CLI | — | games/042 | GPT-6.2 Astra |
+| Tic-tac-toe and Connect Four | Itckt/token-burn-games | Python | 终端字符界面 | Python | Python CLI | — | games/043 | GPT-6.2 Astra |
+| Steamfold Noodle Works | Itckt/token-burn-games | Python | 终端字符界面 | Python | Python CLI | — | games/058 | GPT-6.2 Astra |
+| Friday, Filed | Itckt/token-burn-games | Python | 终端文字游戏 | Python | Python CLI | — | games/079 | GPT-6.2 Astra |
+| Study Break Blackjack | Itckt/token-burn-games | Python | 终端文字游戏 | Python | Python CLI | — | games/085 | GPT-6.2 Astra |
+| Weirlight | Itckt/token-burn-games | Python | 终端字符界面 | Python | Python CLI | — | games/111 | GPT-6.2 Astra |
+| Cretacea: Blackout（Unity） | jc-able/Cretacea-Blackout-Unity | C# | Unity 6 HDRP 17.6 | Unity 6000.6.9f1 | Unity HDRP 桌面项目 | — | 作者按阶段披露三款模型的贡献 | Gemini 4 Neon; Claude Fable 5.2; Claude Opus 5.5 |
+| NEON PINBALL // CYBER ARCADE | iceplantengineering/neon-pinball | HTML | Canvas 2D + Web Audio | 无构建 | 单文件 HTML | — | — | GLM-5.4 |
+| Pelican on a Bicycle · 3D | UNLINEARITY/pelican-bike-3d | JavaScript | Three.js + WebGL | Node.js build.mjs | 单 HTML 构建产物 + 多文件源码 | — | — | GLM-5.4 |
+
 ## 交付形态与平台
 
-按主要交付形态归类，以下前三项合计 150 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。
+按主要交付形态归类，以下前三项合计 189 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。新增项目加入 Cinderwatch、Cold Smoke、Fable 作品集、Last Light Arcade 与 NEON PINBALL；网页多文件组加入 Brushwild、UNWRITTEN、Token Burn 网页作品及其他静态游戏；工程化组增加桌面项目与终端游戏。
 
-- **单 HTML 交付（42 款）**：在已有作品中加入《林间血战》《The Locked Vault》、4 款 Gemini 4 Neon HTML 谜题与滑雪模拟；也包括 Saltwake、Mall Action 构建版、Bitcade Pac-Man、4 款 GPT-6.2 Astra 单文件作品。Last Return 与 Graveyard Shift 由源码构建为自包含 HTML。
-- **无构建但多文件（54 款）**：包括《回声游戏厅》的 14 款、《Loamlands》《Blockhaven》《Saltline Brawl》和《PrimeWordle》，以及原有多文件作品。需要静态服务的作品按条目说明启动。
-- **其余工程化构建（54 款）**：本轮加入 Vite 站点《Solar Drift》和 Godot 项目《Token 花园》；其他项目含《霜谷铲雪社》、Wildlife Odyssey 3D、星烬原野、Space 2601AE、Lantern Drift、Undertow FM 与 Flying Anglia。包含 Vite / Next.js 站点、Rust / WASM 和 Unity / Godot 桌面项目。
-- **提供浏览器以外交付（25 款）**：在原有桌面作品基础上增加《Token 花园》的 Godot 项目与《PrimeWordle》的本地网页启动说明，另含《霜谷铲雪社》、Undertow FM、Flying Anglia、Godot Windows 构建、Tidepost 桌面版与 Street Trash: Dezombifier。
+- **单 HTML 交付（51 款）**：新增 Cinderwatch、《雪迹 · Cold Smoke》、Fable 独立 HTML 两款、Last Light Arcade 三款与 NEON PINBALL；另外 Pelican Bike 的发布产物为单文件 HTML。
+- **无构建但多文件（69 款）**：包括 Brushwild、UNWRITTEN、Beatbound、三款卡丁车、《Atlantis》、Dusk Depths、Port Azure 及 Token Burn 的五款网页游戏，以及原有多文件作品。
+- **其余工程化构建（69 款）**：本轮加入 NeonCoast、Sunbreak、Cretacea Unity 项目及 Token Burn 的 11 款 CLI 游戏；另有 Grand Tel Aviv 6。
+- **提供浏览器以外交付（46 款）**：另含 NeonCoast、Sunbreak、Cretacea Unity 以及 Token Burn 的 11 款命令行作品。
 
 ## 素材来源谱系
 
-从「零外部素材」到「大量第三方资产」，这 150 款覆盖不同的素材路线：
+从「零外部素材」到「大量第三方资产」，这 189 款覆盖不同的素材路线：
 
 1. **纯代码生成** — SUBLEVEL 07（着色器画积水与锈迹、Web Audio 合成 18 个音效）、TukTuk、NEON RUNNER、MOTHLIGHT。体积最小（131 KB ~ 数百 KB），加载最快。
 2. **代码生成 + 脚本建模** — Tidebell 四件套用 Blender Python 脚本生成 48 个模型；Harvest Standoff 用 Blender 脚本雕十名角色。

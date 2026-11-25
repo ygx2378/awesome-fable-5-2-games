@@ -1,6 +1,6 @@
 # Claude Fable 5.2 / GPT-6.2 Astra / Gemini 4 / GLM-5.4 游戏合集
 
-**189 款游戏与交互作品 · 116 个游戏仓库 · 4 份社区合集 · 128 款附浏览器试玩链接 · 附录另有 23 款补充作品**
+**189 款游戏与交互作品 · 116 个游戏仓库 · 4 份社区合集 · 128 款附浏览器试玩链接 · 附录另有 24 款补充作品**
 
 Claude Fable 5.2、GPT-6.2 Astra、Gemini 4 Carbon、Gemini 4 Neon 与 GLM-5.4 带来的游戏作品，已经从小型 demo 延伸到开放世界、3D 竞速、第一人称恐怖与多人格斗。
 
@@ -30,6 +30,7 @@ Claude Fable 5.2、GPT-6.2 Astra、Gemini 4 Carbon、Gemini 4 Neon 与 GLM-5.4 �
 > **2026-11-18 试玩页巡检**：站点试玩页由 61 个增至 **87 个**，新增 26 个页面。其中 23 个是清单内作品在 aiarcade 的镜像（这些作品此前已列作者站试玩，本次不改动链接），另 3 款《Ripcore》《三借芭蕉扇》《Starship Dogfight》不在清单内，已按附录处理并入。清单里仍缺试玩链接的 18 款没有新增页面。3 个新链接逐一实测返回 HTTP 200。
 > **2026-11-20 试玩页巡检**：站点试玩页由 88 个增至 **91 个**，新增 3 个页面。其中《LAST LIGHT — Rooftop Run》《Papertrails》是清单内作品（#96、#97）的流式镜像，页面仍从作者站加载，这两款已有作者站试玩链接，本次不改动；另 1 款《Fault Line Echoes · 断层回声》不在清单内，已按附录处理并入。新增的 1 个链接实测返回 HTTP 200。
 > **2026-11-20 同款对照补录**：新增 5 款，均出自已收录的仓库分支或基准项目——Claude Fable 5.2 版 2 款（Lantern Drift、Mall Action），Claude Opus 5.5 版 3 款（HIGHLINE、The Tallow Deep、Mall Action）；后 3 款与清单内的 Fable 5.2 / GPT-6.2 Astra 版本使用同一提示词，单列成「附」便于对照。5 个试玩链接均返回 HTTP 200，并已在浏览器中实际进入游戏。Model Arena 第三回合 breath 是互动解剖展览而非游戏，未收录。
+> **2026-11-25 试玩页巡检**：站点试玩页由 112 个增至 **113 个**，新增 1 个页面。`ember-dawn-k7q2vd` 即《EMBER DAWN · 烬晓行动》（页内 Credits「Created by 黎」、标注 GLM-5.4、单文件 5.2 MB Three.js、波次防守 FPS），不在清单任何条目内，也不是 Dawnward / Emberdeep 的任何版本，按附录处理并入（23 → 24）；清单里仍缺试玩链接的 61 款本次没有新增页面。新增的 1 个链接实测返回 HTTP 200。
 
 ## 图例
 
@@ -52,7 +53,7 @@ Claude Fable 5.2、GPT-6.2 Astra、Gemini 4 Carbon、Gemini 4 Neon 与 GLM-5.4 �
 - [十、值得收藏的社区合集](#十值得收藏的社区合集)
 - [十一、技术栈速查表](#十一技术栈速查表)
 - [十二、这些游戏是怎么被写出来的](#十二这些游戏是怎么被写出来的)
-- [附录：站上还有这 23 款](#附录站上还有这-23-款)
+- [附录：站上还有这 24 款](#附录站上还有这-24-款)
 
 ---
 
@@ -870,9 +871,9 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 - 原有条目快照为 2026-11-12、2026-11-14；新增 32 款与 Last Return 更新记录于 2026-11-16，新增 21 款记录于 2026-11-17，新增三款作品及模型归属字段记录于 2026-11-18，后续核验记录见上方；Star 数与在线状态会随时间变化。
 - 只有作者明确标注 GPT-6.2 Astra 的作品才计入该模型；未注明 6.2 的 GPT-6 Astra 和 GPT-6.2 Sol 均单独区分。Gemini 4 Carbon 与 Gemini 4 Neon 也分别统计；只写 Gemini 或 Antigravity 时不推断具体版本。
 
-## 附录：站上还有这 23 款
+## 附录：站上还有这 24 款
 
-以下作品不在上面的 189 款里（多数没有公开仓库，或不在最初流传的清单中），一并列出；除特别注明外均在 aiarcade.games 上可以直接玩。🆕 为 2026-11-16 新增，✨ 为 2026-11-18 新增，✦ 为 2026-11-20 新增，★ 为 2026-11-21 新增。
+以下作品不在上面的 189 款里（多数没有公开仓库，或不在最初流传的清单中），一并列出；除特别注明外均在 aiarcade.games 上可以直接玩。🆕 为 2026-11-16 新增，✨ 为 2026-11-18 新增，✦ 为 2026-11-20 新增，★ 为 2026-11-21 新增，◆ 为 2026-11-25 新增。
 
 | 作品 | 一句话 | 试玩 |
 | --- | --- | --- |
@@ -899,6 +900,7 @@ Three.js 场景、Canvas 动画、动效片段 + 提示词指南与模型对比�
 | Starship Dogfight ✨ | 小行星带上的第三人称太空缠斗：无尽波次、六发导弹，每五波一艘无畏舰 | [Play](https://aiarcade.games/play/starship-dogfight) |
 | Fault Line Echoes · 断层回声 ✦ | 白石都城与四片荒野的第一人称冒险 RPG：四种行者流派，接委托、签那份没盖章的汛报 | [Play](https://aiarcade.games/play/fault-line-echoes-hkbbj1) |
 | 重庆（试玩版）★ | 浏览器里观光重庆：李子坝轻轨穿楼、洪崖洞夜景，可飞行、坐轻轨、驾车与计时赛；作者称由 Claude Fable 5.2 用 25 亿 token、187 轮、5 天生成，AI 自己写 Python 指挥 Blender 建模，零人工代码（素材另用 GPT Image 2.5 / Hunyuan3D-2；无公开仓库） | [Play](https://lab.ytdeepsea.com/games/chongqing/) |
+| EMBER DAWN · 烬晓行动 ◆ | 雨夜小镇哨点的波次防守 FPS：三处隘口挡兵，六把枪随时切换，7/8/9 连杀呼叫补给、侦察无人机与五发迫击炮；单文件 5.2 MB，Three.js on WebGL2，作者标注由 GLM-5.4 生成，无公开仓库 | [Play](https://aiarcade.games/play/ember-dawn-k7q2vd) |
 
 ---
 

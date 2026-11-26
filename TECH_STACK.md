@@ -1,8 +1,10 @@
 # Claude Fable 5.2、GPT-6.2 Astra、Gemini 4 与 GLM-5.4 游戏技术栈对比
 
-116 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return；**2026-11-17** 新增 21 款、9 个仓库（含《回声游戏厅》13 款）；**2026-11-18** 新增 3 款、2 个仓库，并为 88 款作品补充模型归属；**2026-11-19** 新增 19 款、10 个仓库，并替换 3 款自然灾害体验的失效源码地址；**2026-11-20** 新增 15 款、11 个仓库（3 款 Fable 单模型、11 款 GPT-6.2 Astra、1 款多模型协作），并增加 10 条在线试玩；**2026-11-21** 新增 6 款、6 个仓库（Fable 独立作品 1 款、Fable/Opus 协作 1 款、Gemini 4 Carbon 1 款及 Carbon/GPT-6 Astra 未注明版本协作 1 款、Gemini 4 Neon 2 款），新增 4 个浏览器试玩地址。**2026-11-23** 新增 14 款、9 个新仓库（Fable 3 款、GPT-6.2 Astra 1 款、Gemini 4 Carbon 1 款、Gemini 4 Neon 8 款、Claude Opus 5.5 对照版 1 款），并在既有《回声游戏厅》仓库补录第 14 期；13 个浏览器试玩网址返回 HTTP 200，未逐款完整游玩。《霜谷铲雪社》仅提供源码与本地启动方式。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
+119 个游戏仓库的横向拆解。原有条目数据抓取于 **2026-11-12**；《潮汐战线》和 5 款游戏于 **2026-11-14** 核验；**2026-11-16** 新增 32 款、23 个仓库，并更新 Last Return；**2026-11-17** 新增 21 款、9 个仓库（含《回声游戏厅》13 款）；**2026-11-18** 新增 3 款、2 个仓库，并为 88 款作品补充模型归属；**2026-11-19** 新增 19 款、10 个仓库，并替换 3 款自然灾害体验的失效源码地址；**2026-11-20** 新增 15 款、11 个仓库（3 款 Fable 单模型、11 款 GPT-6.2 Astra、1 款多模型协作），并增加 10 条在线试玩；**2026-11-21** 新增 6 款、6 个仓库（Fable 独立作品 1 款、Fable/Opus 协作 1 款、Gemini 4 Carbon 1 款及 Carbon/GPT-6 Astra 未注明版本协作 1 款、Gemini 4 Neon 2 款），新增 4 个浏览器试玩地址。**2026-11-23** 新增 14 款、9 个新仓库（Fable 3 款、GPT-6.2 Astra 1 款、Gemini 4 Carbon 1 款、Gemini 4 Neon 8 款、Claude Opus 5.5 对照版 1 款），并在既有《回声游戏厅》仓库补录第 14 期；13 个浏览器试玩网址返回 HTTP 200，未逐款完整游玩。《霜谷铲雪社》仅提供源码与本地启动方式。多模型协作的范围按作者披露注明。语言参考 GitHub API 与游戏子目录，Star 来自 GitHub API，构建方式、交付形态、素材来源、生成成本来自各仓库 README 原文或项目说明，未做推测填充，未知项标 `—`。
 
 **2026-11-24** 新增 3 款、3 个仓库：GPT-6.2 Astra 1 款、Gemini 4 Neon 2 款。Solar Drift 的浏览器试玩返回 HTTP 200；另两款按作者说明本地运行。
+
+**2026-11-27** 新增 3 款、3 个新仓库：Claude Fable 5.2 1 款、Gemini 4 Neon 2 款；两个作者试玩页返回 HTTP 200，StoneRoot 按说明本地启动。未逐款完整游玩。
 
 ## 一览
 
@@ -177,18 +179,22 @@
 | NEON PINBALL // CYBER ARCADE | iceplantengineering/neon-pinball | HTML | Canvas 2D + Web Audio | 无构建 | 单文件 HTML | — | — | GLM-5.4 |
 | Pelican on a Bicycle · 3D | UNLINEARITY/pelican-bike-3d | JavaScript | Three.js + WebGL | Node.js build.mjs | 单 HTML 构建产物 + 多文件源码 | — | — | GLM-5.4 |
 
+| Red Clay Chase | noclipepe/red-clay-chase | JavaScript | Three.js + WebGL + Web Audio | 无构建 | 多文件静态站点 | 几何、贴图、音效由代码生成 | README 称全由 Fable 5.2 创建（28 条消息，约 9.5 小时） | Claude Fable 5.2 |
+| Apex Lap — Solaris Circuit | ololo-dev/apex-lap-gemini-4-neon-blender | TypeScript | Three.js + WebGL | Vite | GitHub Pages 静态站点 + Blender glTF 模型 | 车辆、起跑门、看台与树木由 Blender 建模 | — | Gemini 4 Neon |
+| 石根 STONEROOT | GYC-Debug-create/minecraft-gemini-4-neon | TypeScript | Three.js + WebGL + Web Worker | Vite 6 | 浏览器生存沙盒，需本地启动 | 方块纹理、物品图标与音效程序化生成 | 仓库 About 称单提示词生成 | Gemini 4 Neon |
+
 ## 交付形态与平台
 
-按主要交付形态归类，以下前三项合计 189 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。新增项目加入 Cinderwatch、Cold Smoke、Fable 作品集、Last Light Arcade 与 NEON PINBALL；网页多文件组加入 Brushwild、UNWRITTEN、Token Burn 网页作品及其他静态游戏；工程化组增加桌面项目与终端游戏。
+按主要交付形态归类，以下前三项合计 192 款；最后一项是跨平台补充统计。单 HTML 也可能由构建工具产出。新增项目加入 Cinderwatch、Cold Smoke、Fable 作品集、Last Light Arcade 与 NEON PINBALL；网页多文件组加入 Brushwild、UNWRITTEN、Red Clay Chase 与 Token Burn 网页作品；工程化组增加 Apex Lap、StoneRoot、桌面项目与终端游戏。
 
 - **单 HTML 交付（51 款）**：新增 Cinderwatch、《雪迹 · Cold Smoke》、Fable 独立 HTML 两款、Last Light Arcade 三款与 NEON PINBALL；另外 Pelican Bike 的发布产物为单文件 HTML。
-- **无构建但多文件（69 款）**：包括 Brushwild、UNWRITTEN、Beatbound、三款卡丁车、《Atlantis》、Dusk Depths、Port Azure 及 Token Burn 的五款网页游戏，以及原有多文件作品。
-- **其余工程化构建（69 款）**：本轮加入 NeonCoast、Sunbreak、Cretacea Unity 项目及 Token Burn 的 11 款 CLI 游戏；另有 Grand Tel Aviv 6。
-- **提供浏览器以外交付（46 款）**：另含 NeonCoast、Sunbreak、Cretacea Unity 以及 Token Burn 的 11 款命令行作品。
+- **无构建但多文件（70 款）**：包括 Red Clay Chase、Brushwild、UNWRITTEN、Beatbound、三款卡丁车、《Atlantis》、Dusk Depths、Port Azure 及 Token Burn 的五款网页游戏，以及原有多文件作品。
+- **其余工程化构建（71 款）**：本轮加入 Apex Lap、StoneRoot、NeonCoast、Sunbreak、Cretacea Unity 项目及 Token Burn 的 11 款 CLI 游戏；另有 Grand Tel Aviv 6。
+- **提供浏览器以外交付（47 款）**：另含 StoneRoot、NeonCoast、Sunbreak、Cretacea Unity 以及 Token Burn 的 11 款命令行作品。
 
 ## 素材来源谱系
 
-从「零外部素材」到「大量第三方资产」，这 189 款覆盖不同的素材路线：
+从「零外部素材」到「大量第三方资产」，这 192 款覆盖不同的素材路线：
 
 1. **纯代码生成** — SUBLEVEL 07（着色器画积水与锈迹、Web Audio 合成 18 个音效）、TukTuk、NEON RUNNER、MOTHLIGHT。体积最小（131 KB ~ 数百 KB），加载最快。
 2. **代码生成 + 脚本建模** — Tidebell 四件套用 Blender Python 脚本生成 48 个模型；Harvest Standoff 用 Blender 脚本雕十名角色。
